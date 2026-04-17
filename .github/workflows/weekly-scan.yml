@@ -1,0 +1,173 @@
+name: Weekly repo health scan
+
+on:
+  schedule:
+    # Monday 06:00 UTC — tune for your timezone if you want results waiting
+    # when your team starts the week
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: 'Scan a single repo (leave blank to scan all targets)'
+        required: false
+        type: string
+
+permissions:
+  contents: write   # commit new reports + regenerated dashboard back to repo-health
+
+concurrency:
+  group: weekly-scan
+  cancel-in-progress: false
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Job 1: Discover — read targets.yml, emit JSON list for the matrix
+  # ---------------------------------------------------------------------------
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      targets: ${{ steps.build.outputs.targets }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build target list
+        id: build
+        run: |
+          set -euo pipefail
+          if [ -n "${{ github.event.inputs.target }}" ]; then
+            # Manual dispatch with a specific target
+            targets='["${{ github.event.inputs.target }}"]'
+          else
+            # Full run — every repo in targets.yml
+            targets=$(yq -o=json -I=0 '[.repos[].name]' targets.yml)
+          fi
+          echo "targets=$targets" >> "$GITHUB_OUTPUT"
+          echo "Will scan: $targets"
+
+  # ---------------------------------------------------------------------------
+  # Job 2: Scan — one parallel job per target repo
+  # ---------------------------------------------------------------------------
+  scan:
+    needs: discover
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 3   # keep under Actions concurrent-job limits, conserve minutes
+      matrix:
+        target: ${{ fromJSON(needs.discover.outputs.targets) }}
+    steps:
+      - name: Checkout repo-health config
+        uses: actions/checkout@v4
+
+      - name: Clone target repo with full history
+        env:
+          TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${TOKEN:-}" ]; then
+            echo "::error::ORG_SCAN_TOKEN secret is not set. Configure it at the org level."
+            exit 1
+          fi
+          git clone \
+            "https://x-access-token:${TOKEN}@github.com/Kilowott-labs/${{ matrix.target }}.git" \
+            target
+          cd target
+          # Ensure we have every branch locally so --log-opts --all sees everything
+          for remote_branch in $(git branch -r | grep -v ' -> ' | grep -v '/HEAD$'); do
+            local_branch=${remote_branch#origin/}
+            git branch --track "$local_branch" "$remote_branch" 2>/dev/null || true
+          done
+          git fetch --all --tags --quiet
+
+      - name: Install Gitleaks
+        run: |
+          set -euo pipefail
+          VERSION=$(curl -s https://api.github.com/repos/gitleaks/gitleaks/releases/latest | jq -r .tag_name | sed 's/^v//')
+          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz" \
+            | tar -xz gitleaks
+          sudo mv gitleaks /usr/local/bin/
+          gitleaks version
+
+      - name: Run Gitleaks across full history
+        continue-on-error: true
+        run: |
+          cd target
+          gitleaks detect \
+            --config ../.gitleaks.toml \
+            --report-format json \
+            --report-path ../findings.json \
+            --log-opts="--all" \
+            --no-banner \
+            --exit-code 0
+
+      - name: Normalise report
+        run: |
+          set -euo pipefail
+          DATE=$(date -u +%Y-%m-%d)
+          mkdir -p "reports/${{ matrix.target }}"
+          # gitleaks writes `null` when no findings — normalise to empty array
+          if [ -s findings.json ] && [ "$(cat findings.json | tr -d '[:space:]')" != "null" ]; then
+            cp findings.json "reports/${{ matrix.target }}/${DATE}.json"
+          else
+            echo "[]" > "reports/${{ matrix.target }}/${DATE}.json"
+          fi
+          cp "reports/${{ matrix.target }}/${DATE}.json" "reports/${{ matrix.target }}/latest.json"
+          echo "Findings for ${{ matrix.target }}:"
+          jq 'length' "reports/${{ matrix.target }}/latest.json"
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ matrix.target }}
+          path: reports/${{ matrix.target }}/
+          retention-days: 90
+
+  # ---------------------------------------------------------------------------
+  # Job 3: Aggregate — merge all per-repo reports and regenerate the dashboard
+  # ---------------------------------------------------------------------------
+  aggregate:
+    needs: scan
+    if: always()   # still regenerate dashboard even if some scans failed
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all per-repo reports
+        uses: actions/download-artifact@v4
+        with:
+          path: incoming/
+          pattern: report-*
+
+      - name: Merge into reports/
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          for dir in incoming/report-*; do
+            [ -d "$dir" ] || continue
+            name=$(basename "$dir" | sed 's/^report-//')
+            mkdir -p "reports/$name"
+            cp -r "$dir/"* "reports/$name/"
+          done
+          rm -rf incoming/
+
+      - name: Convert targets.yml to JSON for aggregator
+        run: yq -o=json targets.yml > targets.json
+
+      - name: Regenerate dashboard
+        run: node scripts/aggregate.js
+
+      - name: Clean up targets.json
+        run: rm -f targets.json
+
+      - name: Commit results
+        run: |
+          set -euo pipefail
+          git config user.name  "repo-health-bot"
+          git config user.email "repo-health-bot@users.noreply.github.com"
+          git add reports/ README.md
+          if git diff --cached --quiet; then
+            echo "No dashboard changes — exiting cleanly."
+          else
+            git commit -m "chore(scan): weekly findings $(date -u +%Y-%m-%d)"
+            git push
+          fi

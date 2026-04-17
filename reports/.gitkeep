@@ -1,0 +1,2 @@
+# This file keeps the reports/ directory in git before any scans have run.
+# Scanner outputs land in reports/<repo-name>/<date>.json and latest.json.

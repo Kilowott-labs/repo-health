@@ -1,0 +1,12 @@
+# Local-only files
+targets.json         # generated from targets.yml during workflow runs
+*.log
+.DS_Store
+node_modules/
+.vscode/
+.idea/
+
+# Local scan scratch area
+/target/
+findings.json
+incoming/

@@ -1,0 +1,56 @@
+# Kilowott-labs scan targets
+# ---------------------------
+# Add/remove repos here to control what the health scanner monitors.
+# After editing, the next scheduled run (or manual dispatch) picks up changes.
+#
+# priority:  critical | high | medium | low
+# stack:     free-form tag used later for stack-specific scanners in Phase 2
+# private:   true/false — informational only, helps track public/private audit state
+
+org: Kilowott-labs
+
+repos:
+  - name: kw-security-plugin
+    priority: critical        # Migrated from Bitbucket — highest risk for history-committed secrets
+    stack: php-wp-plugin
+    private: true
+
+  - name: kw-wp-scaffold
+    priority: high            # Shared WP/Woo base used for client builds — compromise affects many
+    stack: wp-theme
+    private: true
+
+  - name: kw-wp-factory
+    priority: high            # Internal tooling, may contain service credentials
+    stack: powershell
+    private: false            # NOTE: currently public — review visibility
+
+  - name: kw-figma-preflight
+    priority: medium
+    stack: html-js
+    private: false            # NOTE: currently public — review visibility
+
+  - name: WP-QA-Agent
+    priority: medium
+    stack: typescript-node
+    private: false            # NOTE: currently public — review visibility
+
+  - name: design-systems
+    priority: medium
+    stack: javascript
+    private: false            # NOTE: currently public — review visibility
+
+  - name: nordic-fund-day
+    priority: medium
+    stack: html
+    private: false            # NOTE: client project — check with client re: visibility
+
+  - name: test-agent-project
+    priority: low
+    stack: scss
+    private: true
+
+  - name: Claude-skills
+    priority: low
+    stack: markdown
+    private: false            # Intentionally public — skills repo

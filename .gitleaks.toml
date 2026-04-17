@@ -1,0 +1,79 @@
+# Gitleaks config for Kilowott-labs repo-health
+# ---------------------------------------------
+# Extends the default Gitleaks ruleset with WordPress-specific patterns
+# and allowlists common false-positives in WP/Woo projects.
+#
+# Docs: https://github.com/gitleaks/gitleaks#configuration
+
+[extend]
+useDefault = true
+
+# --- Custom rules ------------------------------------------------------------
+
+[[rules]]
+id = "wp-auth-key"
+description = "WordPress AUTH_KEY, NONCE_KEY, or SALT literal (should come from env)"
+regex = '''(AUTH_KEY|SECURE_AUTH_KEY|LOGGED_IN_KEY|NONCE_KEY|AUTH_SALT|SECURE_AUTH_SALT|LOGGED_IN_SALT|NONCE_SALT)['"\s,]+['"][A-Za-z0-9\/\+\=!@#\$%\^&\*\(\)\-_ ]{32,}['"]'''
+keywords = ["AUTH_KEY", "NONCE_KEY", "AUTH_SALT", "SECURE_AUTH_KEY", "LOGGED_IN_KEY"]
+
+[[rules]]
+id = "wp-db-password-literal"
+description = "WordPress DB_PASSWORD committed as literal string"
+regex = '''define\s*\(\s*['"]DB_PASSWORD['"]\s*,\s*['"][^'"]{4,}['"]\s*\)'''
+keywords = ["DB_PASSWORD"]
+
+[[rules]]
+id = "woocommerce-api-secret"
+description = "WooCommerce REST API consumer secret (cs_...)"
+regex = '''cs_[a-f0-9]{40}'''
+keywords = ["cs_"]
+
+[[rules]]
+id = "woocommerce-api-key"
+description = "WooCommerce REST API consumer key (ck_...)"
+regex = '''ck_[a-f0-9]{40}'''
+keywords = ["ck_"]
+
+[[rules]]
+id = "stripe-secret-key"
+description = "Stripe secret key (live or test)"
+regex = '''sk_(live|test)_[A-Za-z0-9]{24,}'''
+keywords = ["sk_live", "sk_test"]
+
+# --- Allowlist ---------------------------------------------------------------
+# Things that look like secrets but aren't. Keep this conservative — prefer
+# rotating a real key over adding a broad allowlist entry.
+
+[allowlist]
+description = "Common false positives in WP/Woo and Node projects"
+
+paths = [
+  '''(.*?)\.md$''',
+  '''.*\.lock$''',
+  '''package-lock\.json$''',
+  '''composer\.lock$''',
+  '''yarn\.lock$''',
+  '''node_modules/''',
+  '''vendor/''',
+  '''dist/''',
+  '''build/''',
+  '''\.min\.(js|css)$''',
+  '''tests?/fixtures?/''',
+  '''\.gitleaks\.toml$''',
+]
+
+regexes = [
+  # WP default placeholders in fresh installs / wp-config-sample
+  '''put your unique phrase here''',
+  '''your-password-here''',
+  '''username_here''',
+  '''password_here''',
+  '''database_name_here''',
+  # Generic placeholder patterns
+  '''example\.(com|org|net)''',
+  '''xxxx+''',
+  '''\$\{[A-Z_]+\}''',
+  '''<[A-Z_]+>''',
+  # Test/dummy Stripe keys explicitly marked as fake
+  '''sk_test_(4eC39HqLyjWDarjtT1zdp7dc|FAKE|DUMMY)''',
+]
