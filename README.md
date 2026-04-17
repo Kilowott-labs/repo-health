@@ -1,32 +1,58 @@
 # Kilowott-labs repo health dashboard
 
-_This README is regenerated automatically after every scan. If you're seeing this placeholder, the first scan hasn't run yet._
+_Last regenerated: **2026-04-17 12:02:28 UTC**_  
+_Repos monitored: **9**  ·  Clean: **8**  ·  Flagged: **1**  ·  Total findings: **6**_
 
-Trigger the first scan: **Actions → Weekly repo health scan → Run workflow**.
+## Status at a glance
 
-## What lives here
+| Repo | Stack | Priority | Secret scan | Visibility |
+|---|---|---|---|---|
+| [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php-wp-plugin | critical | 🟢 clean | 🔒 private |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | wp-theme | high | 🟢 clean | 🔒 private |
+| [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | high | 🟢 clean | 🌐 public |
+| [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | html-js | medium | 🟢 clean | 🌐 public |
+| [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | typescript-node | medium | 🟢 clean | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | javascript | medium | 🟢 clean | 🌐 public |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | html | medium | 🔴 6 findings | 🌐 public |
+| [`test-agent-project`](https://github.com/Kilowott-labs/test-agent-project) | scss | low | 🟢 clean | 🔒 private |
+| [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | markdown | low | 🟢 clean | 🌐 public |
 
-- **`targets.yml`** — the list of repos this system monitors. Add/remove here.
-- **`.gitleaks.toml`** — secret-scanning rules (extends Gitleaks defaults with WordPress-specific patterns)
-- **`.github/workflows/weekly-scan.yml`** — the scheduled scan
-- **`scripts/aggregate.js`** — regenerates this dashboard from the latest reports
-- **`reports/<repo>/`** — raw per-repo findings history as JSON
+## Detailed findings
 
-## How it runs
+### `nordic-fund-day` — 6 findings
 
-Every Monday at 06:00 UTC, or on manual dispatch, the workflow:
+| Rule | File | Line | Commit | Date |
+|---|---|---|---|---|
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
+| generic-api-key | `figma-cache/nordic-fund-day-full.json` | 4 | `cbb14bd` | 2026-04-10 |
 
-1. Reads the target list from `targets.yml`
-2. Fans out — one parallel job per target repo
-3. Each job clones the target (full history), runs Gitleaks, writes `reports/<repo>/<date>.json`
-4. A final aggregation job merges all reports and regenerates this README
+---
 
-## Requirements
+## How this works
 
-- An org-level Actions secret named `ORG_SCAN_TOKEN` holding a fine-grained PAT with:
-  - `Contents: Read` and `Metadata: Read` on all Kilowott-labs repos
-  - (`Issues: Write` will be added in Phase 3 when we wire up auto-issues)
+- Weekly scan runs every **Monday 06:00 UTC** via GitHub Actions
+- Gitleaks walks **full git history** on every target repo
+- Findings are written to `reports/<repo>/<date>.json` and `latest.json`
+- This README is regenerated automatically after each scan
+
+Trigger a manual scan: **Actions → Weekly repo health scan → Run workflow**. Leave the target blank to scan everything, or enter a single repo name.
+
+## What each finding means
+
+- 🔴 **Critical repos** (like `kw-security-plugin`) are flagged red on *any* finding — treat every finding as a live credential until proven otherwise.
+- 🟡 **Other repos** are flagged yellow for 1–4 findings, red for 5+.
+- 🟢 **Clean** = Gitleaks found nothing across full history with the current rules.
+- ⚪ **Not scanned** = repo is in `targets.yml` but no report has run yet.
+
+When something is flagged: **rotate the credential first**, then clean the history (see [the GitHub docs on removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
 
 ## Roadmap
 
-See progress in the generated dashboard above (after first scan).
+- [x] **Phase 1** — Gitleaks secret scanning across full history (this)
+- [ ] **Phase 2** — Stack-aware scanners: `composer audit`, `npm audit`, PHPCS+WPCS, Semgrep
+- [ ] **Phase 3** — Auto-open/update `[health-check]` issues in target repos
+- [ ] **Phase 4** — Uptime monitoring via Upptime for client sites
