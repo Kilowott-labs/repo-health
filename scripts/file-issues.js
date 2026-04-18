@@ -1,24 +1,20 @@
 #!/usr/bin/env node
 /**
- * Phase 3: issue filer
+ * Phase 3: issue filer (v2 — rate-limit fixed)
+ *
+ * Changes from v1:
+ *   - Replaces every /search/issues call with /repos/{owner}/{repo}/issues
+ *     (5,000/hr core quota vs 30/min search quota — 100× more headroom)
+ *   - Single-pass per repo (v1 accidentally called findExistingIssue and
+ *     readDismissals twice — once in processRepo, once in the results loop)
+ *   - Added retry-with-backoff on 403/429 (belt-and-suspenders in case a
+ *     future change reintroduces a search call)
  *
  * For each target repo, maintains ONE issue summarising all active findings.
- * - Idempotent: edits the existing issue in place, never creates duplicates
- * - Dismissal-aware: findings labeled wontfix/acknowledged/false-positive
- *   are suppressed on future runs
- * - Closes the issue when the repo goes clean
- *
- * Per-finding stability: each finding is assigned a stable fingerprint
- * (rule + file + line + commit-short) so the team can reference a specific
- * finding even as the issue body is regenerated.
- *
- * Inputs (env / args):
- *   GITHUB_TOKEN          PAT with Issues: Write on all Kilowott-labs repos
- *   ORG                   e.g. "Kilowott-labs"
- *   TARGETS_JSON          path to targets.json (from yq of targets.yml)
- *   REPORTS_DIR           path to reports/ (contains <repo>/latest.json)
- *
- * Exits non-zero only on unexpected API errors, never on findings.
+ *   - Idempotent: edits the existing issue in place, never creates duplicates
+ *   - Dismissal-aware: findings labeled wontfix/acknowledged/false-positive
+ *     are suppressed on future runs
+ *   - Closes the issue when the repo goes clean
  */
 
 const fs = require('fs');
@@ -30,6 +26,7 @@ const ORG = process.env.ORG || 'Kilowott-labs';
 const TARGETS_JSON = process.env.TARGETS_JSON || 'targets.json';
 const REPORTS_DIR = process.env.REPORTS_DIR || 'reports';
 const ISSUE_LABEL = 'health-check';
+const DIGEST_LABEL = `${ISSUE_LABEL}-digest`;
 const DISMISS_LABELS = ['wontfix', 'acknowledged', 'false-positive'];
 const TITLE_PREFIX = '[health-check]';
 
@@ -54,9 +51,6 @@ function fingerprint(finding) {
 }
 
 function severityOf(finding, repoPriority) {
-  // Any secret finding in a public repo is critical
-  // Any secret finding in a critical-priority repo is critical
-  // Everything else starts at high (we'll calibrate when Phase 2 adds non-secret scanners)
   if (repoPriority === 'critical') return 'critical';
   return 'high';
 }
@@ -66,9 +60,11 @@ function severityEmoji(s) {
 }
 
 // ---------------------------------------------------------------------------
-// GitHub API helpers (no external deps — use built-in fetch in Node 20+)
+// GitHub API with backoff
 // ---------------------------------------------------------------------------
-async function gh(pathname, opts = {}) {
+async function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+async function gh(pathname, opts = {}, attempt = 1) {
   const res = await fetch(`https://api.github.com${pathname}`, {
     ...opts,
     headers: {
@@ -80,34 +76,75 @@ async function gh(pathname, opts = {}) {
       ...(opts.headers || {}),
     },
   });
+
+  // Rate limit — back off and retry (max 4 attempts, ~60s total worst case)
+  if ((res.status === 403 || res.status === 429) && attempt <= 4) {
+    const reset = parseInt(res.headers.get('x-ratelimit-reset') || '0', 10);
+    const retryAfter = parseInt(res.headers.get('retry-after') || '0', 10);
+    const waitSeconds = retryAfter
+      || (reset ? Math.max(1, reset - Math.floor(Date.now() / 1000)) : 2 ** attempt);
+    const capped = Math.min(waitSeconds, 60);
+    console.warn(`Rate-limited on ${pathname}. Sleeping ${capped}s (attempt ${attempt}/4).`);
+    await sleep(capped * 1000);
+    return gh(pathname, opts, attempt + 1);
+  }
+
   if (!res.ok) {
     const body = await res.text();
-    throw new Error(`GitHub API ${res.status} on ${opts.method || 'GET'} ${pathname}: ${body}`);
+    const remaining = res.headers.get('x-ratelimit-remaining');
+    const resource = res.headers.get('x-ratelimit-resource') || 'core';
+    throw new Error(
+      `GitHub API ${res.status} on ${opts.method || 'GET'} ${pathname} ` +
+      `[${resource} remaining=${remaining}]: ${body.slice(0, 300)}`
+    );
   }
   if (res.status === 204) return null;
   return res.json();
 }
 
-async function findExistingIssue(owner, repo) {
-  // Find the single open [health-check] issue, if any. We also look at closed
-  // issues so we can reopen instead of creating a new one if findings return.
-  const q = encodeURIComponent(
-    `repo:${owner}/${repo} is:issue label:${ISSUE_LABEL} in:title ${TITLE_PREFIX}`,
-  );
-  const search = await gh(`/search/issues?q=${q}&per_page=5`);
-  // Prefer open, then most-recently-updated closed
-  const items = search.items || [];
-  const open = items.find(i => i.state === 'open');
-  if (open) return open;
-  return items.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))[0] || null;
+// ---------------------------------------------------------------------------
+// Issue lookup — REST only, no /search
+// ---------------------------------------------------------------------------
+async function listRepoIssues(owner, repo, { labels, state = 'all' } = {}) {
+  const params = new URLSearchParams();
+  params.set('state', state);
+  params.set('per_page', '100');
+  if (labels) params.set('labels', Array.isArray(labels) ? labels.join(',') : labels);
+
+  const issues = [];
+  let page = 1;
+  while (true) {
+    params.set('page', String(page));
+    const batch = await gh(`/repos/${owner}/${repo}/issues?${params.toString()}`);
+    if (!Array.isArray(batch) || batch.length === 0) break;
+    // Pull requests also come through /issues — filter them out
+    for (const i of batch) if (!i.pull_request) issues.push(i);
+    if (batch.length < 100) break;
+    page++;
+    if (page > 10) break;
+  }
+  return issues;
 }
 
-async function ensureLabels(owner, repo) {
+function findExistingIssue(healthIssues) {
+  const open = healthIssues.find(i => i.state === 'open' && i.title.startsWith(TITLE_PREFIX));
+  if (open) return open;
+  const closed = healthIssues
+    .filter(i => i.state === 'closed' && i.title.startsWith(TITLE_PREFIX))
+    .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+  return closed[0] || null;
+}
+
+// ---------------------------------------------------------------------------
+// Label management
+// ---------------------------------------------------------------------------
+async function ensureLabels(owner, repo, extraLabels = []) {
   const desired = [
     { name: ISSUE_LABEL, color: 'b60205', description: 'Auto-managed by repo-health scanner' },
     { name: 'wontfix', color: 'ffffff', description: 'Finding acknowledged — do not fix' },
     { name: 'acknowledged', color: 'fbca04', description: 'Finding reviewed — fix planned' },
     { name: 'false-positive', color: '0e8a16', description: 'Finding is incorrect — will allowlist' },
+    ...extraLabels,
   ];
   for (const l of desired) {
     try {
@@ -116,38 +153,35 @@ async function ensureLabels(owner, repo) {
         body: JSON.stringify(l),
       });
     } catch (e) {
-      // 422 = already exists, ignore
-      if (!/\b422\b/.test(e.message)) throw e;
+      if (!/\b422\b/.test(e.message)) throw e; // 422 = already exists
     }
   }
 }
 
-async function readDismissals(owner, repo) {
-  // A finding is dismissed if its fingerprint appears in any issue/comment
-  // tagged with wontfix / acknowledged / false-positive.
-  //
-  // Convention: to dismiss finding F-abc123, either:
-  //   (a) apply a dismissal label to the health-check issue and add a comment
-  //       like "dismiss F-abc123 reason: test fixture"
-  //   (b) open a separate issue titled "[health-check-dismiss] F-abc123" with
-  //       a dismissal label
-  const dismissed = new Map(); // fingerprint -> { reason, label }
-  for (const label of DISMISS_LABELS) {
-    const q = encodeURIComponent(`repo:${owner}/${repo} is:issue label:${label}`);
-    const search = await gh(`/search/issues?q=${q}&per_page=100`);
-    for (const issue of (search.items || [])) {
-      // Scrape fingerprints from body + comments
-      const bodies = [issue.body || ''];
-      if (issue.comments > 0) {
-        const comments = await gh(`/repos/${owner}/${repo}/issues/${issue.number}/comments?per_page=100`);
-        for (const c of comments) bodies.push(c.body || '');
-      }
-      for (const body of bodies) {
-        const matches = body.matchAll(/\bF-[a-f0-9]{8}\b/g);
-        for (const m of matches) {
-          if (!dismissed.has(m[0])) {
-            dismissed.set(m[0], { reason: extractReason(body, m[0]), label });
-          }
+// ---------------------------------------------------------------------------
+// Dismissals — read from already-loaded issue list
+// ---------------------------------------------------------------------------
+async function readDismissals(owner, repo, allIssues) {
+  const dismissed = new Map();
+  const dismissalIssues = allIssues.filter(i =>
+    (i.labels || []).some(l => DISMISS_LABELS.includes(l.name || l))
+  );
+
+  for (const issue of dismissalIssues) {
+    const labelName = (issue.labels || [])
+      .map(l => l.name || l)
+      .find(n => DISMISS_LABELS.includes(n));
+
+    const bodies = [issue.body || ''];
+    if (issue.comments > 0) {
+      const comments = await gh(`/repos/${owner}/${repo}/issues/${issue.number}/comments?per_page=100`);
+      for (const c of comments) bodies.push(c.body || '');
+    }
+    for (const body of bodies) {
+      const matches = body.matchAll(/\bF-[a-f0-9]{8}\b/g);
+      for (const m of matches) {
+        if (!dismissed.has(m[0])) {
+          dismissed.set(m[0], { reason: extractReason(body, m[0]), label: labelName });
         }
       }
     }
@@ -155,9 +189,8 @@ async function readDismissals(owner, repo) {
   return dismissed;
 }
 
-function extractReason(body, fingerprint) {
-  // Pull the rest of the line after the fingerprint as the reason
-  const re = new RegExp(`${fingerprint}\\s*[:\\-]?\\s*(.+)`);
+function extractReason(body, fp) {
+  const re = new RegExp(`${fp}\\s*[:\\-]?\\s*(.+)`);
   const m = body.match(re);
   return m ? m[1].trim().slice(0, 120) : '';
 }
@@ -165,13 +198,12 @@ function extractReason(body, fingerprint) {
 // ---------------------------------------------------------------------------
 // Issue body rendering
 // ---------------------------------------------------------------------------
-function renderIssueBody({ owner, repo, repoPriority, activeFindings, dismissedFindings, runUrl, generatedAt }) {
+function renderIssueBody({ repoPriority, activeFindings, dismissedFindings, runUrl, generatedAt }) {
   const lines = [];
   lines.push(`_Auto-generated by [repo-health](https://github.com/${ORG}/repo-health) on ${generatedAt}._`);
   lines.push('_This issue is updated in place after every scan. Do not rename the title._');
   lines.push('');
 
-  // Severity counts
   const counts = { critical: 0, high: 0, medium: 0, low: 0 };
   for (const f of activeFindings) counts[f.severity]++;
 
@@ -198,7 +230,6 @@ function renderIssueBody({ owner, repo, repoPriority, activeFindings, dismissedF
     lines.push('Each finding has a stable ID (`F-xxxxxxxx`). Reference this ID in a dismissal comment or label to suppress it on future scans.');
     lines.push('');
 
-    // Group by severity
     for (const sev of ['critical', 'high', 'medium', 'low']) {
       const forSev = activeFindings.filter(f => f.severity === sev);
       if (forSev.length === 0) continue;
@@ -217,7 +248,7 @@ function renderIssueBody({ owner, repo, repoPriority, activeFindings, dismissedF
         lines.push('');
         lines.push('**Fix sequence:**');
         lines.push('');
-        for (const step of fixSteps(f, owner, repo)) {
+        for (const step of fixSteps(f)) {
           lines.push(`- [ ] ${step}`);
         }
         lines.push('');
@@ -274,8 +305,8 @@ function explainRule(ruleId) {
   return map[ruleId] || 'A potential secret was detected by the scanner. Review the match and decide whether it is a real credential.';
 }
 
-function fixSteps(finding, owner, repo) {
-  const common = [
+function fixSteps(finding) {
+  return [
     `Verify whether this is a real credential (open \`${finding.file}\` at commit \`${finding.commit}\`)`,
     'If real: **rotate the credential at the provider immediately** — assume compromised',
     `Stop tracking the file: \`echo "${finding.file}" >> .gitignore && git rm --cached "${finding.file}" && git commit -m "fix(security): stop tracking ${path.basename(finding.file)}"\``,
@@ -283,34 +314,43 @@ function fixSteps(finding, owner, repo) {
     'For private repos with few collaborators: consider `git filter-repo` to scrub history',
     'Add the finding ID to a dismissal comment here once resolved',
   ];
-  return common;
 }
 
 // ---------------------------------------------------------------------------
-// Main per-repo flow
+// Per-repo flow — single pass, no duplicate queries
 // ---------------------------------------------------------------------------
 async function processRepo(repo, runUrl, generatedAt) {
   const owner = ORG;
   const name = repo.name;
   const latestPath = path.join(REPORTS_DIR, name, 'latest.json');
-  if (!fs.existsSync(latestPath)) {
-    console.log(`[${name}] no latest.json — skipping`);
-    return;
-  }
 
-  let rawFindings;
-  try {
-    rawFindings = JSON.parse(fs.readFileSync(latestPath, 'utf8'));
-  } catch (e) {
-    console.error(`[${name}] malformed report: ${e.message}`);
-    return;
+  let rawFindings = [];
+  if (fs.existsSync(latestPath)) {
+    try {
+      rawFindings = JSON.parse(fs.readFileSync(latestPath, 'utf8')) || [];
+    } catch (e) {
+      console.error(`[${name}] malformed report: ${e.message}`);
+      rawFindings = [];
+    }
+  } else {
+    console.log(`[${name}] no latest.json — skipping`);
+    return { name, priority: repo.priority, active: 0, dismissed: 0, issueNumber: null, skipped: true };
   }
   if (!Array.isArray(rawFindings)) rawFindings = [];
 
+  // Ensure labels exist BEFORE we query — avoids 404 when labels don't exist yet
   await ensureLabels(owner, name);
-  const dismissals = await readDismissals(owner, name);
 
-  // Normalise + classify
+  // One query gets everything we need: all health-check + dismissal issues.
+  // Union of labels in REST = comma-separated ("any of these")
+  const relevantLabels = [ISSUE_LABEL, ...DISMISS_LABELS].join(',');
+  const allRelevantIssues = await listRepoIssues(owner, name, {
+    labels: relevantLabels,
+    state: 'all',
+  });
+
+  const dismissals = await readDismissals(owner, name, allRelevantIssues);
+
   const classified = rawFindings.map(f => ({
     id: fingerprint(f),
     ruleId: f.RuleID || f.ruleID || 'unknown',
@@ -329,24 +369,24 @@ async function processRepo(repo, runUrl, generatedAt) {
 
   console.log(`[${name}] active=${active.length} dismissed=${dismissed.length} raw=${rawFindings.length}`);
 
+  const healthIssues = allRelevantIssues.filter(i =>
+    (i.labels || []).some(l => (l.name || l) === ISSUE_LABEL)
+  );
+  const existing = findExistingIssue(healthIssues);
+
   const title = `${TITLE_PREFIX} ${active.length} active finding${active.length === 1 ? '' : 's'} — ${name}`;
   const body = renderIssueBody({
-    owner, repo: name,
     repoPriority: repo.priority,
     activeFindings: active,
     dismissedFindings: dismissed,
     runUrl, generatedAt,
   });
 
-  const existing = await findExistingIssue(owner, name);
+  let issueNumber = existing ? existing.number : null;
 
   if (!existing && active.length === 0) {
-    // Nothing to do — repo is clean, no prior issue
-    return;
-  }
-
-  if (existing) {
-    // Update in place
+    // Nothing to do
+  } else if (existing) {
     const nextState = active.length === 0 ? 'closed' : 'open';
     await gh(`/repos/${owner}/${name}/issues/${existing.number}`, {
       method: 'PATCH',
@@ -354,13 +394,21 @@ async function processRepo(repo, runUrl, generatedAt) {
     });
     console.log(`[${name}] updated issue #${existing.number} (state=${nextState})`);
   } else {
-    // Create new
     const created = await gh(`/repos/${owner}/${name}/issues`, {
       method: 'POST',
       body: JSON.stringify({ title, body, labels: [ISSUE_LABEL] }),
     });
+    issueNumber = created.number;
     console.log(`[${name}] opened issue #${created.number}`);
   }
+
+  return {
+    name,
+    priority: repo.priority,
+    active: active.length,
+    dismissed: dismissed.length,
+    issueNumber,
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -368,46 +416,53 @@ async function processRepo(repo, runUrl, generatedAt) {
 // ---------------------------------------------------------------------------
 async function writeDigestIssue(repos, results, runUrl, generatedAt) {
   const digestTitle = `[health-check] Weekly digest — ${generatedAt.split(' ')[0]}`;
-  const totalActive = results.reduce((s, r) => s + r.active, 0);
+  const totalActive = results.reduce((s, r) => s + Math.max(0, r.active), 0);
   const flaggedRepos = results.filter(r => r.active > 0);
+  const errored = results.filter(r => r.active === -1);
 
   const lines = [];
   lines.push(`_Generated ${generatedAt}. Run: [${runUrl.split('/').pop()}](${runUrl})._`);
   lines.push('');
   lines.push(`**${totalActive}** active findings across **${flaggedRepos.length}** of **${repos.length}** repos.`);
+  if (errored.length) lines.push(`⚠️ **${errored.length} repo(s) errored during filing — check workflow log.**`);
   lines.push('');
   lines.push('| Repo | Priority | Active | Dismissed | Issue |');
   lines.push('|---|---|---|---|---|');
-  for (const r of results.sort((a, b) => b.active - a.active)) {
+  for (const r of [...results].sort((a, b) => b.active - a.active)) {
     const issueLink = r.issueNumber
       ? `[#${r.issueNumber}](https://github.com/${ORG}/${r.name}/issues/${r.issueNumber})`
       : '—';
-    lines.push(`| \`${r.name}\` | ${r.priority} | ${r.active} | ${r.dismissed} | ${issueLink} |`);
+    const activeCell = r.active === -1 ? '⚠️ error' : r.active;
+    lines.push(`| \`${r.name}\` | ${r.priority} | ${activeCell} | ${r.dismissed} | ${issueLink} |`);
   }
   lines.push('');
-  lines.push('[Open dashboard](https://github.com/' + ORG + '/repo-health)');
+  lines.push(`[Open dashboard](https://github.com/${ORG}/repo-health)`);
 
-  // Digest lives in repo-health itself, one issue per week (close old ones)
-  const existing = await gh(
-    `/search/issues?q=${encodeURIComponent(`repo:${ORG}/repo-health is:issue label:${ISSUE_LABEL}-digest is:open`)}`,
-  );
-  for (const old of (existing.items || [])) {
+  await ensureLabels(ORG, 'repo-health', [
+    { name: DIGEST_LABEL, color: '1d76db', description: 'Weekly aggregate report' },
+  ]);
+
+  // Close any existing open digest issues (REST, not search)
+  const priorDigests = await listRepoIssues(ORG, 'repo-health', {
+    labels: DIGEST_LABEL,
+    state: 'open',
+  });
+  for (const old of priorDigests) {
     await gh(`/repos/${ORG}/repo-health/issues/${old.number}`, {
       method: 'PATCH',
       body: JSON.stringify({ state: 'closed' }),
     });
   }
-  await ensureLabels(ORG, 'repo-health');
-  try {
-    await gh(`/repos/${ORG}/repo-health/labels`, {
-      method: 'POST',
-      body: JSON.stringify({ name: `${ISSUE_LABEL}-digest`, color: '1d76db', description: 'Weekly aggregate report' }),
-    });
-  } catch (e) { if (!/\b422\b/.test(e.message)) throw e; }
-  await gh(`/repos/${ORG}/repo-health/issues`, {
+
+  const created = await gh(`/repos/${ORG}/repo-health/issues`, {
     method: 'POST',
-    body: JSON.stringify({ title: digestTitle, body: lines.join('\n'), labels: [`${ISSUE_LABEL}-digest`] }),
+    body: JSON.stringify({
+      title: digestTitle,
+      body: lines.join('\n'),
+      labels: [DIGEST_LABEL],
+    }),
   });
+  console.log(`digest issue opened as #${created.number}`);
 }
 
 // ---------------------------------------------------------------------------
@@ -422,28 +477,17 @@ async function writeDigestIssue(repos, results, runUrl, generatedAt) {
   const results = [];
   for (const repo of targets) {
     try {
-      const latestPath = path.join(REPORTS_DIR, repo.name, 'latest.json');
-      let raw = [];
-      if (fs.existsSync(latestPath)) {
-        raw = JSON.parse(fs.readFileSync(latestPath, 'utf8')) || [];
-      }
-      const dismissals = await readDismissals(ORG, repo.name).catch(() => new Map());
-      const classified = raw.map(f => ({ ...f, id: fingerprint(f) }));
-      const active = classified.filter(f => !dismissals.has(f.id));
-      const existing = await findExistingIssue(ORG, repo.name).catch(() => null);
-
-      await processRepo(repo, runUrl, generatedAt);
-
+      const result = await processRepo(repo, runUrl, generatedAt);
+      results.push(result);
+    } catch (e) {
+      console.error(`[${repo.name}] failed: ${e.message}`);
       results.push({
         name: repo.name,
         priority: repo.priority,
-        active: active.length,
-        dismissed: classified.length - active.length,
-        issueNumber: existing ? existing.number : null,
+        active: -1,
+        dismissed: 0,
+        issueNumber: null,
       });
-    } catch (e) {
-      console.error(`[${repo.name}] failed: ${e.message}`);
-      results.push({ name: repo.name, priority: repo.priority, active: -1, dismissed: 0, issueNumber: null });
     }
   }
 
@@ -454,4 +498,10 @@ async function writeDigestIssue(repos, results, runUrl, generatedAt) {
   }
 
   console.log('Issue filing complete.');
+  console.log(JSON.stringify({
+    total: results.length,
+    flagged: results.filter(r => r.active > 0).length,
+    clean: results.filter(r => r.active === 0).length,
+    errored: results.filter(r => r.active === -1).length,
+  }));
 })();
