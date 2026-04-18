@@ -39,15 +39,58 @@ if (!TOKEN) {
 // Fingerprinting — stable per-finding ID so dismissals survive re-scans
 // ---------------------------------------------------------------------------
 function fingerprint(finding) {
+  // Fingerprint intentionally excludes commit SHA so the same underlying leak
+  // (same rule + same file + same line) dedupes across every commit it appears
+  // in. Gitleaks reports each historical occurrence separately when walking
+  // --all; for a team-facing issue we want one entry per unique leak with a
+  // "first seen / last seen" summary instead.
   const rule = finding.RuleID || finding.ruleID || 'unknown';
   const file = finding.File || finding.file || '';
   const line = finding.StartLine || finding.startLine || 0;
-  const commit = String(finding.Commit || finding.commit || '').slice(0, 7);
   const h = crypto.createHash('sha1')
-    .update(`${rule}|${file}|${line}|${commit}`)
+    .update(`${rule}|${file}|${line}`)
     .digest('hex')
     .slice(0, 8);
   return `F-${h}`;
+}
+
+// Groups N raw findings by fingerprint, returns deduped entries with
+// first/last commit metadata preserved.
+function dedupeFindings(rawFindings, repoPriority) {
+  const byFp = new Map();
+  for (const f of rawFindings) {
+    const id = fingerprint(f);
+    const commit = String(f.Commit || f.commit || '').slice(0, 7);
+    const date = String(f.Date || f.date || '').slice(0, 10);
+    if (!byFp.has(id)) {
+      byFp.set(id, {
+        id,
+        ruleId: f.RuleID || f.ruleID || 'unknown',
+        file: f.File || f.file || '',
+        line: f.StartLine || f.startLine || 0,
+        match: f.Match || f.match || '',
+        severity: severityOf(f, repoPriority),
+        firstCommit: commit,
+        firstDate: date,
+        lastCommit: commit,
+        lastDate: date,
+        occurrences: 1,
+      });
+    } else {
+      const existing = byFp.get(id);
+      existing.occurrences++;
+      // Track earliest + latest by date string (ISO sorts lexicographically)
+      if (date && (!existing.firstDate || date < existing.firstDate)) {
+        existing.firstCommit = commit;
+        existing.firstDate = date;
+      }
+      if (date && (!existing.lastDate || date > existing.lastDate)) {
+        existing.lastCommit = commit;
+        existing.lastDate = date;
+      }
+    }
+  }
+  return Array.from(byFp.values());
 }
 
 function severityOf(finding, repoPriority) {
@@ -239,7 +282,13 @@ function renderIssueBody({ repoPriority, activeFindings, dismissedFindings, runU
         lines.push(`#### \`${f.id}\` — ${f.ruleId}`);
         lines.push('');
         lines.push(`- **File:** \`${f.file}\` line ${f.line}`);
-        lines.push(`- **Commit:** \`${f.commit}\`${f.date ? ` (${f.date})` : ''}`);
+        if (f.occurrences > 1) {
+          lines.push(`- **First seen:** commit \`${f.firstCommit}\`${f.firstDate ? ` (${f.firstDate})` : ''}`);
+          lines.push(`- **Last seen:** commit \`${f.lastCommit}\`${f.lastDate ? ` (${f.lastDate})` : ''}`);
+          lines.push(`- **Occurrences in history:** ${f.occurrences}`);
+        } else {
+          lines.push(`- **Commit:** \`${f.firstCommit}\`${f.firstDate ? ` (${f.firstDate})` : ''}`);
+        }
         if (f.match) lines.push(`- **Pattern matched:** \`${f.match.slice(0, 80)}${f.match.length > 80 ? '…' : ''}\``);
         lines.push('');
         lines.push('<details><summary>Why this matters &amp; fix sequence</summary>');
@@ -307,7 +356,7 @@ function explainRule(ruleId) {
 
 function fixSteps(finding) {
   return [
-    `Verify whether this is a real credential (open \`${finding.file}\` at commit \`${finding.commit}\`)`,
+    `Verify whether this is a real credential (open \`${finding.file}\` at commit \`${finding.firstCommit}\`)`,
     'If real: **rotate the credential at the provider immediately** — assume compromised',
     `Stop tracking the file: \`echo "${finding.file}" >> .gitignore && git rm --cached "${finding.file}" && git commit -m "fix(security): stop tracking ${path.basename(finding.file)}"\``,
     'For public repos: history purge is optional — rotation is the real mitigation',
@@ -351,16 +400,7 @@ async function processRepo(repo, runUrl, generatedAt) {
 
   const dismissals = await readDismissals(owner, name, allRelevantIssues);
 
-  const classified = rawFindings.map(f => ({
-    id: fingerprint(f),
-    ruleId: f.RuleID || f.ruleID || 'unknown',
-    file: f.File || f.file || '',
-    line: f.StartLine || f.startLine || 0,
-    commit: String(f.Commit || f.commit || '').slice(0, 7),
-    date: String(f.Date || f.date || '').slice(0, 10),
-    match: f.Match || f.match || '',
-    severity: severityOf(f, repo.priority),
-  }));
+  const classified = dedupeFindings(rawFindings, repo.priority);
 
   const active = classified.filter(f => !dismissals.has(f.id));
   const dismissed = classified
