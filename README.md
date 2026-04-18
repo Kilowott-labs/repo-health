@@ -1,6 +1,6 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-17 12:02:28 UTC**_  
+_Last regenerated: **2026-04-18 10:20:19 UTC**_  
 _Repos monitored: **9**  ·  Clean: **8**  ·  Flagged: **1**  ·  Total findings: **6**_
 
 ## Status at a glance
