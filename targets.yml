@@ -1,56 +1,32 @@
-# Kilowott-labs scan targets
-# ---------------------------
-# Add/remove repos here to control what the health scanner monitors.
-# After editing, the next scheduled run (or manual dispatch) picks up changes.
+# Kilowott-labs scan targets — OVERRIDE FILE
+# ------------------------------------------
+# Auto-discovery runs first and pulls every repo in the org, then these
+# overrides apply. You only need to edit this file when you disagree with
+# what auto-discovery decided.
 #
-# priority:  critical | high | medium | low
-# stack:     free-form tag used later for stack-specific scanners in Phase 2
-# private:   true/false — informational only, helps track public/private audit state
+# Auto-discovery rules (reference — don't edit these, they live in scripts/discover.js):
+#   SKIP if: archived, fork, disabled, empty, or name contains scratch/test/demo
+#   priority: critical — if name contains security/secret/auth
+#   priority: high — if private AND starts with kw-
+#   priority: medium — everything else
+#   stack: auto-detected from repo language (php/node/frontend/powershell/other)
 
-org: Kilowott-labs
+# --- Skip list ---------------------------------------------------------------
+# Repo names to skip even if auto-discovery would include them.
+# Use this for repos that don't match the auto-skip name patterns but still
+# shouldn't be scanned (experimental, client-owned, temporary, etc.)
+skip:
+  # - example-scratch-repo
 
-repos:
-  - name: kw-security-plugin
-    priority: critical        # Migrated from Bitbucket — highest risk for history-committed secrets
-    stack: php-wp-plugin
-    private: true
+# --- Priority / stack overrides ----------------------------------------------
+# Per-repo overrides when the auto-detected values are wrong.
+# Only specify the fields you want to override — others stay auto-detected.
+overrides:
+  nordic-fund-day:
+    priority: high          # default "medium" — this is live client work, bump severity
+  # kw-security-plugin:
+  #   priority: critical    # already critical by name match — no override needed
 
-  - name: kw-wp-scaffold
-    priority: high            # Shared WP/Woo base used for client builds — compromise affects many
-    stack: wp-theme
-    private: true
-
-  - name: kw-wp-factory
-    priority: high            # Internal tooling, may contain service credentials
-    stack: powershell
-    private: false            # NOTE: currently public — review visibility
-
-  - name: kw-figma-preflight
-    priority: medium
-    stack: html-js
-    private: false            # NOTE: currently public — review visibility
-
-  - name: WP-QA-Agent
-    priority: medium
-    stack: typescript-node
-    private: false            # NOTE: currently public — review visibility
-
-  - name: design-systems
-    priority: medium
-    stack: javascript
-    private: false            # NOTE: currently public — review visibility
-
-  - name: nordic-fund-day
-    priority: medium
-    stack: html
-    private: false            # NOTE: client project — check with client re: visibility
-
-  - name: test-agent-project
-    priority: low
-    stack: scss
-    private: true
-
-  - name: Claude-skills
-    priority: low
-    stack: markdown
-    private: false            # Intentionally public — skills repo
+  # Example of overriding stack when auto-detection misses something:
+  # some-repo:
+  #   stack: wp-theme       # repo language is PHP but it's actually a WP theme

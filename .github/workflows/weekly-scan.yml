@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
     inputs:
       target:
-        description: 'Scan a single repo (leave blank to scan all targets)'
+        description: 'Scan a single repo (leave blank to scan all auto-discovered targets)'
         required: false
         type: string
 
@@ -21,28 +21,57 @@ concurrency:
 
 jobs:
   # ---------------------------------------------------------------------------
-  # Job 1: Discover — read targets.yml, emit JSON list for the matrix
+  # Job 1: Discover — auto-detect repos in the org, apply rules + overrides
   # ---------------------------------------------------------------------------
   discover:
     runs-on: ubuntu-latest
     outputs:
-      targets: ${{ steps.build.outputs.targets }}
+      targets: ${{ steps.emit.outputs.targets }}
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build target list
-        id: build
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Convert targets.yml (overrides) to JSON
+        run: yq -o=json targets.yml > targets.json
+
+      - name: Auto-discover org repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          ORG: Kilowott-labs
+          OVERRIDES: targets.json
+          OUTPUT: discovered-targets.json
+        run: node scripts/discover.js
+
+      - name: Build matrix list
+        id: emit
         run: |
           set -euo pipefail
           if [ -n "${{ github.event.inputs.target }}" ]; then
-            # Manual dispatch with a specific target
-            targets='["${{ github.event.inputs.target }}"]'
+            # Manual single-repo dispatch — scan only what was requested,
+            # regardless of discovery. Skip list still applies to prevent
+            # accidental scanning of excluded repos.
+            requested="${{ github.event.inputs.target }}"
+            if jq -e --arg r "$requested" '.skipped[] | select(.name==$r)' discovered-targets.json >/dev/null; then
+              echo "::error::Repo '$requested' is in the skip list. Remove it from targets.yml skip: if you want to scan it."
+              exit 1
+            fi
+            targets="[\"$requested\"]"
           else
-            # Full run — every repo in targets.yml
-            targets=$(yq -o=json -I=0 '[.repos[].name]' targets.yml)
+            targets=$(jq -c '[.repos[].name]' discovered-targets.json)
           fi
           echo "targets=$targets" >> "$GITHUB_OUTPUT"
           echo "Will scan: $targets"
+
+      - name: Upload discovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovered-targets
+          path: discovered-targets.json
+          retention-days: 30
 
   # ---------------------------------------------------------------------------
   # Job 2: Scan — one parallel job per target repo
@@ -52,7 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 3   # keep under Actions concurrent-job limits, conserve minutes
+      max-parallel: 10   # cap concurrency so 50+ repos queue gracefully rather than stampede
       matrix:
         target: ${{ fromJSON(needs.discover.outputs.targets) }}
     steps:
@@ -65,14 +94,13 @@ jobs:
         run: |
           set -euo pipefail
           if [ -z "${TOKEN:-}" ]; then
-            echo "::error::ORG_SCAN_TOKEN secret is not set. Configure it at the org level."
+            echo "::error::ORG_SCAN_TOKEN secret is not set."
             exit 1
           fi
           git clone \
             "https://x-access-token:${TOKEN}@github.com/Kilowott-labs/${{ matrix.target }}.git" \
             target
           cd target
-          # Ensure we have every branch locally so --log-opts --all sees everything
           for remote_branch in $(git branch -r | grep -v ' -> ' | grep -v '/HEAD$'); do
             local_branch=${remote_branch#origin/}
             git branch --track "$local_branch" "$remote_branch" 2>/dev/null || true
@@ -105,7 +133,6 @@ jobs:
           set -euo pipefail
           DATE=$(date -u +%Y-%m-%d)
           mkdir -p "reports/${{ matrix.target }}"
-          # gitleaks writes `null` when no findings — normalise to empty array
           if [ -s findings.json ] && [ "$(cat findings.json | tr -d '[:space:]')" != "null" ]; then
             cp findings.json "reports/${{ matrix.target }}/${DATE}.json"
           else
@@ -126,11 +153,17 @@ jobs:
   # Job 3: Aggregate — merge all per-repo reports and regenerate the dashboard
   # ---------------------------------------------------------------------------
   aggregate:
-    needs: scan
-    if: always()   # still regenerate dashboard even if some scans failed
+    needs: [discover, scan]
+    if: always()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      - name: Download discovery artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: discovered-targets
+          path: .
 
       - name: Download all per-repo reports
         uses: actions/download-artifact@v4
@@ -150,14 +183,10 @@ jobs:
           done
           rm -rf incoming/
 
-      - name: Convert targets.yml to JSON for aggregator
-        run: yq -o=json targets.yml > targets.json
-
       - name: Regenerate dashboard
+        env:
+          TARGETS_JSON: discovered-targets.json
         run: node scripts/aggregate.js
-
-      - name: Clean up targets.json
-        run: rm -f targets.json
 
       - name: Commit results
         run: |
@@ -173,7 +202,7 @@ jobs:
           fi
 
   # ---------------------------------------------------------------------------
-  # Job 4: File issues — open/update per-repo issues + weekly digest
+  # Job 4: File issues — update per-repo health issues + weekly digest
   # ---------------------------------------------------------------------------
   file-issues:
     needs: aggregate
@@ -184,15 +213,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # Need the commit aggregate just pushed
           ref: main
           fetch-depth: 1
 
       - name: Pull latest (aggregate may have pushed)
         run: git pull --ff-only origin main
 
-      - name: Convert targets.yml to JSON
-        run: yq -o=json targets.yml > targets.json
+      - name: Download discovery artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: discovered-targets
+          path: .
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -203,11 +234,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
           ORG: Kilowott-labs
-          TARGETS_JSON: targets.json
+          TARGETS_JSON: discovered-targets.json
           REPORTS_DIR: reports
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: node scripts/file-issues.js
-
-      - name: Cleanup targets.json
-        if: always()
-        run: rm -f targets.json
