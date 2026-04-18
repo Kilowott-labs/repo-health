@@ -160,13 +160,27 @@ jobs:
         continue-on-error: true
         working-directory: target
         run: |
-          # Install deps quietly to produce composer.lock if missing
+          # Write minimal shell in case the composer call crashes
+          echo '{"advisories":{},"abandoned":{}}' > ../composer-raw.json
+
           if [ ! -f composer.lock ]; then
-            composer install --no-interaction --no-progress --no-scripts --quiet || true
+            echo "No composer.lock — running install to generate one"
+            composer install --no-interaction --no-progress --no-scripts || {
+              echo "::warning::composer install failed — audit will run against composer.json only"
+            }
           fi
-          composer audit --format=json --no-interaction > ../composer-raw.json 2>/dev/null || true
-          # composer audit returns non-zero when advisories exist — that's fine
-          cat ../composer-raw.json | head -c 500
+
+          # composer audit exits non-zero when advisories exist — that's normal.
+          # Capture stderr separately so real tool failures are visible.
+          composer audit --format=json --no-interaction > ../composer-raw.json 2> /tmp/composer-stderr.log || true
+
+          if [ -s /tmp/composer-stderr.log ]; then
+            echo "---- composer audit stderr ----"
+            cat /tmp/composer-stderr.log
+          fi
+
+          adv_count=$(jq '.advisories | length' ../composer-raw.json 2>/dev/null || echo "?")
+          echo "composer audit: $adv_count packages with advisories"
 
       - name: Normalize composer audit findings
         if: steps.stack.outputs.has_composer == 'true'
@@ -178,11 +192,24 @@ jobs:
         continue-on-error: true
         working-directory: target
         run: |
+          echo '{"vulnerabilities":{},"metadata":{"vulnerabilities":{"total":0}}}' > ../npm-raw.json
+
           if [ ! -f package-lock.json ] && [ ! -f yarn.lock ] && [ ! -f pnpm-lock.yaml ]; then
-            npm install --package-lock-only --no-audit --no-fund --silent || true
+            echo "No lockfile — generating one"
+            npm install --package-lock-only --no-audit --no-fund --silent || {
+              echo "::warning::npm install failed — audit may return empty"
+            }
           fi
-          npm audit --json > ../npm-raw.json 2>/dev/null || true
-          cat ../npm-raw.json | head -c 500
+
+          npm audit --json > ../npm-raw.json 2> /tmp/npm-stderr.log || true
+
+          if [ -s /tmp/npm-stderr.log ]; then
+            echo "---- npm audit stderr ----"
+            head -c 1000 /tmp/npm-stderr.log
+          fi
+
+          vuln_count=$(jq '.metadata.vulnerabilities.total' ../npm-raw.json 2>/dev/null || echo "?")
+          echo "npm audit: $vuln_count total vulnerabilities"
 
       - name: Normalize npm audit findings
         if: steps.stack.outputs.has_npm == 'true'
@@ -211,30 +238,75 @@ jobs:
       - name: Install PHPCS + WPCS + PHPCompatibilityWP + WooCommerce sniffs
         if: steps.stack.outputs.has_wp == 'true'
         run: |
-          composer global require --quiet --no-interaction \
+          set -euo pipefail
+
+          # Composer 2.2+ blocks plugins by default for security.
+          # dealerdirect/phpcodesniffer-composer-installer is the plugin
+          # that auto-registers WPCS + other standards with phpcs. Without
+          # it allowed, phpcs only sees PEAR/PSR/Squiz and "sniff does not
+          # exist" errors cascade through every WP rule reference.
+          composer global config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+
+          # Install with verbose output so any conflict is visible in the log.
+          # If this step fails, the scan should FAIL — not silently run without
+          # standards. The `|| true` that was here before hid the problem for weeks.
+          composer global require --no-interaction \
             "squizlabs/php_codesniffer=*" \
             "wp-coding-standards/wpcs=*" \
             "phpcompatibility/phpcompatibility-wp=*" \
             "automattic/vipwpcs=*" \
             "woocommerce/woocommerce-sniffs=*" \
-            "dealerdirect/phpcodesniffer-composer-installer=*" || true
+            "dealerdirect/phpcodesniffer-composer-installer=*"
+
           export PATH="$HOME/.composer/vendor/bin:$PATH"
-          phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs,$HOME/.composer/vendor/phpcompatibility/php-compatibility,$HOME/.composer/vendor/phpcompatibility/phpcompatibility-paragonie,$HOME/.composer/vendor/phpcompatibility/phpcompatibility-wp,$HOME/.composer/vendor/automattic/vipwpcs,$HOME/.composer/vendor/woocommerce/woocommerce-sniffs 2>/dev/null || true
+
+          # Verify registration worked. phpcs -i should list WordPress + WooCommerce.
+          # If it doesn't, fail the step so the issue is visible — better a broken
+          # job than a silently empty report.
+          echo "---- registered coding standards ----"
           phpcs -i
+
+          if ! phpcs -i | grep -q "WordPress"; then
+            echo "::error::PHPCS installed but WordPress standard not registered. Sniffs will fail. Check composer install log above."
+            exit 1
+          fi
+          if ! phpcs -i | grep -q "WooCommerce"; then
+            echo "::warning::WooCommerce standard not registered — WooCommerce-specific sniffs will be skipped."
+          fi
 
       - name: Run PHPCS
         if: steps.stack.outputs.has_wp == 'true'
         continue-on-error: true
         run: |
+          set -o pipefail
           export PATH="$HOME/.composer/vendor/bin:$PATH"
           cd target
+
+          # Write a minimal JSON shell first so normalize step always has a file
+          echo '{"totals":{"errors":0,"warnings":0,"fixable":0},"files":{}}' > ../phpcs-raw.json
+
+          # Run PHPCS. Non-zero exit is NORMAL when findings exist — that's the
+          # whole point. We capture stderr so real errors (missing standard,
+          # parse failure) aren't masked.
           phpcs \
             --standard=../configs/phpcs-ruleset.xml \
             --report=json \
             --report-file=../phpcs-raw.json \
             --runtime-set testVersion 7.4- \
-            . || true
-          echo "PHPCS exit OK (errors still captured in JSON)"
+            . \
+            2> >(tee /tmp/phpcs-stderr.log >&2) \
+            || true
+
+          echo "---- PHPCS stderr (if any) ----"
+          cat /tmp/phpcs-stderr.log || true
+
+          # Sanity check: did the report contain any files? Zero files scanned
+          # usually means the path was wrong or the standard failed to load.
+          file_count=$(jq '.files | length' ../phpcs-raw.json 2>/dev/null || echo 0)
+          echo "PHPCS scanned $file_count files"
+          if [ "$file_count" = "0" ]; then
+            echo "::warning::PHPCS report contains 0 files. Either the repo has no PHP, or the standard failed to load."
+          fi
 
       - name: Normalize PHPCS findings
         if: steps.stack.outputs.has_wp == 'true'
@@ -243,25 +315,23 @@ jobs:
       # ---------------- Semgrep (any code) ----------------
       - name: Install Semgrep
         if: steps.stack.outputs.has_any_code == 'true'
-        run: pip install --quiet semgrep
+        run: |
+          pip install semgrep
+          semgrep --version
 
       - name: Run Semgrep
         if: steps.stack.outputs.has_any_code == 'true'
         continue-on-error: true
-        env:
-          # --config=auto hits Semgrep's CDN; these are free + no account needed
-          SEMGREP_RULES: >-
-            p/security-audit
-            p/owasp-top-ten
-            p/secrets
-            p/javascript
-            p/typescript
-            p/php
-            p/wordpress
-            p/nodejs
-            p/react
         working-directory: target
         run: |
+          # Write a minimal valid shell so normalize always has a file to read,
+          # even if semgrep itself crashes.
+          echo '{"results":[],"errors":[]}' > ../semgrep-raw.json
+
+          # Note: NOT using --quiet here. If semgrep is failing to load a pack
+          # or parse a file, we want that visible in the workflow log.
+          # --disable-version-check and --metrics=off are fine to keep; they
+          # only suppress network phone-home, not diagnostic output.
           semgrep \
             --config=p/security-audit \
             --config=p/owasp-top-ten \
@@ -274,10 +344,19 @@ jobs:
             --config=p/react \
             --json \
             --output=../semgrep-raw.json \
-            --quiet \
             --disable-version-check \
             --metrics=off \
-            . || true
+            . \
+            || true
+
+          # Surface counts + any scanner errors so a silently-empty run is visible
+          findings=$(jq '.results | length' ../semgrep-raw.json 2>/dev/null || echo "?")
+          errors=$(jq '.errors | length' ../semgrep-raw.json 2>/dev/null || echo "?")
+          echo "Semgrep: $findings findings, $errors scanner errors"
+          if [ "$errors" != "0" ] && [ "$errors" != "?" ]; then
+            echo "::warning::Semgrep reported $errors internal errors — some rules may not have run"
+            jq '.errors[] | {type, long_msg, spans}' ../semgrep-raw.json 2>/dev/null | head -c 1000 || true
+          fi
 
       - name: Normalize Semgrep findings
         if: steps.stack.outputs.has_any_code == 'true'
