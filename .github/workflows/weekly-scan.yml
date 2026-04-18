@@ -171,3 +171,43 @@ jobs:
             git commit -m "chore(scan): weekly findings $(date -u +%Y-%m-%d)"
             git push
           fi
+
+  # ---------------------------------------------------------------------------
+  # Job 4: File issues — open/update per-repo issues + weekly digest
+  # ---------------------------------------------------------------------------
+  file-issues:
+    needs: aggregate
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Need the commit aggregate just pushed
+          ref: main
+          fetch-depth: 1
+
+      - name: Pull latest (aggregate may have pushed)
+        run: git pull --ff-only origin main
+
+      - name: Convert targets.yml to JSON
+        run: yq -o=json targets.yml > targets.json
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: File / update per-repo health issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          ORG: Kilowott-labs
+          TARGETS_JSON: targets.json
+          REPORTS_DIR: reports
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/file-issues.js
+
+      - name: Cleanup targets.json
+        if: always()
+        run: rm -f targets.json
