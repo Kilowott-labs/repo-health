@@ -2,9 +2,9 @@ name: Weekly repo health scan
 
 on:
   schedule:
-    # Monday 06:00 UTC — tune for your timezone if you want results waiting
-    # when your team starts the week
-    - cron: '0 6 * * 1'
+    # Monday 03:00 UTC — off-peak (more reliable than 06:00), results ready by business hours
+    # in most timezones. Edit if you want a different day/time.
+    - cron: '0 3 * * 1'
   workflow_dispatch:
     inputs:
       target:
@@ -13,7 +13,7 @@ on:
         type: string
 
 permissions:
-  contents: write   # commit new reports + regenerated dashboard back to repo-health
+  contents: write
 
 concurrency:
   group: weekly-scan
@@ -21,7 +21,7 @@ concurrency:
 
 jobs:
   # ---------------------------------------------------------------------------
-  # Job 1: Discover — auto-detect repos in the org, apply rules + overrides
+  # Job 1: Discover — auto-detect org repos, apply rules + overrides
   # ---------------------------------------------------------------------------
   discover:
     runs-on: ubuntu-latest
@@ -51,12 +51,9 @@ jobs:
         run: |
           set -euo pipefail
           if [ -n "${{ github.event.inputs.target }}" ]; then
-            # Manual single-repo dispatch — scan only what was requested,
-            # regardless of discovery. Skip list still applies to prevent
-            # accidental scanning of excluded repos.
             requested="${{ github.event.inputs.target }}"
             if jq -e --arg r "$requested" '.skipped[] | select(.name==$r)' discovered-targets.json >/dev/null; then
-              echo "::error::Repo '$requested' is in the skip list. Remove it from targets.yml skip: if you want to scan it."
+              echo "::error::Repo '$requested' is in the skip list."
               exit 1
             fi
             targets="[\"$requested\"]"
@@ -74,19 +71,36 @@ jobs:
           retention-days: 30
 
   # ---------------------------------------------------------------------------
-  # Job 2: Scan — one parallel job per target repo
+  # Job 2: Scan — per-repo matrix, runs Gitleaks + stack-aware scanners
   # ---------------------------------------------------------------------------
   scan:
     needs: discover
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 10   # cap concurrency so 50+ repos queue gracefully rather than stampede
+      max-parallel: 10
       matrix:
         target: ${{ fromJSON(needs.discover.outputs.targets) }}
     steps:
       - name: Checkout repo-health config
         uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: composer, cs2pr
+          coverage: none
+
+      - name: Set up Python (for Semgrep)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
       - name: Clone target repo with full history
         env:
@@ -107,41 +121,169 @@ jobs:
           done
           git fetch --all --tags --quiet
 
+      - name: Detect stack
+        id: stack
+        working-directory: target
+        run: bash ../scripts/detect-stack.sh
+
+      # ---------------- Gitleaks (unchanged from Phase 1) ----------------
       - name: Install Gitleaks
         run: |
           set -euo pipefail
           VERSION=$(curl -s https://api.github.com/repos/gitleaks/gitleaks/releases/latest | jq -r .tag_name | sed 's/^v//')
-          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz" \
-            | tar -xz gitleaks
+          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${VERSION}/gitleaks_${VERSION}_linux_x64.tar.gz" | tar -xz gitleaks
           sudo mv gitleaks /usr/local/bin/
           gitleaks version
 
-      - name: Run Gitleaks across full history
+      - name: Run Gitleaks (full history)
         continue-on-error: true
         run: |
           cd target
           gitleaks detect \
             --config ../.gitleaks.toml \
             --report-format json \
-            --report-path ../findings.json \
+            --report-path ../gitleaks-raw.json \
             --log-opts="--all" \
             --no-banner \
             --exit-code 0
 
-      - name: Normalise report
+      - name: Normalize Gitleaks findings
         run: |
-          set -euo pipefail
-          DATE=$(date -u +%Y-%m-%d)
-          mkdir -p "reports/${{ matrix.target }}"
-          if [ -s findings.json ] && [ "$(cat findings.json | tr -d '[:space:]')" != "null" ]; then
-            cp findings.json "reports/${{ matrix.target }}/${DATE}.json"
-          else
-            echo "[]" > "reports/${{ matrix.target }}/${DATE}.json"
-          fi
-          cp "reports/${{ matrix.target }}/${DATE}.json" "reports/${{ matrix.target }}/latest.json"
-          echo "Findings for ${{ matrix.target }}:"
-          jq 'length' "reports/${{ matrix.target }}/latest.json"
+          mkdir -p reports/${{ matrix.target }}
+          # Reset latest.json for this repo at start of run — each scanner appends
+          echo "[]" > reports/${{ matrix.target }}/latest.json
+          node scripts/normalize-findings.js gitleaks gitleaks-raw.json ${{ matrix.target }}
 
+      # ---------------- composer audit (PHP repos only) ----------------
+      - name: Run composer audit
+        if: steps.stack.outputs.has_composer == 'true'
+        continue-on-error: true
+        working-directory: target
+        run: |
+          # Install deps quietly to produce composer.lock if missing
+          if [ ! -f composer.lock ]; then
+            composer install --no-interaction --no-progress --no-scripts --quiet || true
+          fi
+          composer audit --format=json --no-interaction > ../composer-raw.json 2>/dev/null || true
+          # composer audit returns non-zero when advisories exist — that's fine
+          cat ../composer-raw.json | head -c 500
+
+      - name: Normalize composer audit findings
+        if: steps.stack.outputs.has_composer == 'true'
+        run: node scripts/normalize-findings.js composer composer-raw.json ${{ matrix.target }}
+
+      # ---------------- npm audit + OSV-Scanner (Node repos only) ----------------
+      - name: Run npm audit
+        if: steps.stack.outputs.has_npm == 'true'
+        continue-on-error: true
+        working-directory: target
+        run: |
+          if [ ! -f package-lock.json ] && [ ! -f yarn.lock ] && [ ! -f pnpm-lock.yaml ]; then
+            npm install --package-lock-only --no-audit --no-fund --silent || true
+          fi
+          npm audit --json > ../npm-raw.json 2>/dev/null || true
+          cat ../npm-raw.json | head -c 500
+
+      - name: Normalize npm audit findings
+        if: steps.stack.outputs.has_npm == 'true'
+        run: node scripts/normalize-findings.js npm npm-raw.json ${{ matrix.target }}
+
+      - name: Install OSV-Scanner
+        if: steps.stack.outputs.has_npm == 'true' || steps.stack.outputs.has_composer == 'true'
+        run: |
+          VERSION=$(curl -s https://api.github.com/repos/google/osv-scanner/releases/latest | jq -r .tag_name | sed 's/^v//')
+          curl -sSfL "https://github.com/google/osv-scanner/releases/download/v${VERSION}/osv-scanner_linux_amd64" -o osv-scanner
+          chmod +x osv-scanner
+          sudo mv osv-scanner /usr/local/bin/
+          osv-scanner --version
+
+      - name: Run OSV-Scanner
+        if: steps.stack.outputs.has_npm == 'true' || steps.stack.outputs.has_composer == 'true'
+        continue-on-error: true
+        working-directory: target
+        run: osv-scanner --recursive --format=json --output=../osv-raw.json . || true
+
+      - name: Normalize OSV findings
+        if: steps.stack.outputs.has_npm == 'true' || steps.stack.outputs.has_composer == 'true'
+        run: node scripts/normalize-findings.js osv osv-raw.json ${{ matrix.target }}
+
+      # ---------------- PHPCS + WPCS (WordPress repos only) ----------------
+      - name: Install PHPCS + WPCS + PHPCompatibilityWP + WooCommerce sniffs
+        if: steps.stack.outputs.has_wp == 'true'
+        run: |
+          composer global require --quiet --no-interaction \
+            "squizlabs/php_codesniffer=*" \
+            "wp-coding-standards/wpcs=*" \
+            "phpcompatibility/phpcompatibility-wp=*" \
+            "automattic/vipwpcs=*" \
+            "woocommerce/woocommerce-sniffs=*" \
+            "dealerdirect/phpcodesniffer-composer-installer=*" || true
+          export PATH="$HOME/.composer/vendor/bin:$PATH"
+          phpcs --config-set installed_paths $HOME/.composer/vendor/wp-coding-standards/wpcs,$HOME/.composer/vendor/phpcompatibility/php-compatibility,$HOME/.composer/vendor/phpcompatibility/phpcompatibility-paragonie,$HOME/.composer/vendor/phpcompatibility/phpcompatibility-wp,$HOME/.composer/vendor/automattic/vipwpcs,$HOME/.composer/vendor/woocommerce/woocommerce-sniffs 2>/dev/null || true
+          phpcs -i
+
+      - name: Run PHPCS
+        if: steps.stack.outputs.has_wp == 'true'
+        continue-on-error: true
+        run: |
+          export PATH="$HOME/.composer/vendor/bin:$PATH"
+          cd target
+          phpcs \
+            --standard=../configs/phpcs-ruleset.xml \
+            --report=json \
+            --report-file=../phpcs-raw.json \
+            --runtime-set testVersion 7.4- \
+            . || true
+          echo "PHPCS exit OK (errors still captured in JSON)"
+
+      - name: Normalize PHPCS findings
+        if: steps.stack.outputs.has_wp == 'true'
+        run: node scripts/normalize-findings.js phpcs phpcs-raw.json ${{ matrix.target }}
+
+      # ---------------- Semgrep (any code) ----------------
+      - name: Install Semgrep
+        if: steps.stack.outputs.has_any_code == 'true'
+        run: pip install --quiet semgrep
+
+      - name: Run Semgrep
+        if: steps.stack.outputs.has_any_code == 'true'
+        continue-on-error: true
+        env:
+          # --config=auto hits Semgrep's CDN; these are free + no account needed
+          SEMGREP_RULES: >-
+            p/security-audit
+            p/owasp-top-ten
+            p/secrets
+            p/javascript
+            p/typescript
+            p/php
+            p/wordpress
+            p/nodejs
+            p/react
+        working-directory: target
+        run: |
+          semgrep \
+            --config=p/security-audit \
+            --config=p/owasp-top-ten \
+            --config=p/secrets \
+            --config=p/javascript \
+            --config=p/typescript \
+            --config=p/php \
+            --config=p/wordpress \
+            --config=p/nodejs \
+            --config=p/react \
+            --json \
+            --output=../semgrep-raw.json \
+            --quiet \
+            --disable-version-check \
+            --metrics=off \
+            . || true
+
+      - name: Normalize Semgrep findings
+        if: steps.stack.outputs.has_any_code == 'true'
+        run: node scripts/normalize-findings.js semgrep semgrep-raw.json ${{ matrix.target }}
+
+      # ---------------- Upload results ----------------
       - name: Upload report artifact
         uses: actions/upload-artifact@v4
         with:
@@ -150,7 +292,7 @@ jobs:
           retention-days: 90
 
   # ---------------------------------------------------------------------------
-  # Job 3: Aggregate — merge all per-repo reports and regenerate the dashboard
+  # Job 3: Aggregate — regenerate dashboard
   # ---------------------------------------------------------------------------
   aggregate:
     needs: [discover, scan]
@@ -165,7 +307,7 @@ jobs:
           name: discovered-targets
           path: .
 
-      - name: Download all per-repo reports
+      - name: Download per-repo reports
         uses: actions/download-artifact@v4
         with:
           path: incoming/
@@ -195,14 +337,14 @@ jobs:
           git config user.email "repo-health-bot@users.noreply.github.com"
           git add reports/ README.md
           if git diff --cached --quiet; then
-            echo "No dashboard changes — exiting cleanly."
+            echo "No dashboard changes."
           else
             git commit -m "chore(scan): weekly findings $(date -u +%Y-%m-%d)"
             git push
           fi
 
   # ---------------------------------------------------------------------------
-  # Job 4: File issues — update per-repo health issues + weekly digest
+  # Job 4: File issues
   # ---------------------------------------------------------------------------
   file-issues:
     needs: aggregate
@@ -216,7 +358,7 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Pull latest (aggregate may have pushed)
+      - name: Pull latest
         run: git pull --ff-only origin main
 
       - name: Download discovery artifact

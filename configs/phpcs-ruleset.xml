@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<ruleset name="Kilowott WP-aggressive">
+  <description>All WordPress + WooCommerce standards, plus security audit. Aggressive.</description>
+
+  <!-- Files: PHP only -->
+  <arg name="extensions" value="php"/>
+  <arg name="colors"/>
+  <arg name="basepath" value="."/>
+  <arg value="sp"/>
+
+  <!-- Exclusions -->
+  <exclude-pattern>*/vendor/*</exclude-pattern>
+  <exclude-pattern>*/node_modules/*</exclude-pattern>
+  <exclude-pattern>*/tests/*</exclude-pattern>
+  <exclude-pattern>*/test/*</exclude-pattern>
+  <exclude-pattern>*/build/*</exclude-pattern>
+  <exclude-pattern>*/dist/*</exclude-pattern>
+  <exclude-pattern>*.min.js</exclude-pattern>
+  <exclude-pattern>*.min.css</exclude-pattern>
+
+  <!-- WordPress full suite — find everything -->
+  <rule ref="WordPress"/>
+  <rule ref="WordPress-Extra"/>
+  <rule ref="WordPress-Docs"/>
+
+  <!-- WooCommerce sniffs if the package is installed -->
+  <rule ref="WooCommerce"/>
+
+  <!-- Security audit on top -->
+  <rule ref="PHPCompatibilityWP"/>
+
+  <!-- Target current PHP versions -->
+  <config name="testVersion" value="7.4-"/>
+
+  <!-- Treat WordPress textdomain as 'kilowott' (adjust if needed) -->
+  <rule ref="WordPress.WP.I18n">
+    <properties>
+      <property name="text_domain" type="array">
+        <element value="kilowott"/>
+        <element value="kw"/>
+        <element value="default"/>
+      </property>
+    </properties>
+  </rule>
+
+  <!-- Don't report everything as ERROR just because WPCS defaults to it -->
+  <!-- (We keep severities but let the scanner show them raw for triage) -->
+</ruleset>

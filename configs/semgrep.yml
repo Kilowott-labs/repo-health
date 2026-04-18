@@ -1,0 +1,22 @@
+# Semgrep config for Kilowott repo-health
+# ---------------------------------------
+# "Find everything" mode — pulls in multiple rule packs. Expect noise.
+# These are pulled from the Semgrep Registry (semgrep.dev/r/...) at runtime.
+#
+# Usage: semgrep --config semgrep.yml --json --output findings.json .
+
+rules: []
+# Intentionally empty inline rules — we rely on the --config packs below,
+# passed via CLI flags in the workflow. Keeping this file as a placeholder
+# for any future custom rules we want to add.
+
+# Rule packs used via CLI (see workflow):
+#   p/security-audit           — broad security rules across languages
+#   p/owasp-top-ten            — OWASP Top 10 categories
+#   p/javascript               — JS-specific security + quality
+#   p/typescript               — TS-specific
+#   p/php                      — PHP general
+#   p/wordpress                — WP-specific
+#   p/nodejs                   — Node ecosystem
+#   p/react                    — React
+#   p/secrets                  — leaked-secret patterns (overlaps Gitleaks intentionally)
