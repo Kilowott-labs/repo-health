@@ -170,10 +170,14 @@ async function listRepoIssues(owner, repo, { labels, state = 'all' } = {}) {
 }
 
 function findExistingIssue(healthIssues) {
-  const open = healthIssues.find(i => i.state === 'open' && i.title.startsWith(TITLE_PREFIX));
+  // Any issue in this list is already label-filtered to health-check, so
+  // every one is a candidate. Prefer the open one; fall back to most
+  // recently updated closed (so we reopen in place instead of creating new).
+  // Title is intentionally NOT used — it changes as finding counts change.
+  const open = healthIssues.find(i => i.state === 'open');
   if (open) return open;
   const closed = healthIssues
-    .filter(i => i.state === 'closed' && i.title.startsWith(TITLE_PREFIX))
+    .filter(i => i.state === 'closed')
     .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
   return closed[0] || null;
 }
@@ -390,13 +394,22 @@ async function processRepo(repo, runUrl, generatedAt) {
   // Ensure labels exist BEFORE we query — avoids 404 when labels don't exist yet
   await ensureLabels(owner, name);
 
-  // One query gets everything we need: all health-check + dismissal issues.
-  // Union of labels in REST = comma-separated ("any of these")
-  const relevantLabels = [ISSUE_LABEL, ...DISMISS_LABELS].join(',');
-  const allRelevantIssues = await listRepoIssues(owner, name, {
-    labels: relevantLabels,
-    state: 'all',
-  });
+  // NOTE on GitHub REST semantics:
+  //   /issues?labels=A,B,C  means "issues labeled with A AND B AND C" (intersection)
+  //   NOT "issues labeled with A OR B OR C" (union) like Search API uses.
+  //
+  // So to find all health-check + dismissal issues, we query each label
+  // separately and merge by issue number. Small cost (4 paginated calls per
+  // repo instead of 1), still well within core quota.
+  const allLabels = [ISSUE_LABEL, ...DISMISS_LABELS];
+  const byNumber = new Map();
+  for (const label of allLabels) {
+    const batch = await listRepoIssues(owner, name, { labels: label, state: 'all' });
+    for (const issue of batch) {
+      byNumber.set(issue.number, issue);
+    }
+  }
+  const allRelevantIssues = Array.from(byNumber.values());
 
   const dismissals = await readDismissals(owner, name, allRelevantIssues);
 
