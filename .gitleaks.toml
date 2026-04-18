@@ -60,6 +60,9 @@ paths = [
   '''\.min\.(js|css)$''',
   '''tests?/fixtures?/''',
   '''\.gitleaks\.toml$''',
+  # Exclude scanner's own output directory so we don't re-detect findings
+  # we just wrote to disk. Only applies when repo-health scans itself.
+  '''^reports/''',
 ]
 
 regexes = [
