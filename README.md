@@ -1,7 +1,7 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-18 11:18:11 UTC**_  
-_Repos monitored: **11**  ·  Clean: **8**  ·  Flagged: **3**  ·  Total findings: **28**_
+_Last regenerated: **2026-04-18 11:55:10 UTC**_  
+_Repos monitored: **11**  ·  Clean: **9**  ·  Flagged: **2**  ·  Total findings: **10**_
 
 ## Status at a glance
 
@@ -17,7 +17,7 @@ _Repos monitored: **11**  ·  Clean: **8**  ·  Flagged: **3**  ·  Total findin
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 18 findings | 🔒 private |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🟢 clean | 🔒 private |
 
 ## Detailed findings
 
@@ -36,33 +36,10 @@ _Repos monitored: **11**  ·  Clean: **8**  ·  Flagged: **3**  ·  Total findin
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
-
-### `repo-health` — 18 findings
-
-| Rule | File | Line | Commit | Date |
-|---|---|---|---|---|
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 10 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 31 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 52 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 73 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 94 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-17.json` | 115 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 10 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 31 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 52 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 73 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 94 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/latest.json` | 115 | `a56e3d5` | 2026-04-17 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 10 | `cf5b7b5` | 2026-04-18 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 31 | `cf5b7b5` | 2026-04-18 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 52 | `cf5b7b5` | 2026-04-18 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 73 | `cf5b7b5` | 2026-04-18 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 94 | `cf5b7b5` | 2026-04-18 |
-| generic-api-key | `reports/nordic-fund-day/2026-04-18.json` | 115 | `cf5b7b5` | 2026-04-18 |
 
 ---
 
