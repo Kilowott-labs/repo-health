@@ -1,13 +1,13 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-18 12:32:34 UTC**_  
-_Repos monitored: **11**  ·  Clean: **9**  ·  Flagged: **2**  ·  Total findings: **10**_
+_Last regenerated: **2026-04-18 13:43:59 UTC**_  
+_Repos monitored: **11**  ·  Clean: **8**  ·  Flagged: **3**  ·  Total findings: **923**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
-| [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🟢 clean | 🔒 private |
+| [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
 | [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6 findings | 🌐 public |
 | [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🟢 clean | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🟡 4 findings | 🌐 public |
@@ -20,6 +20,38 @@ _Repos monitored: **11**  ·  Clean: **9**  ·  Flagged: **2**  ·  Total findin
 | [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🟢 clean | 🔒 private |
 
 ## Detailed findings
+
+### `kw-security-plugin` — 913 findings
+
+| Rule | File | Line | Commit | Date |
+|---|---|---|---|---|
+| WordPress.Files.FileName.InvalidClassFileName | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 1 | `` |  |
+| Squiz.Commenting.FileComment.MissingPackageTag | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 10 | `` |  |
+| Squiz.Commenting.ClassComment.Missing | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 18 | `` |  |
+| Squiz.Commenting.FunctionComment.WrongStyle | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 32 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 40 | `` |  |
+| Squiz.Commenting.InlineComment.InvalidEndChar | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 49 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 57 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 58 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 59 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 68 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 68 | `` |  |
+| PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 77 | `` |  |
+| PEAR.Functions.FunctionCallSignature.Indent | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.CloseBracketLine | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
+| WordPress.WP.I18n.TextDomainMismatch | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 86 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 119 | `` |  |
+| Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 119 | `` |  |
+| Universal.ControlStructures.DisallowLonelyIf.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 122 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 123 | `` |  |
+
+_888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
 ### `nordic-fund-day` — 6 findings
 
