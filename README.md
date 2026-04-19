@@ -1,6 +1,6 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-19 07:08:19 UTC**_  
+_Last regenerated: **2026-04-19 07:28:15 UTC**_  
 _Repos monitored: **11**  ·  Clean: **4**  ·  Flagged: **7**  ·  Total findings: **14440**_
 
 ## Status at a glance
@@ -121,10 +121,10 @@ _332 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
