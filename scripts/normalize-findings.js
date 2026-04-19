@@ -296,6 +296,15 @@ const scannerDir = path.join(REPORTS_DIR, repoName);
 fs.mkdirSync(scannerDir, { recursive: true });
 fs.writeFileSync(path.join(scannerDir, `${scanner}.json`), JSON.stringify(normalised, null, 2));
 
+// Capture scanner-internal errors (Semgrep rule-pack load failures, etc.)
+// so post-mortem diagnostics don't depend on having the workflow log.
+// These don't feed file-issues — they're audit-only.
+if (scanner === 'semgrep' && raw && Array.isArray(raw.errors) && raw.errors.length > 0) {
+  const errorsPath = path.join(scannerDir, 'semgrep-errors.json');
+  fs.writeFileSync(errorsPath, JSON.stringify(raw.errors, null, 2));
+  console.log(`[${scanner}:${repoName}] ${raw.errors.length} scanner errors captured to ${errorsPath}`);
+}
+
 // Merge into latest.json — union of findings from all scanners this run
 const latestPath = path.join(scannerDir, 'latest.json');
 let existing = [];

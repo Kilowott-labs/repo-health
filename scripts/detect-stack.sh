@@ -29,8 +29,15 @@ fi
 if [ "$has_composer" = "true" ] && grep -qE '"(wpackagist-plugin|johnpbloch/wordpress|roots/wordpress|automattic/woocommerce)"' composer.json 2>/dev/null; then
   has_wp=true
 fi
-# Plugin or theme file headers are a strong signal for WP
-if grep -rlE '^\s*(Plugin Name|Theme Name):\s*' --include='*.php' --max-count=1 . 2>/dev/null | head -1 | grep -q .; then
+# Plugin headers live in .php; theme headers live in style.css.
+# A single grep across both extensions catches both.
+if grep -rlE '^\s*(Plugin Name|Theme Name):\s*' --include='*.php' --include='*.css' --max-count=1 . 2>/dev/null | head -1 | grep -q .; then
+  has_wp=true
+  has_any_code=true
+fi
+# Fallback signal: style.css in root + functions.php is the classic WP theme
+# layout. Catches scaffolds where headers may be placeholder or missing.
+if [ -f style.css ] && [ -f functions.php ]; then
   has_wp=true
   has_any_code=true
 fi

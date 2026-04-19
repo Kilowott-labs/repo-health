@@ -160,27 +160,47 @@ jobs:
         continue-on-error: true
         working-directory: target
         run: |
-          # Write minimal shell in case the composer call crashes
+          # Write minimal shell so normalize always has a valid file to read,
+          # even if every subsequent step fails.
           echo '{"advisories":{},"abandoned":{}}' > ../composer-raw.json
 
+          install_ok=true
           if [ ! -f composer.lock ]; then
             echo "No composer.lock — running install to generate one"
-            composer install --no-interaction --no-progress --no-scripts || {
-              echo "::warning::composer install failed — audit will run against composer.json only"
-            }
+            if ! composer install --no-interaction --no-progress --no-scripts 2> /tmp/composer-install-stderr.log; then
+              install_ok=false
+              echo "::warning::composer install failed — see stderr below. Audit will be skipped to avoid malformed output."
+              echo "---- composer install stderr ----"
+              cat /tmp/composer-install-stderr.log
+              echo "---- end stderr ----"
+            fi
           fi
 
-          # composer audit exits non-zero when advisories exist — that's normal.
-          # Capture stderr separately so real tool failures are visible.
-          composer audit --format=json --no-interaction > ../composer-raw.json 2> /tmp/composer-stderr.log || true
+          # Only attempt audit if we have something coherent to audit. Without
+          # a lockfile and a failed install, composer audit emits "No packages —
+          # skipping audit." to stdout, which isn't JSON and breaks the pipeline.
+          if [ "$install_ok" = "true" ] || [ -f composer.lock ]; then
+            # composer audit exits non-zero when advisories exist — that's normal.
+            # Capture stderr separately so real tool failures are visible.
+            composer audit --format=json --no-interaction > ../composer-raw.json 2> /tmp/composer-stderr.log || true
 
-          if [ -s /tmp/composer-stderr.log ]; then
-            echo "---- composer audit stderr ----"
-            cat /tmp/composer-stderr.log
+            if [ -s /tmp/composer-stderr.log ]; then
+              echo "---- composer audit stderr ----"
+              cat /tmp/composer-stderr.log
+            fi
+
+            # Validate the output is actually JSON. If composer emitted human
+            # text (e.g. "No packages — skipping audit.") restore the shell.
+            if ! jq empty ../composer-raw.json 2>/dev/null; then
+              echo "::warning::composer audit produced non-JSON output. Restoring empty shell."
+              echo '{"advisories":{},"abandoned":{}}' > ../composer-raw.json
+            fi
+
+            adv_count=$(jq '.advisories | length' ../composer-raw.json 2>/dev/null || echo "0")
+            echo "composer audit: ${adv_count:-0} packages with advisories"
+          else
+            echo "::warning::Skipping composer audit for this repo — no usable lockfile and install failed."
           fi
-
-          adv_count=$(jq '.advisories | length' ../composer-raw.json 2>/dev/null || echo "?")
-          echo "composer audit: $adv_count packages with advisories"
 
       - name: Normalize composer audit findings
         if: steps.stack.outputs.has_composer == 'true'
@@ -316,7 +336,9 @@ jobs:
       - name: Install Semgrep
         if: steps.stack.outputs.has_any_code == 'true'
         run: |
-          pip install semgrep
+          # Pin to a known-good recent version. Bump periodically; the OCaml
+          # tree-sitter parsers for TSX/modern-JS syntax improve release-over-release.
+          pip install 'semgrep>=1.100'
           semgrep --version
 
       - name: Run Semgrep
@@ -324,14 +346,8 @@ jobs:
         continue-on-error: true
         working-directory: target
         run: |
-          # Write a minimal valid shell so normalize always has a file to read,
-          # even if semgrep itself crashes.
           echo '{"results":[],"errors":[]}' > ../semgrep-raw.json
 
-          # Note: NOT using --quiet here. If semgrep is failing to load a pack
-          # or parse a file, we want that visible in the workflow log.
-          # --disable-version-check and --metrics=off are fine to keep; they
-          # only suppress network phone-home, not diagnostic output.
           semgrep \
             --config=p/security-audit \
             --config=p/owasp-top-ten \
@@ -349,13 +365,20 @@ jobs:
             . \
             || true
 
-          # Surface counts + any scanner errors so a silently-empty run is visible
+          # Surface counts + scanner-internal errors grouped by type so the
+          # workflow log shows "8× PartialParsing, 2× Timeout" instead of
+          # 12 individual multi-line objects that get truncated.
           findings=$(jq '.results | length' ../semgrep-raw.json 2>/dev/null || echo "?")
           errors=$(jq '.errors | length' ../semgrep-raw.json 2>/dev/null || echo "?")
           echo "Semgrep: $findings findings, $errors scanner errors"
+
           if [ "$errors" != "0" ] && [ "$errors" != "?" ]; then
             echo "::warning::Semgrep reported $errors internal errors — some rules may not have run"
-            jq '.errors[] | {type, long_msg, spans}' ../semgrep-raw.json 2>/dev/null | head -c 1000 || true
+            echo "---- error summary by type ----"
+            jq -r '.errors | group_by(.type) | map({type: .[0].type, count: length}) | .[] | "  \(.count)× \(.type)"' ../semgrep-raw.json 2>/dev/null || true
+            echo "---- first 3 full error messages ----"
+            jq -c '.errors[0:3] | .[] | {type, long_msg: (.long_msg // "")[0:300]}' ../semgrep-raw.json 2>/dev/null || true
+            echo "(Full errors preserved in reports/<repo>/semgrep-errors.json by normalizer)"
           fi
 
       - name: Normalize Semgrep findings
