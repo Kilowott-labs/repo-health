@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2026-04-19T07:08:57.798Z",
+    "count": 6339,
+    "bySource": {
+      "gitleaks": 6,
+      "npm-audit": 47,
+      "phpcs": 6283,
+      "semgrep": 3
+    }
+  }
+]

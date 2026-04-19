@@ -1,0 +1,11 @@
+[
+  {
+    "date": "2026-04-19T07:08:57.798Z",
+    "count": 6804,
+    "bySource": {
+      "npm-audit": 47,
+      "phpcs": 6754,
+      "semgrep": 3
+    }
+  }
+]

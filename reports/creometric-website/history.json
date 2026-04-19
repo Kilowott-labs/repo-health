@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-04-19T07:08:57.798Z",
+    "count": 20,
+    "bySource": {
+      "gitleaks": 4,
+      "npm-audit": 16
+    }
+  }
+]

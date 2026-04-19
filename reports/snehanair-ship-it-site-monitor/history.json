@@ -1,0 +1,10 @@
+[
+  {
+    "date": "2026-04-19T07:08:57.798Z",
+    "count": 6,
+    "bySource": {
+      "npm-audit": 4,
+      "semgrep": 2
+    }
+  }
+]
