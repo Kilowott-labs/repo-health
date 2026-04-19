@@ -453,7 +453,7 @@ jobs:
     if: always()
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write   # Phase 3c: commit reports/<repo>/history.json updates
     steps:
       - uses: actions/checkout@v4
         with:
@@ -482,3 +482,45 @@ jobs:
           REPORTS_DIR: reports
           RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: node scripts/file-issues.js
+
+      - name: Post state-transition audit comments
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          ORG: Kilowott-labs
+          TARGETS_JSON: discovered-targets.json
+          REPORTS_DIR: reports
+          THRESHOLD: '5'
+        run: node scripts/state-transition-commenter.js
+
+      - name: Commit updated history files
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name  "repo-health-bot"
+          git config user.email "repo-health-bot@users.noreply.github.com"
+          git add reports/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(history): update transition history $(date -u +%Y-%m-%d)"
+            git pull --rebase origin main || true
+            git push
+          fi
+
+      - name: Track SLA breaches
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          ORG: Kilowott-labs
+          TARGETS_JSON: discovered-targets.json
+          SLA_THRESHOLD_DAYS: '30'
+        run: node scripts/sla-tracker.js
+
+      - name: Notify Slack on critical findings
+        if: always()
+        env:
+          CRITICAL_ALERT_WEBHOOK: ${{ secrets.CRITICAL_ALERT_WEBHOOK }}
+          TARGETS_JSON: discovered-targets.json
+          REPORTS_DIR: reports
+          ORG: Kilowott-labs
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/slack-notify.js
