@@ -107,35 +107,5 @@
         "isSemVerMajor": true
       }
     }
-  },
-  {
-    "RuleID": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
-    "File": "dashboard/src/app/api/ssl/route.ts",
-    "StartLine": 16,
-    "Commit": "",
-    "Date": "",
-    "Match": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized t",
-    "Source": "semgrep",
-    "Severity": "medium",
-    "Extra": {
-      "category": "security",
-      "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
-      "owasp": "A03:2017 - Sensitive Data Exposure"
-    }
-  },
-  {
-    "RuleID": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
-    "File": "ssl-check.js",
-    "StartLine": 20,
-    "Commit": "",
-    "Date": "",
-    "Match": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized t",
-    "Source": "semgrep",
-    "Severity": "medium",
-    "Extra": {
-      "category": "security",
-      "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
-      "owasp": "A03:2017 - Sensitive Data Exposure"
-    }
   }
 ]

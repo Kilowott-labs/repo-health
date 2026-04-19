@@ -1,45 +1,5 @@
 [
   {
-    "RuleID": "generic-api-key",
-    "File": "src/components/LeadForm.tsx",
-    "StartLine": 15,
-    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
-    "Date": "2026-03-19T17:47:26Z",
-    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
-    "Source": "gitleaks",
-    "Severity": "high"
-  },
-  {
-    "RuleID": "generic-api-key",
-    "File": "src/components/ContactForm.tsx",
-    "StartLine": 15,
-    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
-    "Date": "2026-03-19T17:47:26Z",
-    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
-    "Source": "gitleaks",
-    "Severity": "high"
-  },
-  {
-    "RuleID": "generic-api-key",
-    "File": "src/components/LPForm.tsx",
-    "StartLine": 21,
-    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
-    "Date": "2026-03-19T17:47:26Z",
-    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
-    "Source": "gitleaks",
-    "Severity": "high"
-  },
-  {
-    "RuleID": "generic-api-key",
-    "File": "src/app/api/submit-form/route.ts",
-    "StartLine": 3,
-    "Commit": "567b5fe6c418d5f625c793f16ef64e468d8a601c",
-    "Date": "2026-03-19T17:37:29Z",
-    "Match": "WEB3FORMS_KEY = \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
-    "Source": "gitleaks",
-    "Severity": "high"
-  },
-  {
     "RuleID": "npm-@next/eslint-plugin-next",
     "File": "package-lock.json",
     "StartLine": 0,

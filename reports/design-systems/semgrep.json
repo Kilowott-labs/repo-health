@@ -1,0 +1,65 @@
+[
+  {
+    "RuleID": "php.lang.security.injection.echoed-request.echoed-request",
+    "File": "inc/algolia_functions.php",
+    "StartLine": 323,
+    "Commit": "",
+    "Date": "",
+    "Match": "`Echo`ing user input risks cross-site scripting vulnerability. You should use `htmlentities()` when showing data to users.",
+    "Source": "semgrep",
+    "Severity": "high",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      ],
+      "owasp": [
+        "A07:2017 - Cross-Site Scripting (XSS)",
+        "A03:2021 - Injection",
+        "A05:2025 - Injection"
+      ]
+    }
+  },
+  {
+    "RuleID": "php.lang.security.injection.echoed-request.echoed-request",
+    "File": "inc/algolia_functions.php",
+    "StartLine": 412,
+    "Commit": "",
+    "Date": "",
+    "Match": "`Echo`ing user input risks cross-site scripting vulnerability. You should use `htmlentities()` when showing data to users.",
+    "Source": "semgrep",
+    "Severity": "high",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      ],
+      "owasp": [
+        "A07:2017 - Cross-Site Scripting (XSS)",
+        "A03:2021 - Injection",
+        "A05:2025 - Injection"
+      ]
+    }
+  },
+  {
+    "RuleID": "php.lang.security.injection.echoed-request.echoed-request",
+    "File": "inc/algolia_functions.php",
+    "StartLine": 501,
+    "Commit": "",
+    "Date": "",
+    "Match": "`Echo`ing user input risks cross-site scripting vulnerability. You should use `htmlentities()` when showing data to users.",
+    "Source": "semgrep",
+    "Severity": "high",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+      ],
+      "owasp": [
+        "A07:2017 - Cross-Site Scripting (XSS)",
+        "A03:2021 - Injection",
+        "A05:2025 - Injection"
+      ]
+    }
+  }
+]
