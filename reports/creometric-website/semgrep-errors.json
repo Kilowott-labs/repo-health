@@ -1,0 +1,556 @@
+[
+  {
+    "code": 2,
+    "level": "warn",
+    "type": "Timeout",
+    "rule_id": "generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri",
+    "message": "Timeout when running generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri on public/images/clients/client-74.png:\n ",
+    "path": "public/images/clients/client-74.png"
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/about-us/page.tsx",
+          "start": {
+            "line": 118,
+            "col": 86,
+            "offset": 0
+          },
+          "end": {
+            "line": 118,
+            "col": 91,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/about-us/page.tsx:118:\n `&q=80` was unexpected",
+    "path": "src/app/about-us/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/about-us/page.tsx",
+        "start": {
+          "line": 118,
+          "col": 86,
+          "offset": 0
+        },
+        "end": {
+          "line": 118,
+          "col": 91,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/blog/exploring-the-impact-of-voice-search-on-digital-marketing/page.tsx",
+          "start": {
+            "line": 99,
+            "col": 72,
+            "offset": 0
+          },
+          "end": {
+            "line": 99,
+            "col": 260,
+            "offset": 188
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/blog/exploring-the-impact-of-voice-search-on-digital-marketing/page.tsx:99:\n `&A-style content are extremely effective. Create dedicated FAQ sections on your key service pages, and consider building comprehensive FAQ articles around topics your audience cares about.` was unexpected",
+    "path": "src/app/blog/exploring-the-impact-of-voice-search-on-digital-marketing/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/blog/exploring-the-impact-of-voice-search-on-digital-marketing/page.tsx",
+        "start": {
+          "line": 99,
+          "col": 72,
+          "offset": 0
+        },
+        "end": {
+          "line": 99,
+          "col": 260,
+          "offset": 188
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/blog/page.tsx",
+          "start": {
+            "line": 89,
+            "col": 20,
+            "offset": 0
+          },
+          "end": {
+            "line": 89,
+            "col": 26,
+            "offset": 6
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/blog/page.tsx:89:\n `& Tips` was unexpected",
+    "path": "src/app/blog/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/blog/page.tsx",
+        "start": {
+          "line": 89,
+          "col": 20,
+          "offset": 0
+        },
+        "end": {
+          "line": 89,
+          "col": 26,
+          "offset": 6
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/blog/social-media-trends-to-watch-in-2025/page.tsx",
+          "start": {
+            "line": 178,
+            "col": 79,
+            "offset": 0
+          },
+          "end": {
+            "line": 179,
+            "col": 84,
+            "offset": 102
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/blog/social-media-trends-to-watch-in-2025/page.tsx:178:\n `&A). The algorithm\n                heavily favors Reels that retain viewers through the full duration.` was unexpected",
+    "path": "src/app/blog/social-media-trends-to-watch-in-2025/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/blog/social-media-trends-to-watch-in-2025/page.tsx",
+        "start": {
+          "line": 178,
+          "col": 79,
+          "offset": 0
+        },
+        "end": {
+          "line": 179,
+          "col": 84,
+          "offset": 102
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/contact-us/page.tsx",
+          "start": {
+            "line": 19,
+            "col": 85,
+            "offset": 0
+          },
+          "end": {
+            "line": 19,
+            "col": 90,
+            "offset": 5
+          }
+        },
+        {
+          "path": "src/app/contact-us/page.tsx",
+          "start": {
+            "line": 103,
+            "col": 249,
+            "offset": 0
+          },
+          "end": {
+            "line": 103,
+            "col": 300,
+            "offset": 51
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/contact-us/page.tsx:19:\n `&q=80` was unexpected",
+    "path": "src/app/contact-us/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/contact-us/page.tsx",
+        "start": {
+          "line": 19,
+          "col": 85,
+          "offset": 0
+        },
+        "end": {
+          "line": 19,
+          "col": 90,
+          "offset": 5
+        }
+      },
+      {
+        "file": "src/app/contact-us/page.tsx",
+        "start": {
+          "line": 103,
+          "col": 249,
+          "offset": 0
+        },
+        "end": {
+          "line": 103,
+          "col": 300,
+          "offset": 51
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/lp/free-audit/page.tsx",
+          "start": {
+            "line": 64,
+            "col": 34,
+            "offset": 0
+          },
+          "end": {
+            "line": 64,
+            "col": 55,
+            "offset": 21
+          }
+        },
+        {
+          "path": "src/app/lp/free-audit/page.tsx",
+          "start": {
+            "line": 113,
+            "col": 85,
+            "offset": 0
+          },
+          "end": {
+            "line": 113,
+            "col": 90,
+            "offset": 5
+          }
+        },
+        {
+          "path": "src/app/lp/free-audit/page.tsx",
+          "start": {
+            "line": 120,
+            "col": 103,
+            "offset": 0
+          },
+          "end": {
+            "line": 120,
+            "col": 110,
+            "offset": 7
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/lp/free-audit/page.tsx:64:\n `& website audit worth` was unexpected",
+    "path": "src/app/lp/free-audit/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/lp/free-audit/page.tsx",
+        "start": {
+          "line": 64,
+          "col": 34,
+          "offset": 0
+        },
+        "end": {
+          "line": 64,
+          "col": 55,
+          "offset": 21
+        }
+      },
+      {
+        "file": "src/app/lp/free-audit/page.tsx",
+        "start": {
+          "line": 113,
+          "col": 85,
+          "offset": 0
+        },
+        "end": {
+          "line": 113,
+          "col": 90,
+          "offset": 5
+        }
+      },
+      {
+        "file": "src/app/lp/free-audit/page.tsx",
+        "start": {
+          "line": 120,
+          "col": 103,
+          "offset": 0
+        },
+        "end": {
+          "line": 120,
+          "col": 110,
+          "offset": 7
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/content-marketing/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 85,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 90,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/content-marketing/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/content-marketing/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/content-marketing/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 85,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 90,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/pay-per-click/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 82,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 87,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/pay-per-click/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/pay-per-click/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/pay-per-click/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 82,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 87,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/search-engine-optimisation/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 82,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 87,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/search-engine-optimisation/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/search-engine-optimisation/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/search-engine-optimisation/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 82,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 87,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/social-media-management/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 85,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 90,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/social-media-management/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/social-media-management/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/social-media-management/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 85,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 90,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/web-analytics/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 82,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 87,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/web-analytics/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/web-analytics/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/web-analytics/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 82,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 87,
+          "offset": 5
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/app/service/website-design/page.tsx",
+          "start": {
+            "line": 16,
+            "col": 85,
+            "offset": 0
+          },
+          "end": {
+            "line": 16,
+            "col": 90,
+            "offset": 5
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/app/service/website-design/page.tsx:16:\n `&q=80` was unexpected",
+    "path": "src/app/service/website-design/page.tsx",
+    "spans": [
+      {
+        "file": "src/app/service/website-design/page.tsx",
+        "start": {
+          "line": 16,
+          "col": 85,
+          "offset": 0
+        },
+        "end": {
+          "line": 16,
+          "col": 90,
+          "offset": 5
+        }
+      }
+    ]
+  }
+]

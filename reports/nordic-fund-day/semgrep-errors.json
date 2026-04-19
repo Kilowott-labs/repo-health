@@ -1,0 +1,327 @@
+[
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 300,
+            "col": 30,
+            "offset": 0
+          },
+          "end": {
+            "line": 300,
+            "col": 31,
+            "offset": 1
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 317,
+            "col": 88,
+            "offset": 0
+          },
+          "end": {
+            "line": 317,
+            "col": 113,
+            "offset": 25
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 322,
+            "col": 94,
+            "offset": 0
+          },
+          "end": {
+            "line": 322,
+            "col": 105,
+            "offset": 11
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 327,
+            "col": 80,
+            "offset": 0
+          },
+          "end": {
+            "line": 327,
+            "col": 90,
+            "offset": 10
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 332,
+            "col": 95,
+            "offset": 0
+          },
+          "end": {
+            "line": 332,
+            "col": 103,
+            "offset": 8
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 337,
+            "col": 91,
+            "offset": 0
+          },
+          "end": {
+            "line": 337,
+            "col": 103,
+            "offset": 12
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 373,
+            "col": 123,
+            "offset": 0
+          },
+          "end": {
+            "line": 373,
+            "col": 138,
+            "offset": 15
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 436,
+            "col": 90,
+            "offset": 0
+          },
+          "end": {
+            "line": 436,
+            "col": 115,
+            "offset": 25
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 565,
+            "col": 99,
+            "offset": 0
+          },
+          "end": {
+            "line": 565,
+            "col": 111,
+            "offset": 12
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 603,
+            "col": 108,
+            "offset": 0
+          },
+          "end": {
+            "line": 603,
+            "col": 115,
+            "offset": 7
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 695,
+            "col": 89,
+            "offset": 0
+          },
+          "end": {
+            "line": 695,
+            "col": 97,
+            "offset": 8
+          }
+        },
+        {
+          "path": "designs/nordic-fund-day.html",
+          "start": {
+            "line": 729,
+            "col": 56,
+            "offset": 0
+          },
+          "end": {
+            "line": 729,
+            "col": 231,
+            "offset": 175
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line designs/nordic-fund-day.html:300:\n `&` was unexpected",
+    "path": "designs/nordic-fund-day.html",
+    "spans": [
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 300,
+          "col": 30,
+          "offset": 0
+        },
+        "end": {
+          "line": 300,
+          "col": 31,
+          "offset": 1
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 317,
+          "col": 88,
+          "offset": 0
+        },
+        "end": {
+          "line": 317,
+          "col": 113,
+          "offset": 25
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 322,
+          "col": 94,
+          "offset": 0
+        },
+        "end": {
+          "line": 322,
+          "col": 105,
+          "offset": 11
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 327,
+          "col": 80,
+          "offset": 0
+        },
+        "end": {
+          "line": 327,
+          "col": 90,
+          "offset": 10
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 332,
+          "col": 95,
+          "offset": 0
+        },
+        "end": {
+          "line": 332,
+          "col": 103,
+          "offset": 8
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 337,
+          "col": 91,
+          "offset": 0
+        },
+        "end": {
+          "line": 337,
+          "col": 103,
+          "offset": 12
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 373,
+          "col": 123,
+          "offset": 0
+        },
+        "end": {
+          "line": 373,
+          "col": 138,
+          "offset": 15
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 436,
+          "col": 90,
+          "offset": 0
+        },
+        "end": {
+          "line": 436,
+          "col": 115,
+          "offset": 25
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 565,
+          "col": 99,
+          "offset": 0
+        },
+        "end": {
+          "line": 565,
+          "col": 111,
+          "offset": 12
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 603,
+          "col": 108,
+          "offset": 0
+        },
+        "end": {
+          "line": 603,
+          "col": 115,
+          "offset": 7
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 695,
+          "col": 89,
+          "offset": 0
+        },
+        "end": {
+          "line": 695,
+          "col": 97,
+          "offset": 8
+        }
+      },
+      {
+        "file": "designs/nordic-fund-day.html",
+        "start": {
+          "line": 729,
+          "col": 56,
+          "offset": 0
+        },
+        "end": {
+          "line": 729,
+          "col": 231,
+          "offset": 175
+        }
+      }
+    ]
+  }
+]

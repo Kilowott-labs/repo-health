@@ -1,0 +1,171 @@
+[
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 490,
+            "col": 32,
+            "offset": 0
+          },
+          "end": {
+            "line": 490,
+            "col": 33,
+            "offset": 1
+          }
+        },
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 491,
+            "col": 3,
+            "offset": 0
+          },
+          "end": {
+            "line": 491,
+            "col": 19,
+            "offset": 16
+          }
+        },
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 512,
+            "col": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 512,
+            "col": 2,
+            "offset": 1
+          }
+        },
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 548,
+            "col": 36,
+            "offset": 0
+          },
+          "end": {
+            "line": 548,
+            "col": 37,
+            "offset": 1
+          }
+        },
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 549,
+            "col": 3,
+            "offset": 0
+          },
+          "end": {
+            "line": 549,
+            "col": 51,
+            "offset": 48
+          }
+        },
+        {
+          "path": "src/layer1/checks/security.ts",
+          "start": {
+            "line": 558,
+            "col": 1,
+            "offset": 0
+          },
+          "end": {
+            "line": 558,
+            "col": 2,
+            "offset": 1
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line src/layer1/checks/security.ts:490:\n `/` was unexpected",
+    "path": "src/layer1/checks/security.ts",
+    "spans": [
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 490,
+          "col": 32,
+          "offset": 0
+        },
+        "end": {
+          "line": 490,
+          "col": 33,
+          "offset": 1
+        }
+      },
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 491,
+          "col": 3,
+          "offset": 0
+        },
+        "end": {
+          "line": 491,
+          "col": 19,
+          "offset": 16
+        }
+      },
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 512,
+          "col": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 512,
+          "col": 2,
+          "offset": 1
+        }
+      },
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 548,
+          "col": 36,
+          "offset": 0
+        },
+        "end": {
+          "line": 548,
+          "col": 37,
+          "offset": 1
+        }
+      },
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 549,
+          "col": 3,
+          "offset": 0
+        },
+        "end": {
+          "line": 549,
+          "col": 51,
+          "offset": 48
+        }
+      },
+      {
+        "file": "src/layer1/checks/security.ts",
+        "start": {
+          "line": 558,
+          "col": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 558,
+          "col": 2,
+          "offset": 1
+        }
+      }
+    ]
+  }
+]
