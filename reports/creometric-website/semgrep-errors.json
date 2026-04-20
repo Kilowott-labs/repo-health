@@ -1,5 +1,13 @@
 [
   {
+    "code": 2,
+    "level": "warn",
+    "type": "Timeout",
+    "rule_id": "generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri",
+    "message": "Timeout when running generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri on public/images/clients/client-74.png:\n ",
+    "path": "public/images/clients/client-74.png"
+  },
+  {
     "code": 3,
     "level": "warn",
     "type": [
