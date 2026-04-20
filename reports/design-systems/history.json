@@ -25,5 +25,14 @@
       "phpcs": 6754,
       "semgrep": 3
     }
+  },
+  {
+    "date": "2026-04-20T06:56:23.558Z",
+    "count": 6804,
+    "bySource": {
+      "npm-audit": 47,
+      "phpcs": 6754,
+      "semgrep": 3
+    }
   }
 ]
