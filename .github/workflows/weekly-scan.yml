@@ -515,6 +515,14 @@ jobs:
           SLA_THRESHOLD_DAYS: '30'
         run: node scripts/sla-tracker.js
 
+      - name: Merge uptime status into digest
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          UPTIME_REPO: Kilowott-labs/uptime
+          DIGEST_REPO: Kilowott-labs/repo-health
+        run: node scripts/uptime-digest-merge.js
+
       - name: Notify Slack on critical findings
         if: always()
         env:
