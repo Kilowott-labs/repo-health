@@ -20,6 +20,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const resolveAssignees = require('./assign-codeowner');
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const ORG = process.env.ORG || 'Kilowott-labs';
@@ -560,19 +561,32 @@ async function processRepo(repo, runUrl, generatedAt) {
 
   let issueNumber = existing ? existing.number : null;
 
+  // Resolve assignees only when there's active work. If we're closing an
+  // existing issue (active=0), leave assignees untouched — they own the
+  // cleanup/verify of whatever was there.
+  let finalAssignees = [];
+  if (active.length > 0) {
+    const representativeFile = active[0]?.file || '';
+    const raw = await resolveAssignees(owner, name, representativeFile, gh);
+    finalAssignees = [...new Set(raw)].slice(0, 10);
+    console.log(`[${name}] assignees resolved → ${finalAssignees.map(u => '@' + u).join(' ') || '(none)'}`);
+  }
+
   if (!existing && active.length === 0) {
     // Nothing to do
   } else if (existing) {
     const nextState = active.length === 0 ? 'closed' : 'open';
+    const patchBody = { title, body, state: nextState, labels: [ISSUE_LABEL] };
+    if (active.length > 0) patchBody.assignees = finalAssignees;
     await gh(`/repos/${owner}/${name}/issues/${existing.number}`, {
       method: 'PATCH',
-      body: JSON.stringify({ title, body, state: nextState, labels: [ISSUE_LABEL] }),
+      body: JSON.stringify(patchBody),
     });
     console.log(`[${name}] updated issue #${existing.number} (state=${nextState})`);
   } else {
     const created = await gh(`/repos/${owner}/${name}/issues`, {
       method: 'POST',
-      body: JSON.stringify({ title, body, labels: [ISSUE_LABEL] }),
+      body: JSON.stringify({ title, body, labels: [ISSUE_LABEL], assignees: finalAssignees }),
     });
     issueNumber = created.number;
     console.log(`[${name}] opened issue #${created.number}`);

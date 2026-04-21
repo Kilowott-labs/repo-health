@@ -212,6 +212,16 @@ Trigger a manual scan: **Actions → Weekly repo health scan → Run workflow**.
 
 When something is flagged: **rotate the credential first**, then clean the history (see [the GitHub docs on removing sensitive data](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)).
 
+## How health-check issues are assigned
+
+Issues filed in target repos by the weekly scan are assigned to the person responsible for the offending file, resolved in this order:
+
+1. **CODEOWNERS match** — if the target repo has a `.github/CODEOWNERS` file, patterns are matched against the finding's file path; owners listed for the last matching rule are assigned.
+2. **Last-committer fallback** — if no CODEOWNERS rule matches, the most recent commit touching the file is fetched via the GitHub API, and the commit's resolved author (GitHub's automatic email-to-username correlation) is used; if they are a Kilowott-labs org member, they are assigned.
+3. **Admin fallback** — if neither resolves (no CODEOWNERS, no commit history on the file, GitHub cannot correlate the committer to a user account, or the resolved user is not an org member), the repo admin (ajajrajguruKW) is assigned.
+
+Team members who want to stay informed about health-check issues without being on-the-hook as assignees should **Watch** the relevant repo with "All Activity" notifications enabled.
+
 ## Roadmap
 
 - [x] **Phase 1** — Gitleaks secret scanning across full history
