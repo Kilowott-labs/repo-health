@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "sync-data": "node scripts/sync-data.js",
+    "predev": "npm run sync-data",
+    "prebuild": "npm run sync-data",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -12,6 +15,7 @@
   "dependencies": {
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
+    "react-virtuoso": "^4.18.5",
     "recharts": "^3.8.1"
   },
   "devDependencies": {

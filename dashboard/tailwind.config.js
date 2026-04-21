@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         sans: ['"Geist"', '"Geist Fallback"', 'system-ui', 'sans-serif'],
         mono: ['"Geist Mono"', '"Geist Mono Fallback"', 'ui-monospace', 'monospace'],
+        display: ['"Instrument Serif"', 'Georgia', 'serif'],
       },
       colors: {
         // Linear-inspired muted palette, dark-mode defaults

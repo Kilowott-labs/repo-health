@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# Synced data files — authoritative copies live at repo root, these
+# are derived artifacts produced by scripts/sync-data.js at build time.
+public/dashboard.json
+public/history-combined.json
+public/history/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

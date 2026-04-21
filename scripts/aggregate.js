@@ -202,7 +202,7 @@ async function writeDashboardAndHistory(results) {
       findings: dashFindings,
     });
 
-    // Per-repo history snapshot
+    // Per-repo history snapshot (daily file)
     const histDir = path.join('history', repo.name);
     fs.mkdirSync(histDir, { recursive: true });
     const histPath = path.join(histDir, `${today}.json`);
@@ -213,6 +213,26 @@ async function writeDashboardAndHistory(results) {
       total: findings.length,
     }, null, 2));
   }
+
+  // Combined history — one file per repo (all dates sorted ascending) +
+  // one org-wide index. The dashboard UI fetches the org-wide file once
+  // on Overview/Trends mount instead of N per-date files.
+  const combinedByRepo = {};
+  for (const { repo } of results) {
+    const histDir = path.join('history', repo.name);
+    if (!fs.existsSync(histDir)) continue;
+    const entries = fs.readdirSync(histDir)
+      .filter(f => /^\d{4}-\d{2}-\d{2}\.json$/.test(f))
+      .sort()
+      .map(f => {
+        try { return JSON.parse(fs.readFileSync(path.join(histDir, f), 'utf8')); }
+        catch { return null; }
+      })
+      .filter(Boolean);
+    fs.writeFileSync(path.join(histDir, 'combined.json'), JSON.stringify(entries, null, 2));
+    combinedByRepo[repo.name] = entries;
+  }
+  fs.writeFileSync('history-combined.json', JSON.stringify(combinedByRepo, null, 2));
 
   const dashboard = {
     generated_at: generatedAt,
@@ -225,7 +245,10 @@ async function writeDashboardAndHistory(results) {
     },
   };
 
-  fs.writeFileSync('dashboard.json', JSON.stringify(dashboard, null, 2));
+  // Minified — dashboard.json is fetched on every page load; 14k findings
+  // pretty-printed ~7 MB vs ~4 MB raw. The history files stay pretty for
+  // human readability since they're small.
+  fs.writeFileSync('dashboard.json', JSON.stringify(dashboard));
   console.log(`dashboard.json written: ${reposOut.length} repos, totals=${JSON.stringify(dashboard.totals.findings_by_severity)}`);
 }
 
