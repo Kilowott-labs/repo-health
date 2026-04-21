@@ -1,0 +1,15 @@
+{
+  "date": "2026-04-21",
+  "severity_counts": {
+    "critical": 0,
+    "high": 12,
+    "medium": 8,
+    "low": 0,
+    "info": 0
+  },
+  "scanner_counts": {
+    "gitleaks": 4,
+    "npm-audit": 16
+  },
+  "total": 20
+}

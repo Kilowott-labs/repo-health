@@ -1,0 +1,15 @@
+{
+  "date": "2026-04-21",
+  "severity_counts": {
+    "critical": 0,
+    "high": 16,
+    "medium": 325,
+    "low": 16,
+    "info": 0
+  },
+  "scanner_counts": {
+    "npm-audit": 23,
+    "phpcs": 334
+  },
+  "total": 357
+}

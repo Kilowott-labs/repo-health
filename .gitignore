@@ -10,3 +10,5 @@ node_modules/
 /target/
 findings.json
 incoming/
+dashboard/node_modules
+dashboard/dist
