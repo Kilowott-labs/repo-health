@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/geist-font@latest/dist/geist.css');
 @import url('https://cdn.jsdelivr.net/npm/geist-font@latest/dist/geist-mono.css');
 
@@ -19,16 +20,41 @@ html, body, #root {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Subtle noise texture on elevated surfaces — Linear signature */
-.noise {
-  position: relative;
+/* Allow the header's sticky backdrop-blur to work against page scroll */
+body { overflow-x: hidden; }
+
+/* ---------------------------------------------------------------
+   Single orchestrated moment on route mount — fade + 8px rise.
+   Elements opt in by applying `.fade-up`; stagger is expressed
+   inline via `animationDelay` style prop (spec: 12ms per step).
+   Respects prefers-reduced-motion.
+--------------------------------------------------------------- */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
-.noise::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-  opacity: 0.015;
-  pointer-events: none;
-  z-index: 1;
+
+.fade-up {
+  opacity: 0;
+  animation: fade-up 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Details element — keep the default triangle but tighten spacing */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+
+/* Recharts responsive container ought to fill its parent without leaks */
+.recharts-responsive-container { min-width: 0 !important; }
