@@ -58,5 +58,15 @@
       "phpcs": 6283,
       "semgrep": 3
     }
+  },
+  {
+    "date": "2026-04-21T07:19:48.774Z",
+    "count": 6339,
+    "bySource": {
+      "gitleaks": 6,
+      "npm-audit": 47,
+      "phpcs": 6283,
+      "semgrep": 3
+    }
   }
 ]
