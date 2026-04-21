@@ -183,7 +183,14 @@ async function resolveAssignees(owner, repo, filePath, gh) {
 
   // 2. Git blame via commits endpoint
   try {
-    const login = await fetchLastCommitAuthor(owner, repo, filePath, gh);
+    let login = await fetchLastCommitAuthor(owner, repo, filePath, gh);
+    // Reject bot accounts — they cannot be issue assignees (GitHub 422s
+    // on bot-suffixed logins) and attributing ownership to a bot is
+    // semantically wrong anyway. Fall through to admin.
+    if (login && login.endsWith('[bot]')) {
+      console.log(`[assign] ${key}: blame resolved to bot @${login} — skipping`);
+      login = null;
+    }
     if (login) {
       const member = await isOrgMember(login, gh);
       if (member) {
