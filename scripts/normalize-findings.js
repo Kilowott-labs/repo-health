@@ -217,6 +217,29 @@ function parseSemgrep(raw) {
 }
 
 // ---------------------------------------------------------------------------
+// Path normalization — strip GitHub Actions runner absolute prefix
+// ---------------------------------------------------------------------------
+// Some scanners (notably PHPCS) emit absolute paths rooted at
+// /home/runner/work/<outer>/<inner>/target/<real-path> when running in
+// Actions. Downstream consumers (assign-codeowner.js → GitHub commits API,
+// any future direct link in issue bodies) need repo-relative paths. Strip
+// the runner prefix + any leading ./ or / so finding.File is consistent
+// regardless of which scanner produced it.
+function normalizeFilePath(rawPath) {
+  if (!rawPath || typeof rawPath !== 'string') return rawPath;
+  // Runner paths look like /home/runner/work/<repo>/<repo>/[target/]<file>.
+  // The leading slash is sometimes stripped (PHPCS currently does that),
+  // so make it optional.
+  const runnerPrefix = /^\/?home\/runner\/work\/[^/]+\/[^/]+\//;
+  let cleaned = rawPath.replace(runnerPrefix, '');
+  // Clone target dir (from workflow: `git clone ... target`) also needs stripping.
+  cleaned = cleaned.replace(/^target\//, '');
+  // Any leading ./ or / remnants
+  cleaned = cleaned.replace(/^\.?\/+/, '');
+  return cleaned;
+}
+
+// ---------------------------------------------------------------------------
 // Severity mapping — normalise each scanner's vocabulary to ours
 // ---------------------------------------------------------------------------
 function mapSeverity(raw, fallback) {
@@ -288,7 +311,10 @@ try {
   process.exit(0); // don't fail the whole run — other scanners still useful
 }
 
-const normalised = parser(raw);
+const normalised = parser(raw).map(f => ({
+  ...f,
+  File: normalizeFilePath(f.File),
+}));
 console.log(`[${scanner}:${repoName}] ${normalised.length} findings`);
 
 // Write the per-scanner dump (for debugging / audit trail)
