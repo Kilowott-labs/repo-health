@@ -1,6 +1,6 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-21 05:30:20 UTC**_  
+_Last regenerated: **2026-04-21 07:18:58 UTC**_  
 _Repos monitored: **12**  ·  Clean: **4**  ·  Flagged: **7**  ·  Total findings: **14440**_
 
 ## Status at a glance
@@ -26,31 +26,31 @@ _Repos monitored: **12**  ·  Clean: **4**  ·  Flagged: **7**  ·  Total findin
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| WordPress.Files.FileName.InvalidClassFileName | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 1 | `` |  |
-| Squiz.Commenting.FileComment.MissingPackageTag | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 10 | `` |  |
-| Squiz.Commenting.ClassComment.Missing | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 18 | `` |  |
-| Squiz.Commenting.FunctionComment.WrongStyle | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 32 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 40 | `` |  |
-| Squiz.Commenting.InlineComment.InvalidEndChar | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 49 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 57 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 58 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 59 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 65 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 65 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 67 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 67 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 68 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 68 | `` |  |
-| PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 77 | `` |  |
-| PEAR.Functions.FunctionCallSignature.Indent | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.MultipleArguments | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.MultipleArguments | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.CloseBracketLine | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 78 | `` |  |
-| WordPress.WP.I18n.TextDomainMismatch | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 86 | `` |  |
-| Generic.CodeAnalysis.AssignmentInCondition.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 119 | `` |  |
-| Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 119 | `` |  |
-| Universal.ControlStructures.DisallowLonelyIf.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 122 | `` |  |
-| Generic.CodeAnalysis.AssignmentInCondition.Found | `home/runner/work/repo-health/repo-health/target/classes/hide-login-url.php` | 123 | `` |  |
+| WordPress.Files.FileName.InvalidClassFileName | `classes/hide-login-url.php` | 1 | `` |  |
+| Squiz.Commenting.FileComment.MissingPackageTag | `classes/hide-login-url.php` | 10 | `` |  |
+| Squiz.Commenting.ClassComment.Missing | `classes/hide-login-url.php` | 18 | `` |  |
+| Squiz.Commenting.FunctionComment.WrongStyle | `classes/hide-login-url.php` | 32 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 40 | `` |  |
+| Squiz.Commenting.InlineComment.InvalidEndChar | `classes/hide-login-url.php` | 49 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 57 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 58 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 59 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
+| PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket | `classes/hide-login-url.php` | 77 | `` |  |
+| PEAR.Functions.FunctionCallSignature.Indent | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.CloseBracketLine | `classes/hide-login-url.php` | 78 | `` |  |
+| WordPress.WP.I18n.TextDomainMismatch | `classes/hide-login-url.php` | 86 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 119 | `` |  |
+| Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure | `classes/hide-login-url.php` | 119 | `` |  |
+| Universal.ControlStructures.DisallowLonelyIf.Found | `classes/hide-login-url.php` | 122 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 123 | `` |  |
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
