@@ -19,12 +19,12 @@ export function SeverityBar({ counts, height = 4, showLabels = false, className 
     <div className={className}>
       <div
         className="w-full flex overflow-hidden rounded-sm"
-        style={{ height: `${height}px`, background: '#1F1F1F' }}
+        style={{ height: `${height}px`, background: 'var(--c-bg-tertiary)' }}
         role="img"
         aria-label={empty ? 'No findings' : 'Severity distribution'}
       >
         {empty ? (
-          <span className="w-full h-full" style={{ background: '#2A2A2A' }} />
+          <span className="w-full h-full" style={{ background: 'var(--c-border)' }} />
         ) : (
           SEVERITIES.map(sev => {
             const c = counts[sev] || 0;

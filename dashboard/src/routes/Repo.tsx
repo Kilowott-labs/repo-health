@@ -95,10 +95,10 @@ export function Repo({ repo }: Props) {
                 return (
                   <li key={name} className="flex items-center gap-3">
                     <span className="w-24 text-xs font-mono text-fg-secondary shrink-0 truncate">{name}</span>
-                    <span className="flex-1 h-1.5 rounded-sm overflow-hidden" style={{ background: '#1F1F1F' }}>
+                    <span className="flex-1 h-1.5 rounded-sm overflow-hidden" style={{ background: 'var(--c-bg-tertiary)' }}>
                       <span
                         className="block h-full"
-                        style={{ width: `${pct}%`, background: '#84CC16' }}
+                        style={{ width: `${pct}%`, background: 'var(--c-accent)' }}
                       />
                     </span>
                     <span className="text-xs font-mono tabular-nums text-fg-primary w-12 text-right">

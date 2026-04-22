@@ -1,19 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { Layout } from './components/Layout';
+import { ErrorBoundary, FriendlyError } from './components/ErrorBoundary';
+import { OverviewSkeleton, SkeletonChart } from './components/Skeleton';
 import { Overview } from './routes/Overview';
 import { Repo } from './routes/Repo';
 import { Findings } from './routes/Findings';
-import { Sla } from './routes/Sla';
-import { Trends } from './routes/Trends';
+import { Backlog } from './routes/Backlog';
 import { loadDashboard } from './lib/data';
 import type { DashboardData } from './lib/types';
+
+// Trends pulls the largest chunk of Recharts surface area (stacked
+// areas + small multiples) — code-split so the main bundle stays lean.
+const Trends = lazy(() =>
+  import('./routes/Trends').then(m => ({ default: m.Trends }))
+);
 
 export default function App() {
   const [hash, setHash] = useState(
     typeof window !== 'undefined' ? (window.location.hash || '#/') : '#/'
   );
   const [data, setData] = useState<DashboardData | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
     const onHash = () => setHash(window.location.hash || '#/');
@@ -24,16 +31,17 @@ export default function App() {
   useEffect(() => {
     loadDashboard()
       .then(setData)
-      .catch((e: Error) => setError(e.message));
+      .catch((e: Error) => setError(e));
   }, []);
 
   if (error) {
     return (
       <Layout data={null}>
-        <div className="flex flex-col items-center justify-center py-20 text-center">
-          <p className="font-display italic text-3xl text-sev-critical mb-2">Failed to load</p>
-          <p className="text-xs font-mono text-fg-tertiary">{error}</p>
-        </div>
+        <FriendlyError
+          error={error}
+          title="Couldn't load the dashboard."
+          onRetry={() => window.location.reload()}
+        />
       </Layout>
     );
   }
@@ -41,9 +49,7 @@ export default function App() {
   if (!data) {
     return (
       <Layout data={null}>
-        <div className="flex items-center justify-center py-20">
-          <span className="text-sm font-mono text-fg-tertiary animate-pulse">Loading dashboard…</span>
-        </div>
+        <OverviewSkeleton />
       </Layout>
     );
   }
@@ -56,8 +62,8 @@ export default function App() {
       return (
         <Layout data={data}>
           <div className="flex flex-col items-center justify-center py-20 text-center">
-            <p className="font-display italic text-3xl text-fg-primary mb-2">Repo not found.</p>
-            <a href="#/" className="text-xs font-mono text-fg-tertiary hover:text-accent transition-colors">
+            <p className="font-display italic text-4xl text-fg-primary mb-2">Repo not found.</p>
+            <a href="#/" className="text-xs font-mono uppercase tracking-wider text-fg-tertiary hover:text-accent transition-colors mt-2">
               ← Back to overview
             </a>
           </div>
@@ -66,21 +72,41 @@ export default function App() {
     }
     return (
       <Layout data={data}>
-        <Repo repo={repo} />
+        <ErrorBoundary>
+          <Repo repo={repo} />
+        </ErrorBoundary>
       </Layout>
     );
   }
 
-  switch (hash) {
+  // #/sla remains as an alias for #/backlog so old bookmarks don't 404.
+  const route = (hash === '#/sla') ? '#/backlog' : hash;
+
+  let page: React.ReactNode;
+  switch (route) {
     case '#/findings':
-      return <Layout data={data}><Findings data={data} /></Layout>;
-    case '#/sla':
-      return <Layout data={data}><Sla data={data} /></Layout>;
+      page = <Findings data={data} />;
+      break;
+    case '#/backlog':
+      page = <Backlog data={data} />;
+      break;
     case '#/trends':
-      return <Layout data={data}><Trends data={data} /></Layout>;
+      page = (
+        <Suspense fallback={<SkeletonChart height={320} />}>
+          <Trends data={data} />
+        </Suspense>
+      );
+      break;
     case '#/':
     case '':
     default:
-      return <Layout data={data}><Overview data={data} /></Layout>;
+      page = <Overview data={data} />;
+      break;
   }
+
+  return (
+    <Layout data={data}>
+      <ErrorBoundary>{page}</ErrorBoundary>
+    </Layout>
+  );
 }

@@ -12,3 +12,4 @@ findings.json
 incoming/
 dashboard/node_modules
 dashboard/dist
+discovered-targets.json

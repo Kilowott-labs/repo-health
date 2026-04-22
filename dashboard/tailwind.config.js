@@ -4,7 +4,9 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  // Use a custom class selector so our theme toggle script controls it
+  // via <html class="theme-dark"> / <html class="theme-light">.
+  darkMode: ['class', '.theme-dark'],
   theme: {
     extend: {
       fontFamily: {
@@ -13,30 +15,32 @@ export default {
         display: ['"Instrument Serif"', 'Georgia', 'serif'],
       },
       colors: {
-        // Linear-inspired muted palette, dark-mode defaults
+        // All colors resolve from CSS variables defined in index.css.
+        // Light/dark palettes swap by toggling .theme-light / .theme-dark
+        // on <html>.
         bg: {
-          primary: '#0A0A0A',
-          secondary: '#141414',
-          tertiary: '#1F1F1F',
+          primary: 'var(--c-bg-primary)',
+          secondary: 'var(--c-bg-secondary)',
+          tertiary: 'var(--c-bg-tertiary)',
         },
         border: {
-          DEFAULT: '#2A2A2A',
+          DEFAULT: 'var(--c-border)',
         },
         fg: {
-          primary: '#F5F5F4',
-          secondary: '#A8A29E',
-          tertiary: '#57534E',
+          primary: 'var(--c-fg-primary)',
+          secondary: 'var(--c-fg-secondary)',
+          tertiary: 'var(--c-fg-tertiary)',
         },
         sev: {
-          critical: '#C2410C',
-          high: '#D97706',
-          medium: '#CA8A04',
-          low: '#65A30D',
-          info: '#475569',
-          clean: '#166534',
+          critical: 'var(--c-sev-critical)',
+          high: 'var(--c-sev-high)',
+          medium: 'var(--c-sev-medium)',
+          low: 'var(--c-sev-low)',
+          info: 'var(--c-sev-info)',
+          clean: 'var(--c-sev-clean)',
         },
         accent: {
-          DEFAULT: '#84CC16',
+          DEFAULT: 'var(--c-accent)',
         },
       },
     },

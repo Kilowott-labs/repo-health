@@ -6,38 +6,93 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* ──────────────────────────────────────────────────────────────
+   Theme palettes
+   ──────────────────────────────────────────────────────────────
+   Default (no class): treat as dark — the init script in
+   index.html adds .theme-dark before first paint, so there is no
+   flash of wrong theme. Values kept in :root too as a safety net.
+────────────────────────────────────────────────────────────── */
+:root,
+html.theme-dark {
   color-scheme: dark;
+
+  --c-bg-primary:     #0A0A0A;
+  --c-bg-secondary:   #141414;
+  --c-bg-tertiary:    #1F1F1F;
+  --c-border:         #2A2A2A;
+  --c-fg-primary:     #F5F5F4;
+  --c-fg-secondary:   #A8A29E;
+  --c-fg-tertiary:    #57534E;
+
+  --c-sev-critical:   #C2410C;
+  --c-sev-high:       #D97706;
+  --c-sev-medium:     #CA8A04;
+  --c-sev-low:        #65A30D;
+  --c-sev-info:       #475569;
+  --c-sev-clean:      #166534;
+
+  --c-accent:         #84CC16;
 }
 
+html.theme-light {
+  color-scheme: light;
+
+  --c-bg-primary:     #FAFAF9;
+  --c-bg-secondary:   #F5F5F4;
+  --c-bg-tertiary:    #E7E5E4;
+  --c-border:         #D6D3D1;
+  --c-fg-primary:     #1C1917;
+  --c-fg-secondary:   #57534E;
+  --c-fg-tertiary:    #A8A29E;
+
+  --c-sev-critical:   #9A3412;
+  --c-sev-high:       #B45309;
+  --c-sev-medium:     #A16207;
+  --c-sev-low:        #4D7C0F;
+  --c-sev-info:       #475569;
+  --c-sev-clean:      #14532D;
+
+  --c-accent:         #65A30D;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Base typography — Geist for body, Instrument Serif as display.
+   font-feature-settings is applied ONLY to elements that use
+   Geist. Instrument Serif has no stylistic sets and would render
+   fallback glyphs if it inherited Geist's ss01/ss02/cv01/cv11.
+────────────────────────────────────────────────────────────── */
 html, body, #root {
   min-height: 100vh;
-  background: #0A0A0A;
-  color: #F5F5F4;
+  background: var(--c-bg-primary);
+  color: var(--c-fg-primary);
   font-family: 'Geist', system-ui, sans-serif;
-  font-feature-settings: 'ss01', 'ss02', 'cv01', 'cv11';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Allow the header's sticky backdrop-blur to work against page scroll */
-body { overflow-x: hidden; }
+body {
+  overflow-x: hidden;
+  font-feature-settings: 'ss01', 'ss02', 'cv01', 'cv11';
+}
 
-/* ---------------------------------------------------------------
+/* Isolate Instrument Serif from Geist feature-settings. */
+.font-display,
+[class*="font-display"] {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  /* Instrument Serif italic numbers want smooth kerning */
+  font-kerning: normal;
+}
+
+/* ──────────────────────────────────────────────────────────────
    Single orchestrated moment on route mount — fade + 8px rise.
-   Elements opt in by applying `.fade-up`; stagger is expressed
-   inline via `animationDelay` style prop (spec: 12ms per step).
+   Stagger inline via `style={{ animationDelay }}` (12ms steps).
    Respects prefers-reduced-motion.
---------------------------------------------------------------- */
+────────────────────────────────────────────────────────────── */
 @keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 8px, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+  from { opacity: 0; transform: translate3d(0, 8px, 0); }
+  to   { opacity: 1; transform: translate3d(0, 0, 0); }
 }
 
 .fade-up {
@@ -45,16 +100,34 @@ body { overflow-x: hidden; }
   animation: fade-up 520ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .fade-up {
-    animation: none;
-    opacity: 1;
-  }
+/* ──────────────────────────────────────────────────────────────
+   Skeleton loader — used while dashboard.json fetches.
+────────────────────────────────────────────────────────────── */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
 }
 
-/* Details element — keep the default triangle but tighten spacing */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--c-bg-secondary) 0%,
+    var(--c-bg-tertiary)  50%,
+    var(--c-bg-secondary) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { animation: none; opacity: 1; }
+  .skeleton { animation: none; }
+}
+
+/* ──────────────────────────────────────────────────────────────
+   Small tidies — details element, recharts container
+────────────────────────────────────────────────────────────── */
 details > summary { list-style: none; }
 details > summary::-webkit-details-marker { display: none; }
-
-/* Recharts responsive container ought to fill its parent without leaks */
 .recharts-responsive-container { min-width: 0 !important; }
