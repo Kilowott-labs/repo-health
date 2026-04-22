@@ -38,6 +38,22 @@ export function Overview({ data }: Props) {
     : 0;
   const hasTrendData = weekly.length >= 2;
 
+  // Nothing to show yet — fresh deploy before the first scan.
+  if (data.totals.repos_monitored === 0) {
+    return (
+      <div className="fade-up flex flex-col items-center justify-center py-24 text-center">
+        <p className="font-display italic text-5xl text-fg-primary mb-4">
+          No scans yet.
+        </p>
+        <p className="text-sm font-mono text-fg-tertiary max-w-md">
+          The first Monday cron will populate this view. Trigger
+          it manually from Actions → Weekly repo health scan if
+          you can't wait.
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="flex flex-col gap-12">
       {/* ─────── Hero band ─────── */}
@@ -94,25 +110,25 @@ export function Overview({ data }: Props) {
               <AreaChart data={weekly} margin={{ top: 4, right: 8, bottom: 0, left: 8 }}>
                 <defs>
                   <linearGradient id="spark-fill" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stopColor="#84CC16" stopOpacity={0.25} />
-                    <stop offset="100%" stopColor="#84CC16" stopOpacity={0} />
+                    <stop offset="0%" stopColor="var(--c-accent)" stopOpacity={0.25} />
+                    <stop offset="100%" stopColor="var(--c-accent)" stopOpacity={0} />
                   </linearGradient>
                 </defs>
                 <Tooltip
                   contentStyle={{
-                    background: '#141414',
-                    border: '1px solid #2A2A2A',
+                    background: 'var(--c-bg-secondary)',
+                    border: '1px solid var(--c-border)',
                     borderRadius: 2,
                     fontSize: 12,
                     fontFamily: 'Geist Mono, ui-monospace, monospace',
                   }}
-                  labelStyle={{ color: '#A8A29E' }}
-                  itemStyle={{ color: '#F5F5F4' }}
+                  labelStyle={{ color: 'var(--c-fg-secondary)' }}
+                  itemStyle={{ color: 'var(--c-fg-primary)' }}
                 />
                 <Area
                   type="monotone"
                   dataKey="total"
-                  stroke="#84CC16"
+                  stroke="var(--c-accent)"
                   strokeWidth={1.5}
                   fill="url(#spark-fill)"
                   isAnimationActive={false}

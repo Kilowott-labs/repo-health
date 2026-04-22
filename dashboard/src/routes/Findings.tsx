@@ -3,6 +3,7 @@ import type { DashboardData, FindingRow, Severity, FindingStatus } from '../lib/
 import { SEVERITIES, SEVERITY_ORDER } from '../lib/types';
 import { SEVERITY_COLORS, SEVERITY_LABELS } from '../lib/format';
 import { TableVirtuoso } from 'react-virtuoso';
+import { Popover } from '../components/Popover';
 
 interface Props {
   data: DashboardData;
@@ -151,7 +152,8 @@ export function Findings({ data }: Props) {
 }
 
 // --------------------------------------------------------------------------
-// Multi-select dropdown — plain details/summary, no animation library.
+// Multi-select dropdown — portal-rendered so it escapes parent clipping
+// and z-index stacks. See components/Popover.tsx.
 // --------------------------------------------------------------------------
 function MultiDropdown<T extends string>({
   label,
@@ -165,33 +167,39 @@ function MultiDropdown<T extends string>({
   onToggle: (v: T) => void;
 }) {
   return (
-    <details className="relative">
-      <summary className="cursor-pointer px-3 py-1.5 text-xs font-mono text-fg-secondary hover:text-fg-primary border border-border rounded-sm bg-bg-primary transition-colors select-none list-none">
-        {label}
-        {selected.size > 0 && (
-          <span className="ml-1.5 text-accent">· {selected.size}</span>
-        )}
-      </summary>
-      <div className="absolute z-10 right-0 mt-1 min-w-[180px] max-h-72 overflow-y-auto border border-border bg-bg-secondary rounded-sm py-1 shadow-lg">
-        {options.map(opt => {
-          const on = selected.has(opt);
-          return (
-            <button
-              key={opt}
-              type="button"
-              onClick={e => { e.stopPropagation(); onToggle(opt); }}
-              className="w-full flex items-center gap-2 px-3 py-1.5 text-xs font-mono text-left hover:bg-bg-tertiary transition-colors"
-            >
-              <span
-                className={`inline-block w-3 h-3 border rounded-sm ${on ? 'bg-accent border-accent' : 'border-fg-tertiary'}`}
-                aria-hidden
-              />
-              <span className={on ? 'text-fg-primary' : 'text-fg-secondary'}>{opt}</span>
-            </button>
-          );
-        })}
-      </div>
-    </details>
+    <Popover
+      align="left"
+      trigger={({ toggle, open }) => (
+        <button
+          type="button"
+          onClick={toggle}
+          aria-expanded={open}
+          className="px-3 py-1.5 text-xs font-mono text-fg-secondary hover:text-fg-primary border border-border rounded-sm bg-bg-primary transition-colors select-none"
+        >
+          {label}
+          {selected.size > 0 && <span className="ml-1.5 text-accent">· {selected.size}</span>}
+          <span className="ml-1.5 text-fg-tertiary" aria-hidden>{open ? '▴' : '▾'}</span>
+        </button>
+      )}
+    >
+      {options.map(opt => {
+        const on = selected.has(opt);
+        return (
+          <button
+            key={opt}
+            type="button"
+            onClick={() => onToggle(opt)}
+            className="w-full flex items-center gap-2 px-3 py-1.5 text-xs font-mono text-left hover:bg-bg-tertiary transition-colors"
+          >
+            <span
+              className={`inline-block w-3 h-3 border rounded-sm ${on ? 'bg-accent border-accent' : 'border-fg-tertiary'}`}
+              aria-hidden
+            />
+            <span className={on ? 'text-fg-primary' : 'text-fg-secondary'}>{opt}</span>
+          </button>
+        );
+      })}
+    </Popover>
   );
 }
 

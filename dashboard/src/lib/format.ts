@@ -46,13 +46,17 @@ export const SEVERITY_LABELS: Record<Severity, string> = {
   info: 'Info',
 };
 
+// CSS var refs so both dark + light themes swap correctly.
+// Light mode values are defined in index.css under .theme-light.
 export const SEVERITY_COLORS: Record<Severity, string> = {
-  critical: '#C2410C',
-  high: '#D97706',
-  medium: '#CA8A04',
-  low: '#65A30D',
-  info: '#475569',
+  critical: 'var(--c-sev-critical)',
+  high: 'var(--c-sev-high)',
+  medium: 'var(--c-sev-medium)',
+  low: 'var(--c-sev-low)',
+  info: 'var(--c-sev-info)',
 };
+
+export const ACCENT_COLOR = 'var(--c-accent)';
 
 export function formatNumber(n: number): string {
   if (n >= 10000) return `${(n / 1000).toFixed(1)}k`;

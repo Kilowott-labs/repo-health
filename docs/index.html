@@ -4,9 +4,31 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/repo-health/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard</title>
-    <script type="module" crossorigin src="/repo-health/assets/index-By7K1SbS.js"></script>
-    <link rel="stylesheet" crossorigin href="/repo-health/assets/index-Cb6uLC4L.css">
+    <title>Kilowott · Repo Health</title>
+    <meta name="description" content="Weekly automated health scans across Kilowott-labs repos." />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      // Pre-hydration theme bootstrap — runs before React mounts.
+      // Reads localStorage preference (set by ThemeToggle) or falls
+      // back to system preference. Default: dark.
+      (function () {
+        try {
+          var stored = localStorage.getItem('kw-repo-health-theme');
+          var theme = 'dark';
+          if (stored === 'light' || stored === 'dark') {
+            theme = stored;
+          } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+            theme = 'light';
+          }
+          document.documentElement.classList.add('theme-' + theme);
+        } catch (e) {
+          // localStorage may be unavailable (private mode) — dark default.
+          document.documentElement.classList.add('theme-dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/repo-health/assets/index-BWItFjSp.js"></script>
+    <link rel="stylesheet" crossorigin href="/repo-health/assets/index-BRL_YcYU.css">
   </head>
   <body>
     <div id="root"></div>

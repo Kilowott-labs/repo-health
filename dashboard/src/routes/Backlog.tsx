@@ -10,7 +10,7 @@ interface Props {
 
 const SLA_DAYS = 30;
 
-export function Sla({ data }: Props) {
+export function Backlog({ data }: Props) {
   const overdue: FindingRow[] = useMemo(() => {
     const out: FindingRow[] = [];
     for (const r of data.repos) {
@@ -36,22 +36,22 @@ export function Sla({ data }: Props) {
   return (
     <div className="flex flex-col gap-6">
       <header className="fade-up">
-        <h1 className="font-display italic text-4xl md:text-5xl leading-[1.05] text-fg-primary mb-2">
-          SLA breaches
+        <h1 className="font-display italic text-4xl sm:text-5xl leading-[1.05] text-fg-primary mb-2">
+          Backlog
         </h1>
         <p className="text-sm font-mono text-fg-tertiary">
-          Findings open &gt;{SLA_DAYS} days · action required
+          Findings open &gt;{SLA_DAYS} days — action required
         </p>
       </header>
 
       {overdue.length === 0 ? (
         <section
-          className="fade-up border border-border bg-bg-secondary rounded-sm px-8 py-20 text-center"
+          className="fade-up border border-border bg-bg-secondary rounded-sm px-6 sm:px-8 py-16 sm:py-20 text-center"
           style={{ animationDelay: '40ms' }}
         >
-          <p className="font-display italic text-5xl text-fg-primary mb-4">All clear.</p>
+          <p className="font-display italic text-4xl sm:text-5xl text-fg-primary mb-4">All clear.</p>
           <p className="text-sm font-mono text-fg-tertiary">
-            No SLA breaches — every open finding is under {SLA_DAYS} days old.
+            No backlog items — every open finding is under {SLA_DAYS} days old.
           </p>
         </section>
       ) : (

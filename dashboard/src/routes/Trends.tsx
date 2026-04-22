@@ -83,29 +83,29 @@ export function Trends({ data }: Props) {
             <div className="h-[320px]">
               <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={weeklyStacked} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
-                  <CartesianGrid stroke="#1F1F1F" strokeDasharray="2 4" vertical={false} />
+                  <CartesianGrid stroke="var(--c-bg-tertiary)" strokeDasharray="2 4" vertical={false} />
                   <XAxis
                     dataKey="week"
-                    tick={{ fontSize: 10, fontFamily: 'Geist Mono, ui-monospace, monospace', fill: '#57534E' }}
-                    axisLine={{ stroke: '#2A2A2A' }}
+                    tick={{ fontSize: 10, fontFamily: 'Geist Mono, ui-monospace, monospace', fill: 'var(--c-fg-tertiary)' }}
+                    axisLine={{ stroke: 'var(--c-border)' }}
                     tickLine={false}
                   />
                   <YAxis
-                    tick={{ fontSize: 10, fontFamily: 'Geist Mono, ui-monospace, monospace', fill: '#57534E' }}
-                    axisLine={{ stroke: '#2A2A2A' }}
+                    tick={{ fontSize: 10, fontFamily: 'Geist Mono, ui-monospace, monospace', fill: 'var(--c-fg-tertiary)' }}
+                    axisLine={{ stroke: 'var(--c-border)' }}
                     tickLine={false}
                     width={40}
                   />
                   <Tooltip
                     contentStyle={{
-                      background: '#141414',
-                      border: '1px solid #2A2A2A',
+                      background: 'var(--c-bg-secondary)',
+                      border: '1px solid var(--c-border)',
                       borderRadius: 2,
                       fontSize: 12,
                       fontFamily: 'Geist Mono, ui-monospace, monospace',
                     }}
-                    labelStyle={{ color: '#A8A29E' }}
-                    itemStyle={{ color: '#F5F5F4' }}
+                    labelStyle={{ color: 'var(--c-fg-secondary)' }}
+                    itemStyle={{ color: 'var(--c-fg-primary)' }}
                   />
                   {SEVERITIES.map(sev => (
                     <Area
@@ -157,7 +157,7 @@ export function Trends({ data }: Props) {
                         <Line
                           type="monotone"
                           dataKey="total"
-                          stroke="#84CC16"
+                          stroke="var(--c-accent)"
                           strokeWidth={1.25}
                           dot={false}
                           isAnimationActive={false}
