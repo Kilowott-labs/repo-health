@@ -1,7 +1,7 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-21 07:23:09 UTC**_  
-_Repos monitored: **12**  ·  Clean: **4**  ·  Flagged: **7**  ·  Total findings: **14440**_
+_Last regenerated: **2026-04-22 06:50:21 UTC**_  
+_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **14443**_
 
 ## Status at a glance
 
@@ -17,8 +17,9 @@ _Repos monitored: **12**  ·  Clean: **4**  ·  Flagged: **7**  ·  Total findin
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🟡 1 findings | 🔒 private |
-| [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | ⚪ not scanned | 🔒 private |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🟡 1 findings | 🌐 public |
+| [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
+| [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🟡 2 findings | 🔒 private |
 
 ## Detailed findings
 
@@ -113,8 +114,8 @@ _6314 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | GHSA-qj8w-gfj5-8c6v | `package-lock.json` |  | `` |  |
 | GHSA-9jgg-88mc-972h | `package-lock.json` |  | `` |  |
 | GHSA-4v9v-hfq4-rm2v | `package-lock.json` |  | `` |  |
-| Squiz.Commenting.FunctionComment.Missing | `home/runner/work/repo-health/repo-health/target/core/core.php` | 15 | `` |  |
-| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `home/runner/work/repo-health/repo-health/target/core/core.php` | 16 | `` |  |
+| Squiz.Commenting.FunctionComment.Missing | `core/core.php` | 15 | `` |  |
+| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `core/core.php` | 16 | `` |  |
 
 _332 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
@@ -122,9 +123,9 @@ _332 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -191,6 +192,19 @@ _6779 more findings — see [`reports/design-systems/latest.json`](reports/desig
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
 | yaml.github-actions.security.run-shell-injection.run-shell-injection | `.github/workflows/weekly-scan.yml` | 51 | `` |  |
+
+### `industrisalg-repo-main` — 1 findings
+
+| Rule | File | Line | Commit | Date |
+|---|---|---|---|---|
+| generic-api-key | `nopcommerce-source/src/Tests/Nop.Tests/Nop.Services.Tests/Tax/TaxServiceTests.cs` | 36 | `4f998bd` | 2026-04-20 |
+
+### `Sales-Agent` — 2 findings
+
+| Rule | File | Line | Commit | Date |
+|---|---|---|---|---|
+| gcp-api-key | `scripts/crawl.js` | 94 | `9670382` | 2026-04-22 |
+| gcp-api-key | `scripts/crawl-competitor.js` | 78 | `9670382` | 2026-04-22 |
 
 ---
 

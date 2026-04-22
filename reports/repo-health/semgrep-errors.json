@@ -1,0 +1,26 @@
+[
+  {
+    "code": 2,
+    "level": "warn",
+    "type": "Timeout",
+    "rule_id": "javascript.express.security.x-frame-options-misconfiguration.x-frame-options-misconfiguration",
+    "message": "Timeout when running javascript.express.security.x-frame-options-misconfiguration.x-frame-options-misconfiguration on docs/assets/index-BWItFjSp.js:\n ",
+    "path": "docs/assets/index-BWItFjSp.js"
+  },
+  {
+    "code": 2,
+    "level": "warn",
+    "type": "Timeout",
+    "rule_id": "typescript.react.security.audit.react-dangerouslysetinnerhtml.react-dangerouslysetinnerhtml",
+    "message": "Timeout when running typescript.react.security.audit.react-dangerouslysetinnerhtml.react-dangerouslysetinnerhtml on docs/assets/index-BWItFjSp.js:\n ",
+    "path": "docs/assets/index-BWItFjSp.js"
+  },
+  {
+    "code": 2,
+    "level": "warn",
+    "type": "Timeout",
+    "rule_id": "typescript.react.security.audit.react-unsanitized-property.react-unsanitized-property",
+    "message": "Timeout when running typescript.react.security.audit.react-unsanitized-property.react-unsanitized-property on docs/assets/index-BWItFjSp.js:\n ",
+    "path": "docs/assets/index-BWItFjSp.js"
+  }
+]

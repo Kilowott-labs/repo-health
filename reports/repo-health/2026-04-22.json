@@ -1,0 +1,23 @@
+[
+  {
+    "RuleID": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 51,
+    "Commit": "",
+    "Date": "",
+    "Match": "Using variable interpolation `${{...}}` with `github` context data in a `run:` step could allow an attacker to inject their own code into the runner. This would allow them to steal secrets and code. `",
+    "Source": "semgrep",
+    "Severity": "high",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+      ],
+      "owasp": [
+        "A01:2017 - Injection",
+        "A03:2021 - Injection",
+        "A05:2025 - Injection"
+      ]
+    }
+  }
+]

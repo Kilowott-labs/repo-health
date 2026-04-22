@@ -1,0 +1,12 @@
+[
+  {
+    "RuleID": "generic-api-key",
+    "File": "nopcommerce-source/src/Tests/Nop.Tests/Nop.Services.Tests/Tax/TaxServiceTests.cs",
+    "StartLine": 36,
+    "Commit": "4f998bd998ce24de2472f3ce8913e16d6b4906a1",
+    "Date": "2026-04-20T06:48:34Z",
+    "Match": "_taxSettings.HmrcClientSecret = \"cb9da68a-4184-4e8a-a071-11bfcb654ae8\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  }
+]

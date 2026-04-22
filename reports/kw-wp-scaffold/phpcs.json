@@ -1,7 +1,7 @@
 [
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 15,
     "Commit": "",
     "Date": "",
@@ -16,7 +16,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 16,
     "Commit": "",
     "Date": "",
@@ -31,7 +31,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -46,7 +46,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -61,7 +61,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -76,7 +76,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -91,7 +91,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -106,7 +106,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -121,7 +121,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 25,
     "Commit": "",
     "Date": "",
@@ -136,7 +136,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 26,
     "Commit": "",
     "Date": "",
@@ -151,7 +151,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 27,
     "Commit": "",
     "Date": "",
@@ -166,7 +166,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 28,
     "Commit": "",
     "Date": "",
@@ -181,7 +181,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 29,
     "Commit": "",
     "Date": "",
@@ -196,7 +196,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 30,
     "Commit": "",
     "Date": "",
@@ -211,7 +211,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -226,7 +226,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -241,7 +241,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -256,7 +256,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -271,7 +271,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 35,
     "Commit": "",
     "Date": "",
@@ -286,7 +286,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 36,
     "Commit": "",
     "Date": "",
@@ -301,7 +301,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 37,
     "Commit": "",
     "Date": "",
@@ -316,7 +316,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 38,
     "Commit": "",
     "Date": "",
@@ -331,7 +331,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -346,7 +346,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 40,
     "Commit": "",
     "Date": "",
@@ -361,7 +361,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -376,7 +376,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/core/core.php",
+    "File": "core/core.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -391,7 +391,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -406,7 +406,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -421,7 +421,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -436,7 +436,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -451,7 +451,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -466,7 +466,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -481,7 +481,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -496,7 +496,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 23,
     "Commit": "",
     "Date": "",
@@ -511,7 +511,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -526,7 +526,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 25,
     "Commit": "",
     "Date": "",
@@ -541,7 +541,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 26,
     "Commit": "",
     "Date": "",
@@ -556,7 +556,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 28,
     "Commit": "",
     "Date": "",
@@ -571,7 +571,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 28,
     "Commit": "",
     "Date": "",
@@ -586,7 +586,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 29,
     "Commit": "",
     "Date": "",
@@ -601,7 +601,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 30,
     "Commit": "",
     "Date": "",
@@ -616,7 +616,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -631,7 +631,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -646,7 +646,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -661,7 +661,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -676,7 +676,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 35,
     "Commit": "",
     "Date": "",
@@ -691,7 +691,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 36,
     "Commit": "",
     "Date": "",
@@ -706,7 +706,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 38,
     "Commit": "",
     "Date": "",
@@ -721,7 +721,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 38,
     "Commit": "",
     "Date": "",
@@ -736,7 +736,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -751,7 +751,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 40,
     "Commit": "",
     "Date": "",
@@ -766,7 +766,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -781,7 +781,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -796,7 +796,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 43,
     "Commit": "",
     "Date": "",
@@ -811,7 +811,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 44,
     "Commit": "",
     "Date": "",
@@ -826,7 +826,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -841,7 +841,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -856,7 +856,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -871,7 +871,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -886,7 +886,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 55,
     "Commit": "",
     "Date": "",
@@ -901,7 +901,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 56,
     "Commit": "",
     "Date": "",
@@ -916,7 +916,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 56,
     "Commit": "",
     "Date": "",
@@ -931,7 +931,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 57,
     "Commit": "",
     "Date": "",
@@ -946,7 +946,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 58,
     "Commit": "",
     "Date": "",
@@ -961,7 +961,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 59,
     "Commit": "",
     "Date": "",
@@ -976,7 +976,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 60,
     "Commit": "",
     "Date": "",
@@ -991,7 +991,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 61,
     "Commit": "",
     "Date": "",
@@ -1006,7 +1006,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 62,
     "Commit": "",
     "Date": "",
@@ -1021,7 +1021,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 63,
     "Commit": "",
     "Date": "",
@@ -1036,7 +1036,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 64,
     "Commit": "",
     "Date": "",
@@ -1051,7 +1051,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 66,
     "Commit": "",
     "Date": "",
@@ -1066,7 +1066,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 66,
     "Commit": "",
     "Date": "",
@@ -1081,7 +1081,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 67,
     "Commit": "",
     "Date": "",
@@ -1096,7 +1096,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 68,
     "Commit": "",
     "Date": "",
@@ -1111,7 +1111,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 69,
     "Commit": "",
     "Date": "",
@@ -1126,7 +1126,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 70,
     "Commit": "",
     "Date": "",
@@ -1141,7 +1141,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 71,
     "Commit": "",
     "Date": "",
@@ -1156,7 +1156,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 72,
     "Commit": "",
     "Date": "",
@@ -1171,7 +1171,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 73,
     "Commit": "",
     "Date": "",
@@ -1186,7 +1186,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 74,
     "Commit": "",
     "Date": "",
@@ -1201,7 +1201,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 75,
     "Commit": "",
     "Date": "",
@@ -1216,7 +1216,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 76,
     "Commit": "",
     "Date": "",
@@ -1231,7 +1231,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 78,
     "Commit": "",
     "Date": "",
@@ -1246,7 +1246,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 78,
     "Commit": "",
     "Date": "",
@@ -1261,7 +1261,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -1276,7 +1276,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -1291,7 +1291,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -1306,7 +1306,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -1321,7 +1321,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 80,
     "Commit": "",
     "Date": "",
@@ -1336,7 +1336,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 81,
     "Commit": "",
     "Date": "",
@@ -1351,7 +1351,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 82,
     "Commit": "",
     "Date": "",
@@ -1366,7 +1366,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 82,
     "Commit": "",
     "Date": "",
@@ -1381,7 +1381,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 89,
     "Commit": "",
     "Date": "",
@@ -1396,7 +1396,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 90,
     "Commit": "",
     "Date": "",
@@ -1411,7 +1411,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 97,
     "Commit": "",
     "Date": "",
@@ -1426,7 +1426,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 98,
     "Commit": "",
     "Date": "",
@@ -1441,7 +1441,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 99,
     "Commit": "",
     "Date": "",
@@ -1456,7 +1456,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/enqueue.php",
+    "File": "inc/enqueue.php",
     "StartLine": 99,
     "Commit": "",
     "Date": "",
@@ -1471,7 +1471,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -1486,7 +1486,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -1501,7 +1501,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -1516,7 +1516,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -1531,7 +1531,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -1546,7 +1546,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -1561,7 +1561,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 23,
     "Commit": "",
     "Date": "",
@@ -1576,7 +1576,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -1591,7 +1591,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -1606,7 +1606,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -1621,7 +1621,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -1636,7 +1636,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 35,
     "Commit": "",
     "Date": "",
@@ -1651,7 +1651,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 37,
     "Commit": "",
     "Date": "",
@@ -1666,7 +1666,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -1681,7 +1681,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 40,
     "Commit": "",
     "Date": "",
@@ -1696,7 +1696,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -1711,7 +1711,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -1726,7 +1726,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 44,
     "Commit": "",
     "Date": "",
@@ -1741,7 +1741,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -1756,7 +1756,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -1771,7 +1771,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -1786,7 +1786,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 49,
     "Commit": "",
     "Date": "",
@@ -1801,7 +1801,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 51,
     "Commit": "",
     "Date": "",
@@ -1816,7 +1816,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 52,
     "Commit": "",
     "Date": "",
@@ -1831,7 +1831,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 67,
     "Commit": "",
     "Date": "",
@@ -1846,7 +1846,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 67,
     "Commit": "",
     "Date": "",
@@ -1861,7 +1861,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 68,
     "Commit": "",
     "Date": "",
@@ -1876,7 +1876,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 69,
     "Commit": "",
     "Date": "",
@@ -1891,7 +1891,7 @@
   },
   {
     "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 69,
     "Commit": "",
     "Date": "",
@@ -1906,7 +1906,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 70,
     "Commit": "",
     "Date": "",
@@ -1921,7 +1921,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 71,
     "Commit": "",
     "Date": "",
@@ -1936,7 +1936,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 73,
     "Commit": "",
     "Date": "",
@@ -1951,7 +1951,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 74,
     "Commit": "",
     "Date": "",
@@ -1966,7 +1966,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 75,
     "Commit": "",
     "Date": "",
@@ -1981,7 +1981,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 77,
     "Commit": "",
     "Date": "",
@@ -1996,7 +1996,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -2011,7 +2011,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 79,
     "Commit": "",
     "Date": "",
@@ -2026,7 +2026,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 80,
     "Commit": "",
     "Date": "",
@@ -2041,7 +2041,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 81,
     "Commit": "",
     "Date": "",
@@ -2056,7 +2056,7 @@
   },
   {
     "RuleID": "WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 81,
     "Commit": "",
     "Date": "",
@@ -2071,7 +2071,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 82,
     "Commit": "",
     "Date": "",
@@ -2086,7 +2086,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 84,
     "Commit": "",
     "Date": "",
@@ -2101,7 +2101,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 84,
     "Commit": "",
     "Date": "",
@@ -2116,7 +2116,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 85,
     "Commit": "",
     "Date": "",
@@ -2131,7 +2131,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 86,
     "Commit": "",
     "Date": "",
@@ -2146,7 +2146,7 @@
   },
   {
     "RuleID": "WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 86,
     "Commit": "",
     "Date": "",
@@ -2161,7 +2161,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 87,
     "Commit": "",
     "Date": "",
@@ -2176,7 +2176,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 89,
     "Commit": "",
     "Date": "",
@@ -2191,7 +2191,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 89,
     "Commit": "",
     "Date": "",
@@ -2206,7 +2206,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 90,
     "Commit": "",
     "Date": "",
@@ -2221,7 +2221,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 91,
     "Commit": "",
     "Date": "",
@@ -2236,7 +2236,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 93,
     "Commit": "",
     "Date": "",
@@ -2251,7 +2251,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 94,
     "Commit": "",
     "Date": "",
@@ -2266,7 +2266,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 95,
     "Commit": "",
     "Date": "",
@@ -2281,7 +2281,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 97,
     "Commit": "",
     "Date": "",
@@ -2296,7 +2296,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 97,
     "Commit": "",
     "Date": "",
@@ -2311,7 +2311,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 98,
     "Commit": "",
     "Date": "",
@@ -2326,7 +2326,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 99,
     "Commit": "",
     "Date": "",
@@ -2341,7 +2341,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 100,
     "Commit": "",
     "Date": "",
@@ -2356,7 +2356,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 101,
     "Commit": "",
     "Date": "",
@@ -2371,7 +2371,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 103,
     "Commit": "",
     "Date": "",
@@ -2386,7 +2386,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 103,
     "Commit": "",
     "Date": "",
@@ -2401,7 +2401,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 104,
     "Commit": "",
     "Date": "",
@@ -2416,7 +2416,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 105,
     "Commit": "",
     "Date": "",
@@ -2431,7 +2431,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 106,
     "Commit": "",
     "Date": "",
@@ -2446,7 +2446,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 107,
     "Commit": "",
     "Date": "",
@@ -2461,7 +2461,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 108,
     "Commit": "",
     "Date": "",
@@ -2476,7 +2476,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 108,
     "Commit": "",
     "Date": "",
@@ -2491,7 +2491,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 109,
     "Commit": "",
     "Date": "",
@@ -2506,7 +2506,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 110,
     "Commit": "",
     "Date": "",
@@ -2521,7 +2521,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 111,
     "Commit": "",
     "Date": "",
@@ -2536,7 +2536,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 112,
     "Commit": "",
     "Date": "",
@@ -2551,7 +2551,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 113,
     "Commit": "",
     "Date": "",
@@ -2566,7 +2566,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 115,
     "Commit": "",
     "Date": "",
@@ -2581,7 +2581,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 116,
     "Commit": "",
     "Date": "",
@@ -2596,7 +2596,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 117,
     "Commit": "",
     "Date": "",
@@ -2611,7 +2611,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 118,
     "Commit": "",
     "Date": "",
@@ -2626,7 +2626,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 120,
     "Commit": "",
     "Date": "",
@@ -2641,7 +2641,7 @@
   },
   {
     "RuleID": "WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 120,
     "Commit": "",
     "Date": "",
@@ -2656,7 +2656,7 @@
   },
   {
     "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 127,
     "Commit": "",
     "Date": "",
@@ -2671,7 +2671,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 127,
     "Commit": "",
     "Date": "",
@@ -2686,7 +2686,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 128,
     "Commit": "",
     "Date": "",
@@ -2701,7 +2701,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 129,
     "Commit": "",
     "Date": "",
@@ -2716,7 +2716,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 130,
     "Commit": "",
     "Date": "",
@@ -2731,7 +2731,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 131,
     "Commit": "",
     "Date": "",
@@ -2746,7 +2746,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 132,
     "Commit": "",
     "Date": "",
@@ -2761,7 +2761,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 133,
     "Commit": "",
     "Date": "",
@@ -2776,7 +2776,7 @@
   },
   {
     "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 138,
     "Commit": "",
     "Date": "",
@@ -2791,7 +2791,7 @@
   },
   {
     "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 138,
     "Commit": "",
     "Date": "",
@@ -2806,7 +2806,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 138,
     "Commit": "",
     "Date": "",
@@ -2821,7 +2821,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 139,
     "Commit": "",
     "Date": "",
@@ -2836,7 +2836,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 140,
     "Commit": "",
     "Date": "",
@@ -2851,7 +2851,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 141,
     "Commit": "",
     "Date": "",
@@ -2866,7 +2866,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 142,
     "Commit": "",
     "Date": "",
@@ -2881,7 +2881,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 143,
     "Commit": "",
     "Date": "",
@@ -2896,7 +2896,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 144,
     "Commit": "",
     "Date": "",
@@ -2911,7 +2911,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 145,
     "Commit": "",
     "Date": "",
@@ -2926,7 +2926,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 146,
     "Commit": "",
     "Date": "",
@@ -2941,7 +2941,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 147,
     "Commit": "",
     "Date": "",
@@ -2956,7 +2956,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 148,
     "Commit": "",
     "Date": "",
@@ -2971,7 +2971,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/security.php",
+    "File": "inc/security.php",
     "StartLine": 149,
     "Commit": "",
     "Date": "",
@@ -2986,7 +2986,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -3001,7 +3001,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -3016,7 +3016,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -3031,7 +3031,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -3046,7 +3046,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -3061,7 +3061,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -3076,7 +3076,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -3091,7 +3091,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -3106,7 +3106,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -3121,7 +3121,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 36,
     "Commit": "",
     "Date": "",
@@ -3136,7 +3136,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 37,
     "Commit": "",
     "Date": "",
@@ -3151,7 +3151,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 38,
     "Commit": "",
     "Date": "",
@@ -3166,7 +3166,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -3181,7 +3181,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 40,
     "Commit": "",
     "Date": "",
@@ -3196,7 +3196,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -3211,7 +3211,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -3226,7 +3226,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 44,
     "Commit": "",
     "Date": "",
@@ -3241,7 +3241,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -3256,7 +3256,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -3271,7 +3271,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -3286,7 +3286,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -3301,7 +3301,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 57,
     "Commit": "",
     "Date": "",
@@ -3316,7 +3316,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 58,
     "Commit": "",
     "Date": "",
@@ -3331,7 +3331,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 59,
     "Commit": "",
     "Date": "",
@@ -3346,7 +3346,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 60,
     "Commit": "",
     "Date": "",
@@ -3361,7 +3361,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 62,
     "Commit": "",
     "Date": "",
@@ -3376,7 +3376,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 63,
     "Commit": "",
     "Date": "",
@@ -3391,7 +3391,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 64,
     "Commit": "",
     "Date": "",
@@ -3406,7 +3406,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 66,
     "Commit": "",
     "Date": "",
@@ -3421,7 +3421,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 67,
     "Commit": "",
     "Date": "",
@@ -3436,7 +3436,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 68,
     "Commit": "",
     "Date": "",
@@ -3451,7 +3451,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 69,
     "Commit": "",
     "Date": "",
@@ -3466,7 +3466,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 71,
     "Commit": "",
     "Date": "",
@@ -3481,7 +3481,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 72,
     "Commit": "",
     "Date": "",
@@ -3496,7 +3496,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 73,
     "Commit": "",
     "Date": "",
@@ -3511,7 +3511,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 74,
     "Commit": "",
     "Date": "",
@@ -3526,7 +3526,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/woocommerce.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 75,
     "Commit": "",
     "Date": "",
@@ -3541,7 +3541,7 @@
   },
   {
     "RuleID": "WordPress.Files.FileName.NotHyphenatedLowercase",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 1,
     "Commit": "",
     "Date": "",
@@ -3556,7 +3556,7 @@
   },
   {
     "RuleID": "Generic.Commenting.DocComment.LongNotCapital",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 5,
     "Commit": "",
     "Date": "",
@@ -3571,7 +3571,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 15,
     "Commit": "",
     "Date": "",
@@ -3586,7 +3586,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 16,
     "Commit": "",
     "Date": "",
@@ -3601,7 +3601,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 16,
     "Commit": "",
     "Date": "",
@@ -3616,7 +3616,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -3631,7 +3631,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -3646,7 +3646,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -3661,7 +3661,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -3676,7 +3676,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 19,
     "Commit": "",
     "Date": "",
@@ -3691,7 +3691,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -3706,7 +3706,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -3721,7 +3721,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -3736,7 +3736,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 23,
     "Commit": "",
     "Date": "",
@@ -3751,7 +3751,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -3766,7 +3766,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 25,
     "Commit": "",
     "Date": "",
@@ -3781,7 +3781,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 25,
     "Commit": "",
     "Date": "",
@@ -3796,7 +3796,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 27,
     "Commit": "",
     "Date": "",
@@ -3811,7 +3811,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 27,
     "Commit": "",
     "Date": "",
@@ -3826,7 +3826,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 28,
     "Commit": "",
     "Date": "",
@@ -3841,7 +3841,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 29,
     "Commit": "",
     "Date": "",
@@ -3856,7 +3856,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 30,
     "Commit": "",
     "Date": "",
@@ -3871,7 +3871,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -3886,7 +3886,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -3901,7 +3901,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -3916,7 +3916,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -3931,7 +3931,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 36,
     "Commit": "",
     "Date": "",
@@ -3946,7 +3946,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 37,
     "Commit": "",
     "Date": "",
@@ -3961,7 +3961,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 37,
     "Commit": "",
     "Date": "",
@@ -3976,7 +3976,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -3991,7 +3991,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 39,
     "Commit": "",
     "Date": "",
@@ -4006,7 +4006,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 40,
     "Commit": "",
     "Date": "",
@@ -4021,7 +4021,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -4036,7 +4036,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -4051,7 +4051,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 43,
     "Commit": "",
     "Date": "",
@@ -4066,7 +4066,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -4081,7 +4081,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -4096,7 +4096,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -4111,7 +4111,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -4126,7 +4126,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -4141,7 +4141,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 56,
     "Commit": "",
     "Date": "",
@@ -4156,7 +4156,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 57,
     "Commit": "",
     "Date": "",
@@ -4171,7 +4171,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 57,
     "Commit": "",
     "Date": "",
@@ -4186,7 +4186,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 58,
     "Commit": "",
     "Date": "",
@@ -4201,7 +4201,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 58,
     "Commit": "",
     "Date": "",
@@ -4216,7 +4216,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 59,
     "Commit": "",
     "Date": "",
@@ -4231,7 +4231,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 59,
     "Commit": "",
     "Date": "",
@@ -4246,7 +4246,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 60,
     "Commit": "",
     "Date": "",
@@ -4261,7 +4261,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 60,
     "Commit": "",
     "Date": "",
@@ -4276,7 +4276,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 61,
     "Commit": "",
     "Date": "",
@@ -4291,7 +4291,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 61,
     "Commit": "",
     "Date": "",
@@ -4306,7 +4306,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 62,
     "Commit": "",
     "Date": "",
@@ -4321,7 +4321,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 62,
     "Commit": "",
     "Date": "",
@@ -4336,7 +4336,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 63,
     "Commit": "",
     "Date": "",
@@ -4351,7 +4351,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 63,
     "Commit": "",
     "Date": "",
@@ -4366,7 +4366,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 64,
     "Commit": "",
     "Date": "",
@@ -4381,7 +4381,7 @@
   },
   {
     "RuleID": "WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 64,
     "Commit": "",
     "Date": "",
@@ -4396,7 +4396,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 65,
     "Commit": "",
     "Date": "",
@@ -4411,7 +4411,7 @@
   },
   {
     "RuleID": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 65,
     "Commit": "",
     "Date": "",
@@ -4426,7 +4426,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 72,
     "Commit": "",
     "Date": "",
@@ -4441,7 +4441,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 73,
     "Commit": "",
     "Date": "",
@@ -4456,7 +4456,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 74,
     "Commit": "",
     "Date": "",
@@ -4471,7 +4471,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 75,
     "Commit": "",
     "Date": "",
@@ -4486,7 +4486,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/inc/theme_setup.php",
+    "File": "inc/theme_setup.php",
     "StartLine": 76,
     "Commit": "",
     "Date": "",
@@ -4501,7 +4501,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -4516,7 +4516,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -4531,7 +4531,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 23,
     "Commit": "",
     "Date": "",
@@ -4546,7 +4546,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 26,
     "Commit": "",
     "Date": "",
@@ -4561,7 +4561,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 29,
     "Commit": "",
     "Date": "",
@@ -4576,7 +4576,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/functions.php",
+    "File": "functions.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -4591,7 +4591,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 17,
     "Commit": "",
     "Date": "",
@@ -4606,7 +4606,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
@@ -4621,7 +4621,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -4636,7 +4636,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -4651,7 +4651,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -4666,7 +4666,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 24,
     "Commit": "",
     "Date": "",
@@ -4681,7 +4681,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 26,
     "Commit": "",
     "Date": "",
@@ -4696,7 +4696,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 27,
     "Commit": "",
     "Date": "",
@@ -4711,7 +4711,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 28,
     "Commit": "",
     "Date": "",
@@ -4726,7 +4726,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 30,
     "Commit": "",
     "Date": "",
@@ -4741,7 +4741,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
@@ -4756,7 +4756,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -4771,7 +4771,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -4786,7 +4786,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -4801,7 +4801,7 @@
   },
   {
     "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -4816,7 +4816,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 41,
     "Commit": "",
     "Date": "",
@@ -4831,7 +4831,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -4846,7 +4846,7 @@
   },
   {
     "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 42,
     "Commit": "",
     "Date": "",
@@ -4861,7 +4861,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 43,
     "Commit": "",
     "Date": "",
@@ -4876,7 +4876,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 44,
     "Commit": "",
     "Date": "",
@@ -4891,7 +4891,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -4906,7 +4906,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -4921,7 +4921,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -4936,7 +4936,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -4951,7 +4951,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 49,
     "Commit": "",
     "Date": "",
@@ -4966,7 +4966,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 50,
     "Commit": "",
     "Date": "",
@@ -4981,7 +4981,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 51,
     "Commit": "",
     "Date": "",
@@ -4996,7 +4996,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "home/runner/work/repo-health/repo-health/target/blocks/blocks.php",
+    "File": "blocks/blocks.php",
     "StartLine": 52,
     "Commit": "",
     "Date": "",
