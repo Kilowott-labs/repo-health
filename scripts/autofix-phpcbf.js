@@ -69,11 +69,15 @@ function gh(args) {
 // rather than embedding it in the remote URL. This avoids writing the
 // token to .git/config, which would persist on disk after the run and
 // leak if the workspace is snapshotted.
-// (Token still appears in argv visible to same-uid processes on the
-// runner, which is an accepted exposure on ephemeral runners.)
+//
+// Git smart-HTTP expects Basic auth (not Bearer) — matches the pattern
+// actions/checkout@v4 installs. Token still appears in argv visible to
+// same-uid processes on the runner, which is an accepted exposure on
+// ephemeral runners.
+const TOKEN_BASIC = Buffer.from(`x-access-token:${TOKEN}`).toString('base64');
 function gitAuth(args, opts = {}) {
   return git(
-    ['-c', `http.extraheader=Authorization: Bearer ${TOKEN}`, ...args],
+    ['-c', `http.extraheader=Authorization: Basic ${TOKEN_BASIC}`, ...args],
     opts,
   );
 }
