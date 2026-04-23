@@ -1,0 +1,190 @@
+name: Monthly auto-fix PRs
+
+# Runs on the 1st of each month at 04:00 UTC. Manual dispatch
+# supports a dry_run flag for safe validation without side effects.
+on:
+  schedule:
+    - cron: '0 4 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run — log intent without pushing branches or opening PRs'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  contents: read   # repo-health read — everything else escalates via App token
+
+concurrency:
+  group: autofix-monthly
+  cancel-in-progress: false
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Discover — mirrors the weekly-scan discovery so autofix sees the current
+  # set of org repos plus targets.yml overrides (including the `autofix` flag).
+  # ---------------------------------------------------------------------------
+  discover:
+    runs-on: ubuntu-latest
+    outputs:
+      has_eligible: ${{ steps.emit.outputs.has_eligible }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # ubuntu-latest ships the Python kislyuk/yq (different flags). We want
+      # the Go mikefarah/yq that supports `-o=json`. Install explicitly.
+      - name: Install yq (mikefarah)
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+          yq --version
+
+      - name: Convert targets.yml to JSON
+        run: yq -o=json targets.yml > targets.json
+
+      - name: Auto-discover org repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.ORG_SCAN_TOKEN }}
+          ORG: Kilowott-labs
+          OVERRIDES: targets.json
+          OUTPUT: discovered-targets.json
+        run: node scripts/discover.js
+
+      - name: Summarise eligibility
+        id: emit
+        run: |
+          set -euo pipefail
+          ELIGIBLE=$(jq '[.repos[] | select(.autofix.phpcs == true)] | length' discovered-targets.json)
+          echo "Eligible for phpcbf autofix: $ELIGIBLE repo(s)"
+          jq -r '.repos[] | select(.autofix.phpcs == true) | "  + " + .name' discovered-targets.json
+          if [ "$ELIGIBLE" -gt 0 ]; then
+            echo "has_eligible=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_eligible=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload discovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: discovered-targets
+          path: discovered-targets.json
+          retention-days: 30
+
+  # ---------------------------------------------------------------------------
+  # Flow A — phpcbf auto-fix PRs into target repos.
+  # ---------------------------------------------------------------------------
+  autofix-phpcbf:
+    needs: discover
+    if: needs.discover.outputs.has_eligible == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      # App token has bypass on the ruleset + write access to all
+      # repos the App is installed on. Used for both the target repo
+      # clones and PR creation.
+      - name: Generate App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: Kilowott-labs
+
+      - name: Checkout repo-health
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Download discovered targets
+        uses: actions/download-artifact@v4
+        with:
+          name: discovered-targets
+          path: .
+
+      - name: Set up PHP + phpcbf
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          tools: composer, phpcs, phpcbf
+          coverage: none
+
+      - name: Install WPCS + related coding standards
+        run: |
+          set -euo pipefail
+          # Composer 2.2+ requires the phpcs-installer plugin to be
+          # allowlisted — same pattern as Phase 2's PHPCS setup.
+          composer global config --no-plugins allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+          composer global require --no-interaction \
+            "squizlabs/php_codesniffer=*" \
+            "wp-coding-standards/wpcs=*" \
+            "phpcompatibility/phpcompatibility-wp=*" \
+            "automattic/vipwpcs=*" \
+            "dealerdirect/phpcodesniffer-composer-installer=*"
+          export PATH="$HOME/.composer/vendor/bin:$PATH"
+          echo "$HOME/.composer/vendor/bin" >> "$GITHUB_PATH"
+          phpcs -i
+          if ! phpcs -i | grep -q "WordPress"; then
+            echo "::error::WordPress standard did not register. Fix composer install log above."
+            exit 1
+          fi
+
+      - name: Run phpcbf autofix
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          TARGETS_JSON: discovered-targets.json
+          PHPCBF_STANDARD: WordPress
+          ORG: Kilowott-labs
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/autofix-phpcbf.js
+
+  # ---------------------------------------------------------------------------
+  # Flow B — false-positive allowlist PRs into repo-health itself.
+  # ---------------------------------------------------------------------------
+  autofix-allowlist:
+    needs: discover
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: Kilowott-labs
+
+      - name: Checkout repo-health
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Download discovered targets
+        uses: actions/download-artifact@v4
+        with:
+          name: discovered-targets
+          path: .
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run allowlist autofix
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          TARGETS_JSON: discovered-targets.json
+          REPORTS_DIR: reports
+          ORG: Kilowott-labs
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node scripts/autofix-allowlist.js

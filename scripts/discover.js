@@ -148,6 +148,10 @@ async function listOrgRepos(org) {
       priority: ov.priority || autoPriority,
       stack: ov.stack || autoStack,
       private: repo.private,
+      // Autofix flags — per-repo opt-in, read by Phase 5c workflows
+      // (autofix-phpcbf.js / autofix-allowlist.js). Defaults to {}
+      // so downstream code can safely check `autofix.phpcs === true`.
+      autofix: ov.autofix || {},
       // Metadata for audit / debugging
       _source: {
         autoPriority,
