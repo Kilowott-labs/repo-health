@@ -21,6 +21,7 @@
 const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
+const { fingerprint: findingFingerprint } = require('./lib/fingerprint');
 
 const TARGETS_JSON = process.env.TARGETS_JSON || 'targets.json';
 const ORG = process.env.ORG || 'Kilowott-labs';
@@ -88,16 +89,10 @@ function computeScannerCounts(findings) {
   return counts;
 }
 
-// Same hash shape as file-issues.js — keep IDs consistent across both outputs.
-function findingFingerprint(f) {
-  const parts = [
-    f.Source || '',
-    f.RuleID || '',
-    f.File || '',
-    String(f.StartLine || 0),
-  ].join('|');
-  return 'F-' + crypto.createHash('sha256').update(parts).digest('hex').slice(0, 8);
-}
+// Fingerprint moved to scripts/lib/fingerprint.js — imported above as
+// `findingFingerprint`. Previously this was a second implementation using
+// SHA-256 (file-issues.js used SHA-1) which produced different IDs for the
+// same finding. Now both read from the single shared module.
 
 function ageDays(isoOrDate) {
   if (!isoOrDate) return 0;

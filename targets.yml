@@ -27,6 +27,14 @@ overrides:
   # kw-security-plugin:
   #   priority: critical    # already critical by name match — no override needed
 
+  # Phase 5c — monthly phpcbf auto-fix PRs. Canary scope: only
+  # kw-wp-scaffold is flagged for now. Rollout to other WP repos
+  # happens after the canary's first merged PR validates the flow.
+  kw-wp-scaffold:
+    priority: high          # private + kw- prefix already gives this, explicit for clarity
+    autofix:
+      phpcs: true
+
   # Example of overriding stack when auto-detection misses something:
   # some-repo:
   #   stack: wp-theme       # repo language is PHP but it's actually a WP theme

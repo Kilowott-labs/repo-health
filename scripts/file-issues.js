@@ -21,6 +21,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const resolveAssignees = require('./assign-codeowner');
+const { fingerprint: sharedFingerprint } = require('./lib/fingerprint');
 
 const TOKEN = process.env.GITHUB_TOKEN;
 const ORG = process.env.ORG || 'Kilowott-labs';
@@ -37,28 +38,11 @@ if (!TOKEN) {
 }
 
 // ---------------------------------------------------------------------------
-// Fingerprinting — stable per-finding ID so dismissals survive re-scans
+// Fingerprinting — delegate to scripts/lib/fingerprint.js so this code,
+// aggregate.js, and autofix-allowlist.js all produce the same F-xxxxxxxx
+// IDs for the same finding. Algorithm details live in that shared module.
 // ---------------------------------------------------------------------------
-function fingerprint(finding) {
-  // Fingerprint intentionally excludes commit SHA so the same underlying leak
-  // (same rule + same file + same line) dedupes across every commit it appears
-  // in. Gitleaks reports each historical occurrence separately when walking
-  // --all; for a team-facing issue we want one entry per unique leak with a
-  // "first seen / last seen" summary instead.
-  //
-  // Includes source (scanner name) to prevent cross-scanner collisions — a
-  // PHPCS finding and a Gitleaks finding could both report "line 42" of the
-  // same file for unrelated reasons.
-  const rule = finding.RuleID || finding.ruleID || 'unknown';
-  const file = finding.File || finding.file || '';
-  const line = finding.StartLine || finding.startLine || 0;
-  const source = finding.Source || finding.source || 'gitleaks';
-  const h = crypto.createHash('sha1')
-    .update(`${source}|${rule}|${file}|${line}`)
-    .digest('hex')
-    .slice(0, 8);
-  return `F-${h}`;
-}
+const fingerprint = sharedFingerprint;
 
 // Groups N raw findings by fingerprint, returns deduped entries with
 // first/last commit metadata preserved.
