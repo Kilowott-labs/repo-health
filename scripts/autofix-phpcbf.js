@@ -127,6 +127,23 @@ function existingAutofixBranch(repo) {
   }
 }
 
+// Heal: branch exists on remote but no PR is open — typically means
+// a previous run pushed the branch then errored during PR creation.
+// Delete the branch so the current run can re-clone + re-push + PR.
+function deleteRemoteBranch(repo) {
+  try {
+    gh([
+      'api',
+      '--method', 'DELETE',
+      `/repos/${ORG}/${repo}/git/refs/heads/${BRANCH}`,
+    ]);
+    return true;
+  } catch (err) {
+    log(`${repo}: failed to delete stale branch ${BRANCH} — ${err.message.slice(0, 120)}`);
+    return false;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Per-repo workflow
 // ---------------------------------------------------------------------------
@@ -180,7 +197,7 @@ function commitAndPush(repo, workDir) {
   gitAuth(['push', 'origin', BRANCH],                                                      opts);
 }
 
-function openPullRequest(repo, fixedFileCount) {
+function openPullRequest(repo, fixedFileCount, baseBranch) {
   const title = `[autofix] PHPCS phpcbf ${MONTH}`;
   const body =
 `Mechanical PHPCS fixes from repo-health's weekly scan pipeline.
@@ -206,7 +223,7 @@ Run: ${process.env.RUN_URL || 'local run'}
   const url = gh([
     'pr', 'create',
     '--repo', `${ORG}/${repo}`,
-    '--base', 'main',
+    '--base', baseBranch,
     '--head', BRANCH,
     '--title', title,
     '--body', body,
@@ -241,7 +258,8 @@ function labelPr(repo, number, labels) {
 
   for (const repo of repos) {
     const name = repo.name;
-    log(`--- ${name} ---`);
+    const baseBranch = repo.default_branch || 'main';
+    log(`--- ${name} (base=${baseBranch}) ---`);
 
     // Idempotency: open PR
     const openPr = existingAutofixPR(name);
@@ -251,11 +269,15 @@ function labelPr(repo, number, labels) {
       continue;
     }
 
-    // Idempotency: same-month branch
+    // Self-heal: a branch without an accompanying PR is stale —
+    // a prior run pushed it then errored during pr create. Delete
+    // it so this run can re-push from a fresh clone.
     if (existingAutofixBranch(name)) {
-      log(`${name}: branch ${BRANCH} already exists on remote — skipping`);
-      summary.skipped.push({ name, reason: `branch exists` });
-      continue;
+      log(`${name}: branch ${BRANCH} exists but no PR — deleting stale branch to retry`);
+      if (!deleteRemoteBranch(name)) {
+        summary.skipped.push({ name, reason: `stale branch exists, delete failed` });
+        continue;
+      }
     }
 
     const workDir = fs.mkdtempSync(path.join(os.tmpdir(), `autofix-${name}-`));
@@ -282,7 +304,7 @@ function labelPr(repo, number, labels) {
       }
 
       commitAndPush(name, workDir);
-      const prUrl = openPullRequest(name, fixedCount);
+      const prUrl = openPullRequest(name, fixedCount, baseBranch);
       log(`${name}: PR opened → ${prUrl}`);
       summary.opened.push({ name, url: prUrl, fixedCount });
     } catch (err) {

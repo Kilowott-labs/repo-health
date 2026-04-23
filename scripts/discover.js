@@ -148,6 +148,12 @@ async function listOrgRepos(org) {
       priority: ov.priority || autoPriority,
       stack: ov.stack || autoStack,
       private: repo.private,
+      // Default branch flows from GitHub's own /repos API field.
+      // Needed by Phase 5c autofix-phpcbf.js which opens PRs against
+      // each target repo's actual base — the org has a mix of
+      // `main` and `master`, so hardcoding either would break 4-9
+      // of the 13 repos.
+      default_branch: repo.default_branch || 'main',
       // Autofix flags — per-repo opt-in, read by Phase 5c workflows
       // (autofix-phpcbf.js / autofix-allowlist.js). Defaults to {}
       // so downstream code can safely check `autofix.phpcs === true`.
