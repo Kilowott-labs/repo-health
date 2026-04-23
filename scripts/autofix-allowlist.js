@@ -194,6 +194,26 @@ function existingBranch() {
   }
 }
 
+// Ensure a label exists on repo-health. gh pr create --label aborts
+// when the label is missing. --force makes the helper idempotent.
+function ensureLabel(name, color, description) {
+  try {
+    execFileSync('gh', [
+      'label', 'create', name,
+      '--repo', `${ORG}/repo-health`,
+      '--color', color,
+      '--description', description,
+      '--force',
+    ], {
+      encoding: 'utf8',
+      env: { ...process.env, GH_TOKEN: TOKEN, GITHUB_TOKEN: TOKEN },
+      stdio: ['ignore', 'ignore', 'pipe'],
+    });
+  } catch (err) {
+    log(`label '${name}' ensure failed — ${err.message.slice(0, 120)}`);
+  }
+}
+
 function commitAndPushSelf(appliedCount) {
   const msg =
     `chore(autofix-allowlist): batch config updates ${MONTH}\n\n` +
@@ -347,6 +367,9 @@ function commentOnSourceIssue(repo, issueNumber, prUrl) {
   }
 
   commitAndPushSelf(applied.length);
+  // Ensure PR labels exist on repo-health before gh pr create.
+  ensureLabel('autofix',   '84CC16', 'Auto-generated fix PR from repo-health');
+  ensureLabel('allowlist', '65A30D', 'False-positive allowlist update');
   const prUrl = openSelfPr(applied);
   log(`PR opened: ${prUrl}`);
 

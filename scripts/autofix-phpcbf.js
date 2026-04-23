@@ -127,6 +127,29 @@ function existingAutofixBranch(repo) {
   }
 }
 
+// Ensure a label exists on the target repo. `gh pr create --label X`
+// errors (and aborts PR creation) if X doesn't pre-exist. Idempotent
+// via --force: creates the label if absent, updates color/description
+// if present. Failure is logged but not fatal — PR create will still
+// try, and if it fails the whole repo is marked errored.
+function ensureLabel(repo, name, color, description) {
+  try {
+    execFileSync('gh', [
+      'label', 'create', name,
+      '--repo', `${ORG}/${repo}`,
+      '--color', color,
+      '--description', description,
+      '--force',
+    ], {
+      encoding: 'utf8',
+      env: { ...process.env, GH_TOKEN: TOKEN, GITHUB_TOKEN: TOKEN },
+      stdio: ['ignore', 'ignore', 'pipe'],
+    });
+  } catch (err) {
+    log(`${repo}: label '${name}' ensure failed — ${err.message.slice(0, 120)}`);
+  }
+}
+
 // Heal: branch exists on remote but no PR is open — typically means
 // a previous run pushed the branch then errored during PR creation.
 // Delete the branch so the current run can re-clone + re-push + PR.
@@ -304,6 +327,12 @@ function labelPr(repo, number, labels) {
       }
 
       commitAndPush(name, workDir);
+      // Ensure PR labels exist on target repo before gh pr create.
+      // Colors chosen to match the severity palette in
+      // dashboard/src/index.css (accent=lime for autofix, high=amber
+      // for the scanner-specific marker).
+      ensureLabel(name, 'autofix', '84CC16', 'Auto-generated fix PR from repo-health');
+      ensureLabel(name, 'phpcbf',  'D97706', 'PHPCS phpcbf mechanical fix');
       const prUrl = openPullRequest(name, fixedCount, baseBranch);
       log(`${name}: PR opened → ${prUrl}`);
       summary.opened.push({ name, url: prUrl, fixedCount });
