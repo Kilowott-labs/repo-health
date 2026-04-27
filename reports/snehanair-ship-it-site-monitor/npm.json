@@ -1,5 +1,24 @@
 [
   {
+    "RuleID": "npm-node-cron",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "node-cron@3.0.2 - 3.0.3 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "node-cron",
+      "range": "3.0.2 - 3.0.3",
+      "fixAvailable": {
+        "name": "node-cron",
+        "version": "4.2.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
     "RuleID": "GHSA-mm7p-fcc7-pg87",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -22,7 +41,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "8.0.5",
+        "version": "8.0.6",
         "isSemVerMajor": true
       }
     }
@@ -49,7 +68,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "8.0.5",
+        "version": "8.0.6",
         "isSemVerMajor": true
       }
     }
@@ -76,7 +95,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "8.0.5",
+        "version": "8.0.6",
         "isSemVerMajor": true
       }
     }
@@ -103,7 +122,35 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "8.0.5",
+        "version": "8.0.6",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-w5hq-g745-h8pq",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "uuid@<14.0.0 — uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "uuid",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "cwe": [
+        "CWE-787",
+        "CWE-1285"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "node-cron",
+        "version": "4.2.1",
         "isSemVerMajor": true
       }
     }

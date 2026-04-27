@@ -1,0 +1,188 @@
+[
+  {
+    "RuleID": "npm-node-cron",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "node-cron@3.0.2 - 3.0.3 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "node-cron",
+      "range": "3.0.2 - 3.0.3",
+      "fixAvailable": {
+        "name": "node-cron",
+        "version": "4.2.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-mm7p-fcc7-pg87",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=8.0.4 — Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict",
+      "url": "https://github.com/advisories/GHSA-mm7p-fcc7-pg87",
+      "cwe": [
+        "CWE-20",
+        "CWE-436"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "8.0.6",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-rcmh-qjqh-p98v",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=8.0.4 — Nodemailer’s addressparser is vulnerable to DoS caused by recursive calls",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer’s addressparser is vulnerable to DoS caused by recursive calls",
+      "url": "https://github.com/advisories/GHSA-rcmh-qjqh-p98v",
+      "cwe": [
+        "CWE-703"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "8.0.6",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-c7w3-x93f-qmm8",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=8.0.4 — Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter",
+      "url": "https://github.com/advisories/GHSA-c7w3-x93f-qmm8",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "8.0.6",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-vvjj-xcjg-gr5g",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=8.0.4 — Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name Option (EHLO/HELO) ",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name Option (EHLO/HELO) ",
+      "url": "https://github.com/advisories/GHSA-vvjj-xcjg-gr5g",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 4.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "8.0.6",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-w5hq-g745-h8pq",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "uuid@<14.0.0 — uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "uuid",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "cwe": [
+        "CWE-787",
+        "CWE-1285"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "node-cron",
+        "version": "4.2.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
+    "File": "dashboard/src/app/api/ssl/route.ts",
+    "StartLine": 16,
+    "Commit": "",
+    "Date": "",
+    "Match": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized t",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
+      "owasp": "A03:2017 - Sensitive Data Exposure"
+    }
+  },
+  {
+    "RuleID": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
+    "File": "ssl-check.js",
+    "StartLine": 20,
+    "Commit": "",
+    "Date": "",
+    "Match": "Checks for setting the environment variable NODE_TLS_REJECT_UNAUTHORIZED to 0, which disables TLS verification. This should only be used for debugging purposes. Setting the option rejectUnauthorized t",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": "CWE-319: Cleartext Transmission of Sensitive Information",
+      "owasp": "A03:2017 - Sensitive Data Exposure"
+    }
+  }
+]

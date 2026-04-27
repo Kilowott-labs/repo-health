@@ -185,6 +185,96 @@
     }
   },
   {
+    "RuleID": "npm-@wordpress/block-editor",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/block-editor@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/block-editor",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/blocks",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/blocks@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/blocks",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/commands",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/commands@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/commands",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/components",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/components@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/components",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/core-data",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/core-data@>=2.11.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/core-data",
+      "range": ">=2.11.0",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/editor",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/editor@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/editor",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
     "RuleID": "npm-@wordpress/icons",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -197,6 +287,81 @@
       "package": "@wordpress/icons",
       "range": "10.10.0 - 10.32.0",
       "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/interface",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/interface@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/interface",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/patterns",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/patterns@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/patterns",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/plugins",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/plugins@>=6.0.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/plugins",
+      "range": ">=6.0.0",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/preferences",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/preferences@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/preferences",
+      "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/reusable-blocks",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/reusable-blocks@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/reusable-blocks",
+      "range": "*",
+      "fixAvailable": false
     }
   },
   {
@@ -216,6 +381,21 @@
         "version": "19.2.4",
         "isSemVerMajor": true
       }
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/server-side-render",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/server-side-render@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/server-side-render",
+      "range": "*",
+      "fixAvailable": false
     }
   },
   {
@@ -1006,6 +1186,29 @@
     }
   },
   {
+    "RuleID": "GHSA-qx2v-qp2m-jg93",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "postcss@<8.5.10 — PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "postcss",
+      "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+      "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-5c6j-r48x-rmvq",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1053,12 +1256,79 @@
     }
   },
   {
+    "RuleID": "GHSA-rmmh-p597-ppvv",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "showdown@* — Showdown vulnerable to Regular Expression Denial of Service (ReDoS) in link/anchor parsing",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "showdown",
+      "title": "Showdown vulnerable to Regular Expression Denial of Service (ReDoS) in link/anchor parsing",
+      "url": "https://github.com/advisories/GHSA-rmmh-p597-ppvv",
+      "cwe": [
+        "CWE-674",
+        "CWE-777"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-sockjs",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "sockjs@>=0.3.17 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "sockjs",
+      "range": ">=0.3.17",
+      "fixAvailable": {
+        "name": "@wordpress/scripts",
+        "version": "19.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-w5hq-g745-h8pq",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "uuid@<14.0.0 — uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "uuid",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "cwe": [
+        "CWE-787",
+        "CWE-1285"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": false
+    }
+  },
+  {
     "RuleID": "GHSA-9jgg-88mc-972h",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1085,7 +1355,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site",
+    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {

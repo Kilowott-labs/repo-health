@@ -1,5 +1,45 @@
 [
   {
+    "RuleID": "gcp-api-key",
+    "File": "docs/dashboard.json",
+    "StartLine": 1,
+    "Commit": "b76c5a3f997c32d862de15d1bba7a0317ffb2f87",
+    "Date": "2026-04-22T06:50:37Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "docs/dashboard.json",
+    "StartLine": 1,
+    "Commit": "b76c5a3f997c32d862de15d1bba7a0317ffb2f87",
+    "Date": "2026-04-22T06:50:37Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "dashboard.json",
+    "StartLine": 1,
+    "Commit": "b76c5a3f997c32d862de15d1bba7a0317ffb2f87",
+    "Date": "2026-04-22T06:50:37Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "dashboard.json",
+    "StartLine": 1,
+    "Commit": "b76c5a3f997c32d862de15d1bba7a0317ffb2f87",
+    "Date": "2026-04-22T06:50:37Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
     "RuleID": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
     "File": ".github/workflows/weekly-scan.yml",
     "StartLine": 51,

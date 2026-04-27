@@ -12,5 +12,19 @@
       "gitleaks": 1
     },
     "total": 1
+  },
+  {
+    "date": "2026-04-27",
+    "severity_counts": {
+      "critical": 0,
+      "high": 1,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 1
+    },
+    "total": 1
   }
 ]

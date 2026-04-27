@@ -1,6 +1,16 @@
 [
   {
     "RuleID": "generic-api-key",
+    "File": "src/components/ContactForm.tsx",
+    "StartLine": 15,
+    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
+    "Date": "2026-03-19T17:47:26Z",
+    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "generic-api-key",
     "File": "src/components/LeadForm.tsx",
     "StartLine": 15,
     "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
@@ -13,16 +23,6 @@
     "RuleID": "generic-api-key",
     "File": "src/components/LPForm.tsx",
     "StartLine": 21,
-    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
-    "Date": "2026-03-19T17:47:26Z",
-    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
-    "Source": "gitleaks",
-    "Severity": "high"
-  },
-  {
-    "RuleID": "generic-api-key",
-    "File": "src/components/ContactForm.tsx",
-    "StartLine": 15,
     "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
     "Date": "2026-03-19T17:47:26Z",
     "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
@@ -202,7 +202,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@9.5.0 - 15.5.14 — Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
+    "Match": "next@>=9.3.4-canary.0 — Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -230,7 +230,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@9.5.0 - 15.5.14 — Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
+    "Match": "next@>=9.3.4-canary.0 — Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -258,7 +258,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@9.5.0 - 15.5.14 — Next.js: HTTP request smuggling in rewrites",
+    "Match": "next@>=9.3.4-canary.0 — Next.js: HTTP request smuggling in rewrites",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -285,7 +285,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@9.5.0 - 15.5.14 — Next.js: Unbounded next/image disk cache growth can exhaust storage",
+    "Match": "next@>=9.3.4-canary.0 — Next.js: Unbounded next/image disk cache growth can exhaust storage",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -312,7 +312,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@9.5.0 - 15.5.14 — Next.js has a Denial of Service with Server Components",
+    "Match": "next@>=9.3.4-canary.0 — Next.js has a Denial of Service with Server Components",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -423,6 +423,33 @@
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
       "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-qx2v-qp2m-jg93",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "postcss@<8.5.10 — PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "postcss",
+      "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+      "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
     }
   }
 ]
