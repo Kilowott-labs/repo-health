@@ -162,7 +162,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@>=9.3.4-canary.0 — Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -190,7 +190,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@>=9.3.4-canary.0 — Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -218,7 +218,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@>=9.3.4-canary.0 — Next.js: HTTP request smuggling in rewrites",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js: HTTP request smuggling in rewrites",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -245,7 +245,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@>=9.3.4-canary.0 — Next.js: Unbounded next/image disk cache growth can exhaust storage",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js: Unbounded next/image disk cache growth can exhaust storage",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -272,7 +272,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "next@>=9.3.4-canary.0 — Next.js has a Denial of Service with Server Components",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js has a Denial of Service with Server Components",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {

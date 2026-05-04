@@ -41,5 +41,20 @@
       "semgrep": 1
     },
     "total": 5
+  },
+  {
+    "date": "2026-05-04",
+    "severity_counts": {
+      "critical": 0,
+      "high": 17,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 16,
+      "semgrep": 1
+    },
+    "total": 17
   }
 ]

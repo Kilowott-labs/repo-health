@@ -1,0 +1,455 @@
+[
+  {
+    "RuleID": "generic-api-key",
+    "File": "src/components/LPForm.tsx",
+    "StartLine": 21,
+    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
+    "Date": "2026-03-19T17:47:26Z",
+    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "generic-api-key",
+    "File": "src/components/LeadForm.tsx",
+    "StartLine": 15,
+    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
+    "Date": "2026-03-19T17:47:26Z",
+    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "generic-api-key",
+    "File": "src/app/api/submit-form/route.ts",
+    "StartLine": 3,
+    "Commit": "567b5fe6c418d5f625c793f16ef64e468d8a601c",
+    "Date": "2026-03-19T17:37:29Z",
+    "Match": "WEB3FORMS_KEY = \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "generic-api-key",
+    "File": "src/components/ContactForm.tsx",
+    "StartLine": 15,
+    "Commit": "028a021a1459eea10ee35d6240fbda6cb9df50b5",
+    "Date": "2026-03-19T17:47:26Z",
+    "Match": "access_key\", \"03c25fe0-b587-4406-bc6d-c33112140ce0\"",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "npm-@next/eslint-plugin-next",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@next/eslint-plugin-next@14.0.5-canary.0 - 15.0.0-rc.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "@next/eslint-plugin-next",
+      "range": "14.0.5-canary.0 - 15.0.0-rc.1",
+      "fixAvailable": {
+        "name": "eslint-config-next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-f886-m6hf-6m8v",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "brace-expansion@<=1.1.12 || 2.0.0 - 2.0.2 || 4.0.0 - 5.0.4 — brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "brace-expansion",
+      "title": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+      "cwe": [
+        "CWE-400"
+      ],
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-f886-m6hf-6m8v",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "brace-expansion@<=1.1.12 || 2.0.0 - 2.0.2 || 4.0.0 - 5.0.4 — brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "brace-expansion",
+      "title": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+      "cwe": [
+        "CWE-400"
+      ],
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-f886-m6hf-6m8v",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "brace-expansion@<=1.1.12 || 2.0.0 - 2.0.2 || 4.0.0 - 5.0.4 — brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "brace-expansion",
+      "title": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+      "url": "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+      "cwe": [
+        "CWE-400"
+      ],
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-eslint-config-next",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "eslint-config-next@14.0.5-canary.0 - 15.0.0-rc.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "eslint-config-next",
+      "range": "14.0.5-canary.0 - 15.0.0-rc.1",
+      "fixAvailable": {
+        "name": "eslint-config-next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-rf6f-7fwh-wjgh",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "flatted@<=3.4.1 — Prototype Pollution via parse() in NodeJS flatted",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "flatted",
+      "title": "Prototype Pollution via parse() in NodeJS flatted",
+      "url": "https://github.com/advisories/GHSA-rf6f-7fwh-wjgh",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-5j98-mcp5-4vw2",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "glob@10.2.0 - 10.4.5 — glob CLI: Command injection via -c/--cmd executes matches with shell:true",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "glob",
+      "title": "glob CLI: Command injection via -c/--cmd executes matches with shell:true",
+      "url": "https://github.com/advisories/GHSA-5j98-mcp5-4vw2",
+      "cwe": [
+        "CWE-78"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "fixAvailable": {
+        "name": "eslint-config-next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-9g9p-9gw9-jx7f",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "next",
+      "title": "Next.js self-hosted applications vulnerable to DoS via Image Optimizer remotePatterns configuration",
+      "url": "https://github.com/advisories/GHSA-9g9p-9gw9-jx7f",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-h25m-26qc-wcjf",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "next",
+      "title": "Next.js HTTP request deserialization can lead to DoS when using insecure React Server Components",
+      "url": "https://github.com/advisories/GHSA-h25m-26qc-wcjf",
+      "cwe": [
+        "CWE-400",
+        "CWE-502"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-ggv3-7p47-pfv8",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js: HTTP request smuggling in rewrites",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "next",
+      "title": "Next.js: HTTP request smuggling in rewrites",
+      "url": "https://github.com/advisories/GHSA-ggv3-7p47-pfv8",
+      "cwe": [
+        "CWE-444"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-3x4c-7xq6-9pq8",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js: Unbounded next/image disk cache growth can exhaust storage",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "next",
+      "title": "Next.js: Unbounded next/image disk cache growth can exhaust storage",
+      "url": "https://github.com/advisories/GHSA-3x4c-7xq6-9pq8",
+      "cwe": [
+        "CWE-400"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-q4gf-8mx6-v5v3",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "next@9.3.4-canary.0 - 16.3.0-canary.5 — Next.js has a Denial of Service with Server Components",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "next",
+      "title": "Next.js has a Denial of Service with Server Components",
+      "url": "https://github.com/advisories/GHSA-q4gf-8mx6-v5v3",
+      "cwe": [
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-3v7f-55p6-f55p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "picomatch@<=2.3.1 || 4.0.0 - 4.0.3 — Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "picomatch",
+      "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+      "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-3v7f-55p6-f55p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "picomatch@<=2.3.1 || 4.0.0 - 4.0.3 — Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "picomatch",
+      "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+      "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-c2c7-rcm5-vvqj",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "picomatch@<=2.3.1 || 4.0.0 - 4.0.3 — Picomatch has a ReDoS vulnerability via extglob quantifiers",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "picomatch",
+      "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-c2c7-rcm5-vvqj",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "picomatch@<=2.3.1 || 4.0.0 - 4.0.3 — Picomatch has a ReDoS vulnerability via extglob quantifiers",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "picomatch",
+      "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+      "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-qx2v-qp2m-jg93",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "postcss@<8.5.10 — PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "postcss",
+      "title": "PostCSS has XSS via Unescaped </style> in its CSS Stringify Output",
+      "url": "https://github.com/advisories/GHSA-qx2v-qp2m-jg93",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 6.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "next",
+        "version": "16.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  }
+]

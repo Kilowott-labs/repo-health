@@ -1,7 +1,7 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-04-27 05:53:26 UTC**_  
-_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **14485**_
+_Last regenerated: **2026-05-04 06:12:18 UTC**_  
+_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **14497**_
 
 ## Status at a glance
 
@@ -17,9 +17,9 @@ _Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findin
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 5 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 17 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
-| [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🟡 2 findings | 🔒 private |
+| [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🟡 2 findings | 🌐 public |
 
 ## Detailed findings
 
@@ -123,10 +123,10 @@ _335 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
+| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -190,10 +190,22 @@ _335 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 _6795 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 5 findings
+### `repo-health` — 17 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
+| gcp-api-key | `dashboard.json` | 1 | `a1be65f` | 2026-04-27 |
 | gcp-api-key | `docs/dashboard.json` | 1 | `b76c5a3` | 2026-04-22 |
 | gcp-api-key | `docs/dashboard.json` | 1 | `b76c5a3` | 2026-04-22 |
 | gcp-api-key | `dashboard.json` | 1 | `b76c5a3` | 2026-04-22 |
@@ -210,8 +222,8 @@ _6795 more findings — see [`reports/design-systems/latest.json`](reports/desig
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `scripts/crawl.js` | 94 | `9670382` | 2026-04-22 |
-| gcp-api-key | `scripts/crawl-competitor.js` | 78 | `9670382` | 2026-04-22 |
+| gcp-api-key | `scripts/crawl-competitor.js` | 78 | `82286aa` | 2026-04-30 |
+| gcp-api-key | `scripts/crawl.js` | 94 | `82286aa` | 2026-04-30 |
 
 ---
 

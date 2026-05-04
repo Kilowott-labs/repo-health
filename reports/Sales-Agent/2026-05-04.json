@@ -1,0 +1,22 @@
+[
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl-competitor.js",
+    "StartLine": 78,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl.js",
+    "StartLine": 94,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  }
+]

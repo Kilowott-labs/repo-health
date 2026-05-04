@@ -1,0 +1,14 @@
+{
+  "date": "2026-05-04",
+  "severity_counts": {
+    "critical": 0,
+    "high": 0,
+    "medium": 865,
+    "low": 48,
+    "info": 0
+  },
+  "scanner_counts": {
+    "phpcs": 913
+  },
+  "total": 913
+}
