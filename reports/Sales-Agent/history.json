@@ -12,5 +12,12 @@
     "bySource": {
       "gitleaks": 2
     }
+  },
+  {
+    "date": "2026-05-04T06:13:35.888Z",
+    "count": 2,
+    "bySource": {
+      "gitleaks": 2
+    }
   }
 ]
