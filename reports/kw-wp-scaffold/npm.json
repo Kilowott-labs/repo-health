@@ -1,5 +1,29 @@
 [
   {
+    "RuleID": "GHSA-fv7c-fp4j-7gwp",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@babel/plugin-transform-modules-systemjs@7.12.0 - 7.29.0 — @babel/plugin-transform-modules-systemjs generates arbitrary code when compiling malicious input",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "@babel/plugin-transform-modules-systemjs",
+      "title": "@babel/plugin-transform-modules-systemjs generates arbitrary code when compiling malicious input",
+      "url": "https://github.com/advisories/GHSA-fv7c-fp4j-7gwp",
+      "cwe": [
+        "CWE-94",
+        "CWE-843"
+      ],
+      "cvss": {
+        "score": 8.2,
+        "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-vpq2-c234-7xj6",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -121,18 +145,348 @@
     }
   },
   {
+    "RuleID": "GHSA-w9j2-pvgh-6h63",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+      "url": "https://github.com/advisories/GHSA-w9j2-pvgh-6h63",
+      "cwe": [
+        "CWE-287",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 4.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-pmwg-cvhr-8vh7",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+      "url": "https://github.com/advisories/GHSA-pmwg-cvhr-8vh7",
+      "cwe": [
+        "CWE-183",
+        "CWE-441",
+        "CWE-918"
+      ],
+      "cvss": {
+        "score": 7.2,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-3w6x-2g7m-8v23",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+      "url": "https://github.com/advisories/GHSA-3w6x-2g7m-8v23",
+      "cwe": [
+        "CWE-915",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-q8qp-cvcw-x6jj",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+      "url": "https://github.com/advisories/GHSA-q8qp-cvcw-x6jj",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 7.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-xhjh-pmcv-23jw",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+      "url": "https://github.com/advisories/GHSA-xhjh-pmcv-23jw",
+      "cwe": [
+        "CWE-116",
+        "CWE-626"
+      ],
+      "cvss": {
+        "score": 3.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-445q-vr5w-6q77",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+      "url": "https://github.com/advisories/GHSA-445q-vr5w-6q77",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-m7pr-hjqh-92cm",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: no_proxy bypass via IP alias allows SSRF",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: no_proxy bypass via IP alias allows SSRF",
+      "url": "https://github.com/advisories/GHSA-m7pr-hjqh-92cm",
+      "cwe": [
+        "CWE-918"
+      ],
+      "cvss": {
+        "score": 6.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-62hf-57xw-28j9",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "url": "https://github.com/advisories/GHSA-62hf-57xw-28j9",
+      "cwe": [
+        "CWE-674"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-5c9x-8gcm-mpgx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+      "url": "https://github.com/advisories/GHSA-5c9x-8gcm-mpgx",
+      "cwe": [
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-vf2m-468p-8v99",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: HTTP adapter streamed responses bypass maxContentLength",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: HTTP adapter streamed responses bypass maxContentLength",
+      "url": "https://github.com/advisories/GHSA-vf2m-468p-8v99",
+      "cwe": [
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-pf86-5x62-jrwf",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+      "url": "https://github.com/advisories/GHSA-pf86-5x62-jrwf",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 7.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-6chq-wfr3-2hj9",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: Header Injection via Prototype Pollution",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: Header Injection via Prototype Pollution",
+      "url": "https://github.com/advisories/GHSA-6chq-wfr3-2hj9",
+      "cwe": [
+        "CWE-113",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 7.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-xx6v-rp6x-q39c",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+      "url": "https://github.com/advisories/GHSA-xx6v-rp6x-q39c",
+      "cwe": [
+        "CWE-183",
+        "CWE-201"
+      ],
+      "cvss": {
+        "score": 5.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-rp42-5vxx-qpwr",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "basic-ftp@<=5.2.2 — basic-ftp vulnerable to denial of service via unbounded memory consumption in Client.list()",
+    "Match": "basic-ftp@<=5.3.0 — basic-ftp vulnerable to denial of service via unbounded memory consumption in Client.list()",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
       "package": "basic-ftp",
       "title": "basic-ftp vulnerable to denial of service via unbounded memory consumption in Client.list()",
       "url": "https://github.com/advisories/GHSA-rp42-5vxx-qpwr",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-rpmf-866q-6p89",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "basic-ftp@<=5.3.0 — basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "basic-ftp",
+      "title": "basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+      "url": "https://github.com/advisories/GHSA-rpmf-866q-6p89",
       "cwe": [
         "CWE-400",
         "CWE-770"
@@ -164,6 +518,52 @@
     }
   },
   {
+    "RuleID": "GHSA-q3j6-qgpj-74h6",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "fast-uri@<=3.1.1 — fast-uri vulnerable to path traversal via percent-encoded dot segments",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "fast-uri",
+      "title": "fast-uri vulnerable to path traversal via percent-encoded dot segments",
+      "url": "https://github.com/advisories/GHSA-q3j6-qgpj-74h6",
+      "cwe": [
+        "CWE-22"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-v39h-62p7-jpjc",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "fast-uri@<=3.1.1 — fast-uri vulnerable to host confusion via percent-encoded authority delimiters",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "fast-uri",
+      "title": "fast-uri vulnerable to host confusion via percent-encoded authority delimiters",
+      "url": "https://github.com/advisories/GHSA-v39h-62p7-jpjc",
+      "cwe": [
+        "CWE-436"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-http-proxy-agent",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -180,6 +580,29 @@
         "version": "19.2.4",
         "isSemVerMajor": true
       }
+    }
+  },
+  {
+    "RuleID": "GHSA-v2v4-37r5-5v8g",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ip-address@<=10.1.0 — ip-address has XSS in Address6 HTML-emitting methods",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ip-address",
+      "title": "ip-address has XSS in Address6 HTML-emitting methods",
+      "url": "https://github.com/advisories/GHSA-v2v4-37r5-5v8g",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
     }
   },
   {
@@ -480,59 +903,12 @@
     }
   },
   {
-    "RuleID": "npm-sockjs",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "sockjs@>=0.3.17 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "sockjs",
-      "range": ">=0.3.17",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
-    }
-  },
-  {
-    "RuleID": "GHSA-w5hq-g745-h8pq",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "uuid@<14.0.0 — uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "uuid",
-      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
-      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
-      "cwe": [
-        "CWE-787",
-        "CWE-1285"
-      ],
-      "cvss": {
-        "score": 0,
-        "vectorString": null
-      },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
-    }
-  },
-  {
     "RuleID": "GHSA-9jgg-88mc-972h",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -559,7 +935,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site",
+    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {

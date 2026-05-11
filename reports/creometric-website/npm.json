@@ -13,7 +13,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -101,7 +101,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -151,7 +151,7 @@
       },
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -179,7 +179,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -207,7 +207,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -234,7 +234,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -261,7 +261,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -288,7 +288,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
@@ -407,7 +407,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.4",
+        "version": "16.2.6",
         "isSemVerMajor": true
       }
     }
