@@ -1,0 +1,69 @@
+[
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl-competitor.js",
+    "StartLine": 78,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl.js",
+    "StartLine": 94,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "GHSA-rpmf-866q-6p89",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "basic-ftp@<=5.3.0 — basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "basic-ftp",
+      "title": "basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+      "url": "https://github.com/advisories/GHSA-rpmf-866q-6p89",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-v2v4-37r5-5v8g",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ip-address@<=10.1.0 — ip-address has XSS in Address6 HTML-emitting methods",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ip-address",
+      "title": "ip-address has XSS in Address6 HTML-emitting methods",
+      "url": "https://github.com/advisories/GHSA-v2v4-37r5-5v8g",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  }
+]

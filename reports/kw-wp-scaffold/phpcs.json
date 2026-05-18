@@ -1,6 +1,516 @@
 [
   {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "blocks/blocks.php",
+    "StartLine": 17,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function kw_register_blocks()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 18,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 20,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 21,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 22,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 24,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 26,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 27,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 28,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 30,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 31,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 32,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 33,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 34,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 41,
+    "Commit": "",
+    "Date": "",
+    "Match": "The method parameter $post is never used",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "blocks/blocks.php",
+    "StartLine": 41,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function kw_block_categories()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 42,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "blocks/blocks.php",
+    "StartLine": 42,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 5,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 43,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 44,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 45,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 46,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 47,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 48,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 49,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 50,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 51,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "blocks/blocks.php",
+    "StartLine": 52,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "functions.php",
+    "StartLine": 17,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "functions.php",
+    "StartLine": 20,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "functions.php",
+    "StartLine": 23,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "functions.php",
+    "StartLine": 26,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "functions.php",
+    "StartLine": 29,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "functions.php",
+    "StartLine": 31,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
     "File": "core/core.php",
     "StartLine": 15,
     "Commit": "",
@@ -2985,561 +3495,6 @@
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "inc/woocommerce.php",
-    "StartLine": 18,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing doc comment for function kw_woocommerce_setup()",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 19,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 20,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 21,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 22,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "inc/woocommerce.php",
-    "StartLine": 31,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing doc comment for function kw_cart_to_checkout_redirect()",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 32,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 33,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 34,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 36,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 37,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 38,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 39,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 40,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 41,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 42,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 44,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 45,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 46,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 47,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 48,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "inc/woocommerce.php",
-    "StartLine": 57,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing doc comment for function kw_featured_image_placeholder()",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 58,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 59,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 60,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 62,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 63,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 64,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 66,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 67,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 68,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 69,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 71,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 72,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 73,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 74,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "inc/woocommerce.php",
-    "StartLine": 75,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
     "RuleID": "WordPress.Files.FileName.NotHyphenatedLowercase",
     "File": "inc/theme_setup.php",
     "StartLine": 1,
@@ -4500,116 +4455,26 @@
     }
   },
   {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "functions.php",
-    "StartLine": 17,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "functions.php",
-    "StartLine": 20,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "functions.php",
-    "StartLine": 23,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "functions.php",
-    "StartLine": 26,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "functions.php",
-    "StartLine": 29,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "functions.php",
-    "StartLine": 31,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
     "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "blocks/blocks.php",
-    "StartLine": 17,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing doc comment for function kw_register_blocks()",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 18,
     "Commit": "",
     "Date": "",
+    "Match": "Missing doc comment for function kw_woocommerce_setup()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 19,
+    "Commit": "",
+    "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
     "Source": "phpcs",
     "Severity": "medium",
@@ -4621,7 +4486,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 20,
     "Commit": "",
     "Date": "",
@@ -4636,7 +4501,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 21,
     "Commit": "",
     "Date": "",
@@ -4651,7 +4516,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 22,
     "Commit": "",
     "Date": "",
@@ -4665,98 +4530,23 @@
     }
   },
   {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 24,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 26,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 27,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 28,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 30,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "inc/woocommerce.php",
     "StartLine": 31,
     "Commit": "",
     "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Match": "Missing doc comment for function kw_cart_to_checkout_redirect()",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 1,
-      "fixable": true
+      "fixable": false
     }
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 32,
     "Commit": "",
     "Date": "",
@@ -4771,7 +4561,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 33,
     "Commit": "",
     "Date": "",
@@ -4786,7 +4576,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 34,
     "Commit": "",
     "Date": "",
@@ -4800,69 +4590,9 @@
     }
   },
   {
-    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 41,
-    "Commit": "",
-    "Date": "",
-    "Match": "The method parameter $post is never used",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "blocks/blocks.php",
-    "StartLine": 41,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing doc comment for function kw_block_categories()",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": false
-    }
-  },
-  {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 42,
-    "Commit": "",
-    "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "blocks/blocks.php",
-    "StartLine": 42,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 5,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 43,
+    "File": "inc/woocommerce.php",
+    "StartLine": 36,
     "Commit": "",
     "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
@@ -4876,7 +4606,97 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
+    "StartLine": 37,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 38,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 39,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 40,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 41,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 42,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
     "StartLine": 44,
     "Commit": "",
     "Date": "",
@@ -4891,7 +4711,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 45,
     "Commit": "",
     "Date": "",
@@ -4906,7 +4726,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 46,
     "Commit": "",
     "Date": "",
@@ -4921,7 +4741,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 47,
     "Commit": "",
     "Date": "",
@@ -4936,7 +4756,7 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
+    "File": "inc/woocommerce.php",
     "StartLine": 48,
     "Commit": "",
     "Date": "",
@@ -4950,9 +4770,24 @@
     }
   },
   {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "inc/woocommerce.php",
+    "StartLine": 57,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function kw_featured_image_placeholder()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": false
+    }
+  },
+  {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 49,
+    "File": "inc/woocommerce.php",
+    "StartLine": 58,
     "Commit": "",
     "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
@@ -4966,8 +4801,8 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 50,
+    "File": "inc/woocommerce.php",
+    "StartLine": 59,
     "Commit": "",
     "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
@@ -4981,8 +4816,8 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 51,
+    "File": "inc/woocommerce.php",
+    "StartLine": 60,
     "Commit": "",
     "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
@@ -4996,8 +4831,173 @@
   },
   {
     "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "blocks/blocks.php",
-    "StartLine": 52,
+    "File": "inc/woocommerce.php",
+    "StartLine": 62,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 63,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 64,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 66,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 67,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 68,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 69,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 71,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 72,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 73,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 74,
+    "Commit": "",
+    "Date": "",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "inc/woocommerce.php",
+    "StartLine": 75,
     "Commit": "",
     "Date": "",
     "Match": "Tabs must be used to indent lines; spaces are not allowed",
