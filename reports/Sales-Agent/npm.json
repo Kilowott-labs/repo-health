@@ -45,5 +45,28 @@
       },
       "fixAvailable": true
     }
+  },
+  {
+    "RuleID": "GHSA-58qx-3vcg-4xpx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@8.0.0 - 8.20.0 — ws: Uninitialized memory disclosure",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Uninitialized memory disclosure",
+      "url": "https://github.com/advisories/GHSA-58qx-3vcg-4xpx",
+      "cwe": [
+        "CWE-908"
+      ],
+      "cvss": {
+        "score": 4.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
   }
 ]

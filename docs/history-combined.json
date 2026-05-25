@@ -89,6 +89,21 @@
         "npm-audit": 26
       },
       "total": 30
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 15,
+        "medium": 14,
+        "low": 2,
+        "info": 0
+      },
+      "scanner_counts": {
+        "gitleaks": 4,
+        "npm-audit": 27
+      },
+      "total": 31
     }
   ],
   "WP-QA-Agent": [
@@ -154,6 +169,18 @@
     },
     {
       "date": "2026-05-18",
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {},
+      "total": 0
+    },
+    {
+      "date": "2026-05-25",
       "severity_counts": {
         "critical": 0,
         "high": 0,
@@ -255,6 +282,21 @@
         "semgrep": 2
       },
       "total": 6
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 1,
+        "medium": 6,
+        "low": 1,
+        "info": 0
+      },
+      "scanner_counts": {
+        "npm-audit": 6,
+        "semgrep": 2
+      },
+      "total": 8
     }
   ],
   "design-systems": [
@@ -353,6 +395,22 @@
         "semgrep": 3
       },
       "total": 6831
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 39,
+        "medium": 6070,
+        "low": 731,
+        "info": 0
+      },
+      "scanner_counts": {
+        "npm-audit": 83,
+        "phpcs": 6754,
+        "semgrep": 3
+      },
+      "total": 6840
     }
   ],
   "Claude-skills": [
@@ -418,6 +476,18 @@
     },
     {
       "date": "2026-05-18",
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {},
+      "total": 0
+    },
+    {
+      "date": "2026-05-25",
       "severity_counts": {
         "critical": 0,
         "high": 0,
@@ -531,6 +601,23 @@
         "semgrep": 3
       },
       "total": 6366
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 45,
+        "medium": 5886,
+        "low": 444,
+        "info": 0
+      },
+      "scanner_counts": {
+        "gitleaks": 6,
+        "npm-audit": 83,
+        "phpcs": 6283,
+        "semgrep": 3
+      },
+      "total": 6375
     }
   ],
   "kw-figma-preflight": [
@@ -596,6 +683,18 @@
     },
     {
       "date": "2026-05-18",
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {},
+      "total": 0
+    },
+    {
+      "date": "2026-05-25",
       "severity_counts": {
         "critical": 0,
         "high": 0,
@@ -697,6 +796,21 @@
         "phpcs": 334
       },
       "total": 376
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 23,
+        "medium": 343,
+        "low": 14,
+        "info": 0
+      },
+      "scanner_counts": {
+        "npm-audit": 46,
+        "phpcs": 334
+      },
+      "total": 380
     }
   ],
   "kw-security-plugin": [
@@ -783,6 +897,20 @@
         "phpcs": 913
       },
       "total": 913
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 865,
+        "low": 48,
+        "info": 0
+      },
+      "scanner_counts": {
+        "phpcs": 913
+      },
+      "total": 913
     }
   ],
   "kw-wp-factory": [
@@ -848,6 +976,18 @@
     },
     {
       "date": "2026-05-18",
+      "severity_counts": {
+        "critical": 0,
+        "high": 0,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {},
+      "total": 0
+    },
+    {
+      "date": "2026-05-25",
       "severity_counts": {
         "critical": 0,
         "high": 0,
@@ -947,6 +1087,21 @@
         "semgrep": 1
       },
       "total": 161
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 485,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {
+        "gitleaks": 484,
+        "semgrep": 1
+      },
+      "total": 485
     }
   ],
   "industrisalg-repo-main": [
@@ -1008,6 +1163,20 @@
     },
     {
       "date": "2026-05-18",
+      "severity_counts": {
+        "critical": 0,
+        "high": 1,
+        "medium": 0,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {
+        "gitleaks": 1
+      },
+      "total": 1
+    },
+    {
+      "date": "2026-05-25",
       "severity_counts": {
         "critical": 0,
         "high": 1,
@@ -1093,6 +1262,21 @@
         "npm-audit": 2
       },
       "total": 4
+    },
+    {
+      "date": "2026-05-25",
+      "severity_counts": {
+        "critical": 0,
+        "high": 3,
+        "medium": 2,
+        "low": 0,
+        "info": 0
+      },
+      "scanner_counts": {
+        "gitleaks": 2,
+        "npm-audit": 3
+      },
+      "total": 5
     }
   ]
 }

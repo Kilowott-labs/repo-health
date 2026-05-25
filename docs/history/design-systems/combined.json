@@ -94,5 +94,21 @@
       "semgrep": 3
     },
     "total": 6831
+  },
+  {
+    "date": "2026-05-25",
+    "severity_counts": {
+      "critical": 0,
+      "high": 39,
+      "medium": 6070,
+      "low": 731,
+      "info": 0
+    },
+    "scanner_counts": {
+      "npm-audit": 83,
+      "phpcs": 6754,
+      "semgrep": 3
+    },
+    "total": 6840
   }
 ]

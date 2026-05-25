@@ -1,25 +1,25 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-05-18 06:57:19 UTC**_  
-_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **14688**_
+_Last regenerated: **2026-05-25 07:15:21 UTC**_  
+_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **15038**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6366 findings | 🌐 public |
-| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 376 findings | 🔒 private |
-| [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 30 findings | 🌐 public |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6375 findings | 🌐 public |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 380 findings | 🔒 private |
+| [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 31 findings | 🌐 public |
 | [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟢 clean | 🌐 public |
-| [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 6 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6831 findings | 🌐 public |
+| [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 8 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6840 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 161 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 485 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
-| [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🟡 4 findings | 🌐 public |
+| [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 5 findings | 🌐 public |
 
 ## Detailed findings
 
@@ -55,7 +55,7 @@ _Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findin
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6366 findings
+### `nordic-fund-day` — 6375 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -75,19 +75,19 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@typescript-eslint/utils | `package-lock.json` |  | `` |  |
 | npm-@wordpress/block-editor | `package-lock.json` |  | `` |  |
 | npm-@wordpress/blocks | `package-lock.json` |  | `` |  |
+| npm-@wordpress/commands | `package-lock.json` |  | `` |  |
+| npm-@wordpress/components | `package-lock.json` |  | `` |  |
 | npm-@wordpress/core-data | `package-lock.json` |  | `` |  |
 | npm-@wordpress/editor | `package-lock.json` |  | `` |  |
 | npm-@wordpress/icons | `package-lock.json` |  | `` |  |
+| npm-@wordpress/interface | `package-lock.json` |  | `` |  |
 | npm-@wordpress/patterns | `package-lock.json` |  | `` |  |
-| npm-@wordpress/reusable-blocks | `package-lock.json` |  | `` |  |
-| npm-@wordpress/scripts | `package-lock.json` |  | `` |  |
-| npm-@wordpress/server-side-render | `package-lock.json` |  | `` |  |
-| GHSA-3p68-rc4w-qgx5 | `package-lock.json` |  | `` |  |
-| GHSA-fvcv-3m26-pcqx | `package-lock.json` |  | `` |  |
+| npm-@wordpress/plugins | `package-lock.json` |  | `` |  |
+| npm-@wordpress/preferences | `package-lock.json` |  | `` |  |
 
-_6341 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6350 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
-### `kw-wp-scaffold` — 376 findings
+### `kw-wp-scaffold` — 380 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -114,23 +114,24 @@ _6341 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | GHSA-q8qp-cvcw-x6jj | `package-lock.json` |  | `` |  |
 | GHSA-rp42-5vxx-qpwr | `package-lock.json` |  | `` |  |
 | GHSA-rpmf-866q-6p89 | `package-lock.json` |  | `` |  |
+| npm-body-parser | `package-lock.json` |  | `` |  |
 | npm-copy-webpack-plugin | `package-lock.json` |  | `` |  |
-| GHSA-q3j6-qgpj-74h6 | `package-lock.json` |  | `` |  |
 
-_351 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
+_355 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
-### `creometric-website` — 30 findings
+### `creometric-website` — 31 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
+| GHSA-jxxr-4gwj-5jf2 | `package-lock.json` |  | `` |  |
 | npm-eslint-config-next | `package-lock.json` |  | `` |  |
 | GHSA-rf6f-7fwh-wjgh | `package-lock.json` |  | `` |  |
 | GHSA-5j98-mcp5-4vw2 | `package-lock.json` |  | `` |  |
@@ -147,22 +148,23 @@ _351 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 | GHSA-h64f-5h5j-jqjh | `package-lock.json` |  | `` |  |
 | GHSA-c4j6-fc7j-m34r | `package-lock.json` |  | `` |  |
 | GHSA-wfc6-r584-vfw7 | `package-lock.json` |  | `` |  |
-| GHSA-36qx-fr4f-26g5 | `package-lock.json` |  | `` |  |
 
-_5 more findings — see [`reports/creometric-website/latest.json`](reports/creometric-website/latest.json)._
+_6 more findings — see [`reports/creometric-website/latest.json`](reports/creometric-website/latest.json)._
 
-### `snehanair-ship-it-site-monitor` — 6 findings
+### `snehanair-ship-it-site-monitor` — 8 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
+| npm-node-cron | `package-lock.json` |  | `` |  |
 | GHSA-mm7p-fcc7-pg87 | `package-lock.json` |  | `` |  |
 | GHSA-rcmh-qjqh-p98v | `package-lock.json` |  | `` |  |
 | GHSA-c7w3-x93f-qmm8 | `package-lock.json` |  | `` |  |
 | GHSA-vvjj-xcjg-gr5g | `package-lock.json` |  | `` |  |
+| GHSA-w5hq-g745-h8pq | `package-lock.json` |  | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
 
-### `design-systems` — 6831 findings
+### `design-systems` — 6840 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -176,55 +178,55 @@ _5 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | npm-@typescript-eslint/utils | `package-lock.json` |  | `` |  |
 | npm-@wordpress/block-editor | `package-lock.json` |  | `` |  |
 | npm-@wordpress/blocks | `package-lock.json` |  | `` |  |
+| npm-@wordpress/commands | `package-lock.json` |  | `` |  |
+| npm-@wordpress/components | `package-lock.json` |  | `` |  |
 | npm-@wordpress/core-data | `package-lock.json` |  | `` |  |
 | npm-@wordpress/editor | `package-lock.json` |  | `` |  |
 | npm-@wordpress/icons | `package-lock.json` |  | `` |  |
+| npm-@wordpress/interface | `package-lock.json` |  | `` |  |
 | npm-@wordpress/patterns | `package-lock.json` |  | `` |  |
+| npm-@wordpress/plugins | `package-lock.json` |  | `` |  |
+| npm-@wordpress/preferences | `package-lock.json` |  | `` |  |
 | npm-@wordpress/reusable-blocks | `package-lock.json` |  | `` |  |
 | npm-@wordpress/scripts | `package-lock.json` |  | `` |  |
 | npm-@wordpress/server-side-render | `package-lock.json` |  | `` |  |
 | GHSA-3p68-rc4w-qgx5 | `package-lock.json` |  | `` |  |
-| GHSA-fvcv-3m26-pcqx | `package-lock.json` |  | `` |  |
 | GHSA-w9j2-pvgh-6h63 | `package-lock.json` |  | `` |  |
 | GHSA-pmwg-cvhr-8vh7 | `package-lock.json` |  | `` |  |
-| GHSA-3w6x-2g7m-8v23 | `package-lock.json` |  | `` |  |
-| GHSA-xhjh-pmcv-23jw | `package-lock.json` |  | `` |  |
-| GHSA-445q-vr5w-6q77 | `package-lock.json` |  | `` |  |
-| GHSA-m7pr-hjqh-92cm | `package-lock.json` |  | `` |  |
 
-_6806 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6815 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 161 findings
+### `repo-health` — 485 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `102a3ed` | 2026-05-11 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
 
-_136 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_460 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 
@@ -232,7 +234,7 @@ _136 more findings — see [`reports/repo-health/latest.json`](reports/repo-heal
 |---|---|---|---|---|
 | generic-api-key | `nopcommerce-source/src/Tests/Nop.Tests/Nop.Services.Tests/Tax/TaxServiceTests.cs` | 36 | `4f998bd` | 2026-04-20 |
 
-### `Sales-Agent` — 4 findings
+### `Sales-Agent` — 5 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -240,6 +242,7 @@ _136 more findings — see [`reports/repo-health/latest.json`](reports/repo-heal
 | gcp-api-key | `scripts/crawl.js` | 94 | `82286aa` | 2026-04-30 |
 | GHSA-rpmf-866q-6p89 | `package-lock.json` |  | `` |  |
 | GHSA-v2v4-37r5-5v8g | `package-lock.json` |  | `` |  |
+| GHSA-58qx-3vcg-4xpx | `package-lock.json` |  | `` |  |
 
 ---
 

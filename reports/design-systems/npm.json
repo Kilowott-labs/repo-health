@@ -52,7 +52,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@tootallnate/once@<3.0.1 — @tootallnate/once vulnerable to Incorrect Control Flow Scoping",
+    "Match": "@tootallnate/once@<2.0.1 — @tootallnate/once vulnerable to Incorrect Control Flow Scoping",
     "Source": "npm-audit",
     "Severity": "low",
     "Extra": {
@@ -66,11 +66,7 @@
         "score": 3.3,
         "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -179,6 +175,36 @@
     }
   },
   {
+    "RuleID": "npm-@wordpress/commands",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/commands@<=1.10.0 || 1.15.0 - 1.44.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/commands",
+      "range": "<=1.10.0 || 1.15.0 - 1.44.0",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/components",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/components@<=33.0.1-next.v.202604201441.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/components",
+      "range": "<=33.0.1-next.v.202604201441.0",
+      "fixAvailable": false
+    }
+  },
+  {
     "RuleID": "npm-@wordpress/core-data",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -224,6 +250,21 @@
     }
   },
   {
+    "RuleID": "npm-@wordpress/interface",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/interface@<=7.0.0 || 9.0.0 - 9.29.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/interface",
+      "range": "<=7.0.0 || 9.0.0 - 9.29.0",
+      "fixAvailable": false
+    }
+  },
+  {
     "RuleID": "npm-@wordpress/patterns",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -235,6 +276,36 @@
     "Extra": {
       "package": "@wordpress/patterns",
       "range": "*",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/plugins",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/plugins@6.0.0 - 7.10.0 || 7.15.0 - 7.44.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/plugins",
+      "range": "6.0.0 - 7.10.0 || 7.15.0 - 7.44.0",
+      "fixAvailable": false
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/preferences",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/preferences@<=4.10.0 || 4.15.0 - 4.44.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/preferences",
+      "range": "<=4.10.0 || 4.15.0 - 4.44.0",
       "fixAvailable": false
     }
   },
@@ -278,12 +349,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/server-side-render@1.20.2-next.0 - 1.20.2-next.1 || 1.20.8-next.53e2173694.0 - 1.20.8-next.645224df70.0 || >=1.21.0 — transitive vulnerability",
+    "Match": "@wordpress/server-side-render@* — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/server-side-render",
-      "range": "1.20.2-next.0 - 1.20.2-next.1 || 1.20.8-next.53e2173694.0 - 1.20.8-next.645224df70.0 || >=1.21.0",
+      "range": "*",
       "fixAvailable": false
     }
   },
@@ -302,31 +373,6 @@
       "url": "https://github.com/advisories/GHSA-3p68-rc4w-qgx5",
       "cwe": [
         "CWE-441",
-        "CWE-918"
-      ],
-      "cvss": {
-        "score": 4.8,
-        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "GHSA-fvcv-3m26-pcqx",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "axios",
-      "title": "Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
-      "url": "https://github.com/advisories/GHSA-fvcv-3m26-pcqx",
-      "cwe": [
-        "CWE-113",
-        "CWE-444",
         "CWE-918"
       ],
       "cvss": {
@@ -643,6 +689,31 @@
     }
   },
   {
+    "RuleID": "GHSA-fvcv-3m26-pcqx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.1 — Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain",
+      "url": "https://github.com/advisories/GHSA-fvcv-3m26-pcqx",
+      "cwe": [
+        "CWE-113",
+        "CWE-444",
+        "CWE-918"
+      ],
+      "cvss": {
+        "score": 4.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-6v7q-wjvx-w8wg",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -737,6 +808,21 @@
     }
   },
   {
+    "RuleID": "npm-body-parser",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "body-parser@1.20.3 - 1.20.4 || 2.0.0-beta.1 - 2.0.2 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "body-parser",
+      "range": "1.20.3 - 1.20.4 || 2.0.0-beta.1 - 2.0.2",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-f886-m6hf-6m8v",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -788,12 +874,27 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "copy-webpack-plugin@4.3.0 - 13.0.1 — transitive vulnerability",
+    "Match": "copy-webpack-plugin@6.1.1 - 13.0.1 — transitive vulnerability",
     "Source": "npm-audit",
-    "Severity": "high",
+    "Severity": "medium",
     "Extra": {
       "package": "copy-webpack-plugin",
-      "range": "4.3.0 - 13.0.1",
+      "range": "6.1.1 - 13.0.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-express",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "express@4.21.0 - 4.22.1 || 5.0.0-alpha.1 - 5.0.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "express",
+      "range": "4.21.0 - 4.22.1 || 5.0.0-alpha.1 - 5.0.1",
       "fixAvailable": true
     }
   },
@@ -913,25 +1014,6 @@
     }
   },
   {
-    "RuleID": "npm-http-proxy-agent",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "http-proxy-agent@4.0.1 - 5.0.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "low",
-    "Extra": {
-      "package": "http-proxy-agent",
-      "range": "4.0.1 - 5.0.0",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
-    }
-  },
-  {
     "RuleID": "GHSA-v2v4-37r5-5v8g",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -952,44 +1034,6 @@
         "vectorString": null
       },
       "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-environment-jsdom",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-environment-jsdom@27.0.1 - 30.0.0-rc.1 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "low",
-    "Extra": {
-      "package": "jest-environment-jsdom",
-      "range": "27.0.1 - 30.0.0-rc.1",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
-    }
-  },
-  {
-    "RuleID": "npm-jsdom",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jsdom@16.6.0 - 22.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "low",
-    "Extra": {
-      "package": "jsdom",
-      "range": "16.6.0 - 22.1.0",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
     }
   },
   {
@@ -1497,6 +1541,29 @@
     }
   },
   {
+    "RuleID": "GHSA-q8mj-m7cp-5q26",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "qs@6.11.1 - 6.15.1 — qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "qs",
+      "title": "qs has a remotely triggerable DoS: qs.stringify crashes with TypeError on null/undefined entries in comma-format arrays when encodeValuesOnly is set",
+      "url": "https://github.com/advisories/GHSA-q8mj-m7cp-5q26",
+      "cwe": [
+        "CWE-476"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-5c6j-r48x-rmvq",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1568,12 +1635,55 @@
     }
   },
   {
+    "RuleID": "npm-sockjs",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "sockjs@>=0.3.17 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "sockjs",
+      "range": ">=0.3.17",
+      "fixAvailable": {
+        "name": "@wordpress/scripts",
+        "version": "19.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-w5hq-g745-h8pq",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "uuid@<11.1.1 — uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "uuid",
+      "title": "uuid: Missing buffer bounds check in v3/v5/v6 when buf is provided",
+      "url": "https://github.com/advisories/GHSA-w5hq-g745-h8pq",
+      "cwe": [
+        "CWE-787",
+        "CWE-1285"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": false
+    }
+  },
+  {
     "RuleID": "GHSA-9jgg-88mc-972h",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1600,7 +1710,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@<=5.2.0 — webpack-dev-server users' source code may be stolen when they access a malicious web site",
+    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1619,6 +1729,56 @@
         "version": "19.2.4",
         "isSemVerMajor": true
       }
+    }
+  },
+  {
+    "RuleID": "GHSA-79cf-xcqc-c78w",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "webpack-dev-server@* — webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "webpack-dev-server",
+      "title": "webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
+      "url": "https://github.com/advisories/GHSA-79cf-xcqc-c78w",
+      "cwe": [
+        "CWE-749"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": {
+        "name": "@wordpress/scripts",
+        "version": "19.2.4",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-58qx-3vcg-4xpx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@8.0.0 - 8.20.0 — ws: Uninitialized memory disclosure",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Uninitialized memory disclosure",
+      "url": "https://github.com/advisories/GHSA-58qx-3vcg-4xpx",
+      "cwe": [
+        "CWE-908"
+      ],
+      "cvss": {
+        "score": 4.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
     }
   }
 ]

@@ -100,5 +100,22 @@
       "semgrep": 3
     },
     "total": 6366
+  },
+  {
+    "date": "2026-05-25",
+    "severity_counts": {
+      "critical": 0,
+      "high": 45,
+      "medium": 5886,
+      "low": 444,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 6,
+      "npm-audit": 83,
+      "phpcs": 6283,
+      "semgrep": 3
+    },
+    "total": 6375
   }
 ]
