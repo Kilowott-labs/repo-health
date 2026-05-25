@@ -102,5 +102,13 @@
       "npm-audit": 42,
       "phpcs": 334
     }
+  },
+  {
+    "date": "2026-05-25T07:16:40.910Z",
+    "count": 380,
+    "bySource": {
+      "npm-audit": 46,
+      "phpcs": 334
+    }
   }
 ]
