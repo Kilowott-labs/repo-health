@@ -110,5 +110,13 @@
       "npm-audit": 6,
       "semgrep": 2
     }
+  },
+  {
+    "date": "2026-06-01T08:35:53.870Z",
+    "count": 8,
+    "bySource": {
+      "npm-audit": 6,
+      "semgrep": 2
+    }
   }
 ]
