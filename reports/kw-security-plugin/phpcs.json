@@ -1,11 +1,11 @@
 [
   {
-    "RuleID": "Squiz.Commenting.FileComment.WrongStyle",
-    "File": "kw-security.php",
-    "StartLine": 2,
+    "RuleID": "WordPress.Files.FileName.InvalidClassFileName",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 1,
     "Commit": "",
     "Date": "",
-    "Match": "You must use \"/**\" style comments for a file comment",
+    "Match": "Class file names should be based on the class name with \"class-\" prepended. Expected class-kw-hide-login.php, but found hide-login-url.php.",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -15,207 +15,57 @@
     }
   },
   {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 3,
+    "RuleID": "Squiz.Commenting.FileComment.MissingPackageTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 10,
     "Commit": "",
     "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 4,
-    "Commit": "",
-    "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 5,
-    "Commit": "",
-    "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 6,
-    "Commit": "",
-    "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 7,
-    "Commit": "",
-    "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
-    "File": "kw-security.php",
-    "StartLine": 8,
-    "Commit": "",
-    "Date": "",
-    "Match": "Found precision alignment of 2 spaces.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "kw-security.php",
-    "StartLine": 11,
-    "Commit": "",
-    "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Match": "Missing @package tag in file comment",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 2,
       "fixable": false
     }
   },
   {
-    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis",
-    "File": "kw-security.php",
-    "StartLine": 12,
+    "RuleID": "Squiz.Commenting.ClassComment.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 18,
     "Commit": "",
     "Date": "",
-    "Match": "No space after opening parenthesis is prohibited",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore",
-    "File": "kw-security.php",
-    "StartLine": 12,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space before \"!\"; 0 found",
+    "Match": "Missing doc comment for class KW_Hide_Login",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 5,
-      "fixable": true
+      "fixable": false
     }
   },
   {
-    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter",
-    "File": "kw-security.php",
-    "StartLine": 12,
+    "RuleID": "Squiz.Commenting.FunctionComment.WrongStyle",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 32,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 space after \"!\"; 0 found",
+    "Match": "You must use \"/**\" style comments for a function comment",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 5,
-      "fixable": true
+      "column": 16,
+      "fixable": false
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 12,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 40,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 6,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 12,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 34,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter",
-    "File": "kw-security.php",
-    "StartLine": 12,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after \"!\"; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 39,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 12,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 9 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -225,192 +75,177 @@
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 12,
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 49,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 57,
-      "fixable": true
+      "column": 13,
+      "fixable": false
     }
   },
   {
-    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis",
-    "File": "kw-security.php",
-    "StartLine": 12,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 57,
     "Commit": "",
     "Date": "",
-    "Match": "No space before closing parenthesis is prohibited",
+    "Match": "Expected 1 space after comma in argument list; 6 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 58,
+      "column": 36,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "kw-security.php",
-    "StartLine": 13,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 58,
     "Commit": "",
     "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Match": "Expected 1 space after comma in argument list; 4 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 38,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "kw-security.php",
-    "StartLine": 14,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 59,
     "Commit": "",
     "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Match": "Expected 1 space after comma in argument list; 11 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 31,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 17,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 65,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 9 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 35,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 17,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 65,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 9 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 41,
+      "column": 71,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 18,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 67,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 6 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 38,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 18,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 67,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 7 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 41,
+      "column": 74,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 19,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 68,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 8 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 36,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 19,
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 68,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Expected 1 space after comma in argument list; 9 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 41,
+      "column": 72,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 20,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 77,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Opening parenthesis of a multi-line function call must be the last content on the line",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 13,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 20,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.Indent",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 78,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 47,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 21,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Multi-line function call not indented correctly; expected 12 spaces but found 16",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -420,192 +255,42 @@
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 21,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 78,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Only one argument is allowed per line in a multi-line function call",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 34,
+      "column": 70,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 21,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 78,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Only one argument is allowed per line in a multi-line function call",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 58,
+      "column": 75,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 21,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 78,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 59,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 22,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 22,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 34,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 22,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 57,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 22,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 58,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 23,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 23,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 43,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 25,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 1,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceAfterArrayOpenerSingleLine",
-    "File": "kw-security.php",
-    "StartLine": 25,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after the array opener in a single line array. Found: no spaces",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 41,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceBeforeArrayCloserSingleLine",
-    "File": "kw-security.php",
-    "StartLine": 25,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space before the array closer in a single line array. Found: no spaces",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 76,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 25,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Closing parenthesis of a multi-line function call must be on a line by itself",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -615,114 +300,1824 @@
     }
   },
   {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "kw-security.php",
-    "StartLine": 27,
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 86,
     "Commit": "",
     "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 205,
       "fixable": false
     }
   },
   {
-    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis",
-    "File": "kw-security.php",
-    "StartLine": 28,
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 119,
     "Commit": "",
     "Date": "",
-    "Match": "No space after opening parenthesis is prohibited",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 28,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 119,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 28,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Universal.ControlStructures.DisallowLonelyIf.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 122,
+    "Commit": "",
+    "Date": "",
+    "Match": "If control structure block found as the only statement within an \"else\" block. Use elseif instead.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 15,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
-    "File": "kw-security.php",
-    "StartLine": 28,
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 123,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 28,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 123,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 10,
+      "column": 28,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 136,
+    "Commit": "",
+    "Date": "",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 24,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 136,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 24,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 154,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Universal.NamingConventions.NoReservedKeywordParameterNames.stringFound",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 157,
+    "Commit": "",
+    "Date": "",
+    "Match": "It is recommended not to use reserved keyword \"string\" as function parameter name. Found: $string",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 48,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 166,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 182,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 205,
+    "Commit": "",
+    "Date": "",
+    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 24,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 205,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 205,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 205,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 209,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 209,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 209,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 214,
+    "Commit": "",
+    "Date": "",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 5 spaces but found 8 spaces",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 44,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
-    "File": "kw-security.php",
-    "StartLine": 28,
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 215,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 1 space but found 4 spaces",
     "Source": "phpcs",
-    "Severity": "medium",
+    "Severity": "low",
     "Extra": {
-      "type": "ERROR",
-      "column": 55,
+      "type": "WARNING",
+      "column": 44,
       "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis",
-    "File": "kw-security.php",
-    "StartLine": 28,
+    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 216,
     "Commit": "",
     "Date": "",
-    "Match": "No space before closing parenthesis is prohibited",
+    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 65,
+      "column": 17,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 216,
+    "Commit": "",
+    "Date": "",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 16 spaces but found 19 spaces",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 44,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
-    "File": "kw-security.php",
-    "StartLine": 29,
+    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 218,
     "Commit": "",
     "Date": "",
-    "Match": "Tabs must be used to indent lines; spaces are not allowed",
+    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 13,
       "fixable": true
     }
   },
   {
-    "RuleID": "PSR2.Files.ClosingTag.NotAllowed",
-    "File": "kw-security.php",
-    "StartLine": 34,
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 223,
     "Commit": "",
     "Date": "",
-    "Match": "A closing tag is not permitted at the end of a PHP file",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 31,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 224,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 31,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 227,
+    "Commit": "",
+    "Date": "",
+    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 17,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 229,
+    "Commit": "",
+    "Date": "",
+    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 231,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 231,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 231,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 41,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 236,
+    "Commit": "",
+    "Date": "",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 5 spaces but found 8 spaces",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 44,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 237,
+    "Commit": "",
+    "Date": "",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 1 space but found 4 spaces",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 44,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 238,
+    "Commit": "",
+    "Date": "",
+    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 17,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 238,
+    "Commit": "",
+    "Date": "",
+    "Match": "Equals sign not aligned with surrounding assignments; expected 16 spaces but found 19 spaces",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 44,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 254,
+    "Commit": "",
+    "Date": "",
+    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 24,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 254,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 254,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 254,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 257,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 25,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 257,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 61,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 257,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 87,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 268,
+    "Commit": "",
+    "Date": "",
+    "Match": "Use Yoda Condition checks, you must.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 29,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 269,
+    "Commit": "",
+    "Date": "",
+    "Match": "Use Yoda Condition checks, you must.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 70,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 276,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 50,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 300,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['QUERY_STRING'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 69,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 304,
+    "Commit": "",
+    "Date": "",
+    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 309,
+    "Commit": "",
+    "Date": "",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 32,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 309,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 32,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 311,
+    "Commit": "",
+    "Date": "",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 35,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 311,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 35,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 311,
+    "Commit": "",
+    "Date": "",
+    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 37,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.PHP.NoSilencedErrors.Discouraged",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 316,
+    "Commit": "",
+    "Date": "",
+    "Match": "Silencing errors is strongly discouraged. Use proper error checking instead. Found: @require_once WPINC ....",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 21,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 320,
+    "Commit": "",
+    "Date": "",
+    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 38,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 320,
+    "Commit": "",
+    "Date": "",
+    "Match": "Assignments must be the first block of code on a line",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 38,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 327,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['QUERY_STRING'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 77,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 336,
+    "Commit": "",
+    "Date": "",
+    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 342,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 49,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 342,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 78,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 342,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_REQUEST['redirect_to'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 78,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 342,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_REQUEST['redirect_to']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 78,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 346,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 35,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WooCommerce.Commenting.CommentHooks.MissingHookComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 347,
+    "Commit": "",
+    "Date": "",
+    "Match": "A hook was found, but was not accompanied by a docblock comment on the line above to clarify the meaning of the hook.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 47,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.PHP.NoSilencedErrors.Discouraged",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 358,
+    "Commit": "",
+    "Date": "",
+    "Match": "Silencing errors is strongly discouraged. Use proper error checking instead. Found: @require_once ABSPATH ....",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 17,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Commenting.DocComment.MissingShort",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 368,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing short description in doc comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 368,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$path\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 368,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$scheme\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 368,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$blog_id\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 368,
+    "Commit": "",
+    "Date": "",
+    "Match": "Parameter comment must end with a full stop",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 369,
+    "Commit": "",
+    "Date": "",
+    "Match": "The method parameter $blog_id is never used",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Commenting.DocComment.MissingShort",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 373,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing short description in doc comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 373,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$path\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 373,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$scheme\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 373,
+    "Commit": "",
+    "Date": "",
+    "Match": "Parameter comment must end with a full stop",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Commenting.DocComment.MissingShort",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 378,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing short description in doc comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 378,
+    "Commit": "",
+    "Date": "",
+    "Match": "Doc comment for parameter \"$status\" missing",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 9,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 378,
+    "Commit": "",
+    "Date": "",
+    "Match": "Parameter comment must end with a full stop",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 379,
+    "Commit": "",
+    "Date": "",
+    "Match": "The method parameter $status is never used",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 390,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 391,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 433,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 25,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 438,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_POST['post_password'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 93,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 438,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_POST['post_password']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 93,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 438,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 93,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 448,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 31,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 460,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 461,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 462,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 480,
+    "Commit": "",
+    "Date": "",
+    "Match": "Use Yoda Condition checks, you must.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 31,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.WrongStyle",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 491,
+    "Commit": "",
+    "Date": "",
+    "Match": "You must use \"/**\" style comments for a function comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 495,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 39,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 502,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 61,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 510,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 77,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 516,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 space after comma in argument list; 11 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 52,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 520,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function settings_section_desc()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 522,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 159,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 526,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function whl_page_input()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 528,
+    "Commit": "",
+    "Date": "",
+    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 33,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 532,
+    "Commit": "",
+    "Date": "",
+    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 33,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 536,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 110,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 540,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing doc comment for function whl_redirect_admin_input()",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 16,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 542,
+    "Commit": "",
+    "Date": "",
+    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 33,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 546,
+    "Commit": "",
+    "Date": "",
+    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 33,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 550,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 163,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 563,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 27,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.NonceVerification.Recommended",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 564,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 29,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 569,
+    "Commit": "",
+    "Date": "",
+    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found '__'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 25,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 569,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 123,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 588,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 53,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 588,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 53,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 588,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 53,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 589,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 56,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 589,
+    "Commit": "",
+    "Date": "",
+    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 56,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 589,
+    "Commit": "",
+    "Date": "",
+    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 56,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 592,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 69,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 603,
+    "Commit": "",
+    "Date": "",
+    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 64,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 614,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 628,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 629,
+    "Commit": "",
+    "Date": "",
+    "Match": "Missing parameter comment",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 12,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 658,
+    "Commit": "",
+    "Date": "",
+    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 13,
+      "fixable": false
+    }
+  },
+  {
+    "RuleID": "PSR2.Classes.ClassDeclaration.CloseBraceAfterBody",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 671,
+    "Commit": "",
+    "Date": "",
+    "Match": "The closing brace for the class must go on the next line after the body",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 5,
       "fixable": true
     }
   },
   {
     "RuleID": "PSR2.Files.EndFileNewline.NoneFound",
-    "File": "kw-security.php",
-    "StartLine": 34,
+    "File": "classes/hide-login-url.php",
+    "StartLine": 675,
     "Commit": "",
     "Date": "",
     "Match": "Expected 1 newline at end of file; 0 found",
@@ -730,7 +2125,7 @@
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 1,
+      "column": 3,
       "fixable": true
     }
   },
@@ -11565,12 +12960,12 @@
     }
   },
   {
-    "RuleID": "WordPress.Files.FileName.InvalidClassFileName",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 1,
+    "RuleID": "Squiz.Commenting.FileComment.WrongStyle",
+    "File": "kw-security.php",
+    "StartLine": 2,
     "Commit": "",
     "Date": "",
-    "Match": "Class file names should be based on the class name with \"class-\" prepended. Expected class-kw-hide-login.php, but found hide-login-url.php.",
+    "Match": "You must use \"/**\" style comments for a file comment",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -11580,57 +12975,207 @@
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FileComment.MissingPackageTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 10,
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 3,
     "Commit": "",
     "Date": "",
-    "Match": "Missing @package tag in file comment",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 4,
+    "Commit": "",
+    "Date": "",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 5,
+    "Commit": "",
+    "Date": "",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 6,
+    "Commit": "",
+    "Date": "",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 7,
+    "Commit": "",
+    "Date": "",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Universal.WhiteSpace.PrecisionAlignment.Found",
+    "File": "kw-security.php",
+    "StartLine": 8,
+    "Commit": "",
+    "Date": "",
+    "Match": "Found precision alignment of 2 spaces.",
+    "Source": "phpcs",
+    "Severity": "low",
+    "Extra": {
+      "type": "WARNING",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "kw-security.php",
+    "StartLine": 11,
+    "Commit": "",
+    "Date": "",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 2,
+      "column": 1,
       "fixable": false
     }
   },
   {
-    "RuleID": "Squiz.Commenting.ClassComment.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 18,
+    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis",
+    "File": "kw-security.php",
+    "StartLine": 12,
     "Commit": "",
     "Date": "",
-    "Match": "Missing doc comment for class KW_Hide_Login",
+    "Match": "No space after opening parenthesis is prohibited",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore",
+    "File": "kw-security.php",
+    "StartLine": 12,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 space before \"!\"; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 5,
-      "fixable": false
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.WrongStyle",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 32,
+    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter",
+    "File": "kw-security.php",
+    "StartLine": 12,
     "Commit": "",
     "Date": "",
-    "Match": "You must use \"/**\" style comments for a function comment",
+    "Match": "Expected 1 space after \"!\"; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 16,
-      "fixable": false
+      "column": 5,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 40,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 12,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 9 found",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 6,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 12,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 34,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter",
+    "File": "kw-security.php",
+    "StartLine": 12,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 space after \"!\"; 0 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 39,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 12,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -11640,177 +13185,42 @@
     }
   },
   {
-    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 49,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 12,
     "Commit": "",
     "Date": "",
-    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 13,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 57,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 6 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 36,
+      "column": 57,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 58,
+    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis",
+    "File": "kw-security.php",
+    "StartLine": 12,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 4 found",
+    "Match": "No space before closing parenthesis is prohibited",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 38,
+      "column": 58,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 59,
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "kw-security.php",
+    "StartLine": 13,
     "Commit": "",
     "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 11 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 31,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 65,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 9 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 35,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 65,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 9 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 71,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 67,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 6 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 38,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 67,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 7 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 74,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 68,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 8 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 36,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 68,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 9 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 72,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 77,
-    "Commit": "",
-    "Date": "",
-    "Match": "Opening parenthesis of a multi-line function call must be the last content on the line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.Indent",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 78,
-    "Commit": "",
-    "Date": "",
-    "Match": "Multi-line function call not indented correctly; expected 12 spaces but found 16",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
@@ -11820,1869 +13230,459 @@
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 78,
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "kw-security.php",
+    "StartLine": 14,
     "Commit": "",
     "Date": "",
-    "Match": "Only one argument is allowed per line in a multi-line function call",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 70,
+      "column": 1,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.MultipleArguments",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 78,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 17,
     "Commit": "",
     "Date": "",
-    "Match": "Only one argument is allowed per line in a multi-line function call",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 75,
+      "column": 1,
       "fixable": true
     }
   },
   {
-    "RuleID": "PEAR.Functions.FunctionCallSignature.CloseBracketLine",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 78,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 17,
     "Commit": "",
     "Date": "",
-    "Match": "Closing parenthesis of a multi-line function call must be on a line by itself",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 77,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 86,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 205,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 119,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 28,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 119,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 28,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Universal.ControlStructures.DisallowLonelyIf.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 122,
-    "Commit": "",
-    "Date": "",
-    "Match": "If control structure block found as the only statement within an \"else\" block. Use elseif instead.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 15,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 123,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 28,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 123,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 28,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 136,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 24,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 136,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 24,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 154,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Universal.NamingConventions.NoReservedKeywordParameterNames.stringFound",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 157,
-    "Commit": "",
-    "Date": "",
-    "Match": "It is recommended not to use reserved keyword \"string\" as function parameter name. Found: $string",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 48,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 166,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 182,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 205,
-    "Commit": "",
-    "Date": "",
-    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 24,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 205,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 205,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 205,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 209,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 41,
-      "fixable": false
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 209,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 18,
     "Commit": "",
     "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 18,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 41,
-      "fixable": false
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 209,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 19,
     "Commit": "",
     "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 1,
+      "fixable": true
+    }
+  },
+  {
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 19,
+    "Commit": "",
+    "Date": "",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 41,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 214,
-    "Commit": "",
-    "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 5 spaces but found 8 spaces",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 44,
       "fixable": true
     }
   },
   {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 215,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 20,
     "Commit": "",
     "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 1 space but found 4 spaces",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
-    "Severity": "low",
+    "Severity": "medium",
     "Extra": {
-      "type": "WARNING",
-      "column": 44,
+      "type": "ERROR",
+      "column": 1,
       "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 216,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 20,
     "Commit": "",
     "Date": "",
-    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 17,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 216,
-    "Commit": "",
-    "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 16 spaces but found 19 spaces",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 44,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 218,
-    "Commit": "",
-    "Date": "",
-    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 223,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 31,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 224,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 31,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 227,
-    "Commit": "",
-    "Date": "",
-    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 17,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 229,
-    "Commit": "",
-    "Date": "",
-    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 231,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 41,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 231,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 41,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 231,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 41,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 236,
-    "Commit": "",
-    "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 5 spaces but found 8 spaces",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 44,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 237,
-    "Commit": "",
-    "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 1 space but found 4 spaces",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 44,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 238,
-    "Commit": "",
-    "Date": "",
-    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 17,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Formatting.MultipleStatementAlignment.NotSameWarning",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 238,
-    "Commit": "",
-    "Date": "",
-    "Match": "Equals sign not aligned with surrounding assignments; expected 16 spaces but found 19 spaces",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 44,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 254,
-    "Commit": "",
-    "Date": "",
-    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 24,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 254,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 254,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 254,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 257,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 25,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 257,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 61,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 257,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 87,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 268,
-    "Commit": "",
-    "Date": "",
-    "Match": "Use Yoda Condition checks, you must.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 29,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 269,
-    "Commit": "",
-    "Date": "",
-    "Match": "Use Yoda Condition checks, you must.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 70,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 276,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 50,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 300,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['QUERY_STRING'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 69,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 304,
-    "Commit": "",
-    "Date": "",
-    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 309,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 32,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 309,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 32,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 311,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 35,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 311,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 35,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.AlternativeFunctions.parse_url_parse_url",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 311,
-    "Commit": "",
-    "Date": "",
-    "Match": "parse_url() is discouraged because of inconsistency in the output across PHP versions; use wp_parse_url() instead.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 37,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.PHP.NoSilencedErrors.Discouraged",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 316,
-    "Commit": "",
-    "Date": "",
-    "Match": "Silencing errors is strongly discouraged. Use proper error checking instead. Found: @require_once WPINC ....",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 21,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.CodeAnalysis.AssignmentInCondition.Found",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 320,
-    "Commit": "",
-    "Date": "",
-    "Match": "Variable assignment found within a condition. Did you mean to do a comparison ?",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 38,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 320,
-    "Commit": "",
-    "Date": "",
-    "Match": "Assignments must be the first block of code on a line",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 38,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 327,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['QUERY_STRING'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 77,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.WhiteSpace.ScopeIndent.Incorrect",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 336,
-    "Commit": "",
-    "Date": "",
-    "Match": "Line indented incorrectly; expected at least 4 tabs, found 3",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": true
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 342,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 49,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 342,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 78,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 342,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_REQUEST['redirect_to'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 78,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 342,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_REQUEST['redirect_to']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 78,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 346,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 35,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WooCommerce.Commenting.CommentHooks.MissingHookComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 347,
-    "Commit": "",
-    "Date": "",
-    "Match": "A hook was found, but was not accompanied by a docblock comment on the line above to clarify the meaning of the hook.",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 47,
-      "fixable": false
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.PHP.NoSilencedErrors.Discouraged",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 358,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 21,
     "Commit": "",
     "Date": "",
-    "Match": "Silencing errors is strongly discouraged. Use proper error checking instead. Found: @require_once ABSPATH ....",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 17,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Commenting.DocComment.MissingShort",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 368,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing short description in doc comment",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 368,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 21,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$path\" missing",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 34,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 368,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 21,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$scheme\" missing",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 58,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 368,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 21,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$blog_id\" missing",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 59,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 368,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 22,
     "Commit": "",
     "Date": "",
-    "Match": "Parameter comment must end with a full stop",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 13,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 369,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 22,
     "Commit": "",
     "Date": "",
-    "Match": "The method parameter $blog_id is never used",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 16,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Commenting.DocComment.MissingShort",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 373,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing short description in doc comment",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 34,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 373,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 22,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$path\" missing",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 57,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 373,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 22,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$scheme\" missing",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 58,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 373,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 23,
     "Commit": "",
     "Date": "",
-    "Match": "Parameter comment must end with a full stop",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 13,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Generic.Commenting.DocComment.MissingShort",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 378,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 23,
     "Commit": "",
     "Date": "",
-    "Match": "Missing short description in doc comment",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 43,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamTag",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 378,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 25,
     "Commit": "",
     "Date": "",
-    "Match": "Doc comment for parameter \"$status\" missing",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 9,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.ParamCommentFullStop",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 378,
+    "RuleID": "NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceAfterArrayOpenerSingleLine",
+    "File": "kw-security.php",
+    "StartLine": 25,
     "Commit": "",
     "Date": "",
-    "Match": "Parameter comment must end with a full stop",
+    "Match": "Expected 1 space after the array opener in a single line array. Found: no spaces",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 13,
-      "fixable": false
+      "column": 41,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 379,
+    "RuleID": "NormalizedArrays.Arrays.ArrayBraceSpacing.SpaceBeforeArrayCloserSingleLine",
+    "File": "kw-security.php",
+    "StartLine": 25,
     "Commit": "",
     "Date": "",
-    "Match": "The method parameter $status is never used",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 16,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 390,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
+    "Match": "Expected 1 space before the array closer in a single line array. Found: no spaces",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 12,
-      "fixable": false
+      "column": 76,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 391,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 25,
     "Commit": "",
     "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 433,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 25,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 438,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_POST['post_password'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 93,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 438,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_POST['post_password']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 93,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 438,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 93,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 448,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 31,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 460,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 461,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 462,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.PHP.YodaConditions.NotYoda",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 480,
-    "Commit": "",
-    "Date": "",
-    "Match": "Use Yoda Condition checks, you must.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 31,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.WrongStyle",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 491,
-    "Commit": "",
-    "Date": "",
-    "Match": "You must use \"/**\" style comments for a function comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 16,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 495,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 39,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 502,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 61,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 510,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
       "column": 77,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 516,
-    "Commit": "",
-    "Date": "",
-    "Match": "Expected 1 space after comma in argument list; 11 found",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 52,
       "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 520,
+    "RuleID": "Squiz.Commenting.InlineComment.InvalidEndChar",
+    "File": "kw-security.php",
+    "StartLine": 27,
     "Commit": "",
     "Date": "",
-    "Match": "Missing doc comment for function settings_section_desc()",
+    "Match": "Inline comments must end in full-stops, exclamation marks, or question marks",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 16,
+      "column": 1,
       "fixable": false
     }
   },
   {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 522,
+    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis",
+    "File": "kw-security.php",
+    "StartLine": 28,
     "Commit": "",
     "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Match": "No space after opening parenthesis is prohibited",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 159,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 526,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket",
+    "File": "kw-security.php",
+    "StartLine": 28,
     "Commit": "",
     "Date": "",
-    "Match": "Missing doc comment for function whl_page_input()",
+    "Match": "Expected 1 spaces after opening parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 16,
-      "fixable": false
+      "column": 10,
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 528,
+    "RuleID": "PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket",
+    "File": "kw-security.php",
+    "StartLine": 28,
     "Commit": "",
     "Date": "",
-    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Match": "Expected 1 spaces before closing parenthesis; 0 found",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 33,
-      "fixable": false
+      "column": 55,
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 532,
+    "RuleID": "WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis",
+    "File": "kw-security.php",
+    "StartLine": 28,
     "Commit": "",
     "Date": "",
-    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
+    "Match": "No space before closing parenthesis is prohibited",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 33,
-      "fixable": false
+      "column": 65,
+      "fixable": true
     }
   },
   {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 536,
+    "RuleID": "Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed",
+    "File": "kw-security.php",
+    "StartLine": 29,
     "Commit": "",
     "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
+    "Match": "Tabs must be used to indent lines; spaces are not allowed",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 110,
-      "fixable": false
+      "column": 1,
+      "fixable": true
     }
   },
   {
-    "RuleID": "Squiz.Commenting.FunctionComment.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 540,
+    "RuleID": "PSR2.Files.ClosingTag.NotAllowed",
+    "File": "kw-security.php",
+    "StartLine": 34,
     "Commit": "",
     "Date": "",
-    "Match": "Missing doc comment for function whl_redirect_admin_input()",
+    "Match": "A closing tag is not permitted at the end of a PHP file",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 16,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 542,
-    "Commit": "",
-    "Date": "",
-    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 33,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 546,
-    "Commit": "",
-    "Date": "",
-    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found 'trailingslashit'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 33,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 550,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 163,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 563,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 27,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Recommended",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 564,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
-    "Source": "phpcs",
-    "Severity": "low",
-    "Extra": {
-      "type": "WARNING",
-      "column": 29,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.EscapeOutput.OutputNotEscaped",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 569,
-    "Commit": "",
-    "Date": "",
-    "Match": "All output should be run through an escaping function (see the Security sections in the WordPress Developer Handbooks), found '__'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 25,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 569,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 123,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 588,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 53,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 588,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 53,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 588,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 53,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotValidated",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 589,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a possibly undefined superglobal array index: $_SERVER['REQUEST_URI']. Check that the array index exists before using it.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 56,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 589,
-    "Commit": "",
-    "Date": "",
-    "Match": "$_SERVER['REQUEST_URI'] not unslashed before sanitization. Use wp_unslash() or similar",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 56,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.ValidatedSanitizedInput.InputNotSanitized",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 589,
-    "Commit": "",
-    "Date": "",
-    "Match": "Detected usage of a non-sanitized input variable: $_SERVER['REQUEST_URI']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 56,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 592,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 69,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.I18n.TextDomainMismatch",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 603,
-    "Commit": "",
-    "Date": "",
-    "Match": "Mismatched text domain. Expected 'kilowott' or 'kw' or 'default' but got 'kw-security'.",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 64,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 614,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 628,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "Squiz.Commenting.FunctionComment.MissingParamComment",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 629,
-    "Commit": "",
-    "Date": "",
-    "Match": "Missing parameter comment",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 12,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.WP.GlobalVariablesOverride.Prohibited",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 658,
-    "Commit": "",
-    "Date": "",
-    "Match": "Overriding WordPress globals is prohibited. Found assignment to $pagenow",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 13,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "PSR2.Classes.ClassDeclaration.CloseBraceAfterBody",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 671,
-    "Commit": "",
-    "Date": "",
-    "Match": "The closing brace for the class must go on the next line after the body",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 5,
+      "column": 1,
       "fixable": true
     }
   },
   {
     "RuleID": "PSR2.Files.EndFileNewline.NoneFound",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 675,
+    "File": "kw-security.php",
+    "StartLine": 34,
     "Commit": "",
     "Date": "",
     "Match": "Expected 1 newline at end of file; 0 found",
@@ -13690,7 +13690,7 @@
     "Severity": "medium",
     "Extra": {
       "type": "ERROR",
-      "column": 3,
+      "column": 1,
       "fixable": true
     }
   }

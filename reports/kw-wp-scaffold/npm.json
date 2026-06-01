@@ -146,7 +146,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Authentication Bypass via Prototype Pollution Gadget in `validateStatus` Merge Strategy",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -170,7 +170,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Incomplete Fix for CVE-2025-62718 — NO_PROXY Protection Bypassed via RFC 1122 Loopback Subnet (127.0.0.0/8) in Axios 1.15.0",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -195,7 +195,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Invisible JSON Response Tampering via Prototype Pollution Gadget in `parseReviver`",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -219,7 +219,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Null Byte Injection via Reverse-Encoding in AxiosURLSearchParams",
     "Source": "npm-audit",
     "Severity": "low",
     "Extra": {
@@ -243,7 +243,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: CRLF Injection in multipart/form-data body via unsanitized blob.type in formDataToStream",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -266,7 +266,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: no_proxy bypass via IP alias allows SSRF",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: no_proxy bypass via IP alias allows SSRF",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -289,7 +289,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -312,7 +312,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios' HTTP adapter-streamed uploads bypass maxBodyLength when maxRedirects: 0",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -335,7 +335,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: HTTP adapter streamed responses bypass maxContentLength",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: HTTP adapter streamed responses bypass maxContentLength",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -358,7 +358,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Prototype Pollution Gadgets - Response Tampering, Data Exfiltration, and Request Hijacking",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -381,7 +381,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: Header Injection via Prototype Pollution",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: Header Injection via Prototype Pollution",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -405,7 +405,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: XSRF Token Cross-Origin Leakage via Prototype Pollution Gadget in `withXSRFToken` Boolean Coercion",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -429,7 +429,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.1 — Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios has prototype pollution read-side gadgets in HTTP adapter that allow credential injection and request hijacking",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -442,6 +442,100 @@
       "cvss": {
         "score": 7.4,
         "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-pjwm-pj3p-43mv",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
+      "url": "https://github.com/advisories/GHSA-pjwm-pj3p-43mv",
+      "cwe": [
+        "CWE-918"
+      ],
+      "cvss": {
+        "score": 8.6,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-898c-q2cr-xwhg",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "url": "https://github.com/advisories/GHSA-898c-q2cr-xwhg",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 4.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-3g43-6gmg-66jw",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "url": "https://github.com/advisories/GHSA-3g43-6gmg-66jw",
+      "cwe": [
+        "CWE-94",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-35jp-ww65-95wh",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+      "url": "https://github.com/advisories/GHSA-35jp-ww65-95wh",
+      "cwe": [
+        "CWE-441",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 8.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N"
       },
       "fixAvailable": true
     }

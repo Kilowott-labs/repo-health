@@ -1,23 +1,23 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-05-25 07:15:21 UTC**_  
-_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **15038**_
+_Last regenerated: **2026-06-01 08:34:40 UTC**_  
+_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **16022**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6375 findings | 🌐 public |
-| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 380 findings | 🔒 private |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6379 findings | 🌐 public |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 384 findings | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 31 findings | 🌐 public |
 | [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟢 clean | 🌐 public |
 | [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 8 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6840 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6844 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 485 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 1457 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
 | [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 5 findings | 🌐 public |
 
@@ -27,35 +27,35 @@ _Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findin
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| Squiz.Commenting.FileComment.WrongStyle | `kw-security.php` | 2 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 3 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 4 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 5 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 6 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 7 | `` |  |
-| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 8 | `` |  |
-| Squiz.Commenting.InlineComment.InvalidEndChar | `kw-security.php` | 11 | `` |  |
-| WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis | `kw-security.php` | 12 | `` |  |
-| WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore | `kw-security.php` | 12 | `` |  |
-| WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter | `kw-security.php` | 12 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 12 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 12 | `` |  |
-| WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter | `kw-security.php` | 12 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 12 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 12 | `` |  |
-| WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis | `kw-security.php` | 12 | `` |  |
-| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `kw-security.php` | 13 | `` |  |
-| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `kw-security.php` | 14 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 17 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 17 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 18 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 18 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 19 | `` |  |
-| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 19 | `` |  |
+| WordPress.Files.FileName.InvalidClassFileName | `classes/hide-login-url.php` | 1 | `` |  |
+| Squiz.Commenting.FileComment.MissingPackageTag | `classes/hide-login-url.php` | 10 | `` |  |
+| Squiz.Commenting.ClassComment.Missing | `classes/hide-login-url.php` | 18 | `` |  |
+| Squiz.Commenting.FunctionComment.WrongStyle | `classes/hide-login-url.php` | 32 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 40 | `` |  |
+| Squiz.Commenting.InlineComment.InvalidEndChar | `classes/hide-login-url.php` | 49 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 57 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 58 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 59 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
+| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
+| PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket | `classes/hide-login-url.php` | 77 | `` |  |
+| PEAR.Functions.FunctionCallSignature.Indent | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
+| PEAR.Functions.FunctionCallSignature.CloseBracketLine | `classes/hide-login-url.php` | 78 | `` |  |
+| WordPress.WP.I18n.TextDomainMismatch | `classes/hide-login-url.php` | 86 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 119 | `` |  |
+| Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure | `classes/hide-login-url.php` | 119 | `` |  |
+| Universal.ControlStructures.DisallowLonelyIf.Found | `classes/hide-login-url.php` | 122 | `` |  |
+| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 123 | `` |  |
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6375 findings
+### `nordic-fund-day` — 6379 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -85,9 +85,9 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@wordpress/plugins | `package-lock.json` |  | `` |  |
 | npm-@wordpress/preferences | `package-lock.json` |  | `` |  |
 
-_6350 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6354 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
-### `kw-wp-scaffold` — 380 findings
+### `kw-wp-scaffold` — 384 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -112,21 +112,21 @@ _6350 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | GHSA-6chq-wfr3-2hj9 | `package-lock.json` |  | `` |  |
 | GHSA-xx6v-rp6x-q39c | `package-lock.json` |  | `` |  |
 | GHSA-q8qp-cvcw-x6jj | `package-lock.json` |  | `` |  |
-| GHSA-rp42-5vxx-qpwr | `package-lock.json` |  | `` |  |
-| GHSA-rpmf-866q-6p89 | `package-lock.json` |  | `` |  |
-| npm-body-parser | `package-lock.json` |  | `` |  |
-| npm-copy-webpack-plugin | `package-lock.json` |  | `` |  |
+| GHSA-pjwm-pj3p-43mv | `package-lock.json` |  | `` |  |
+| GHSA-898c-q2cr-xwhg | `package-lock.json` |  | `` |  |
+| GHSA-3g43-6gmg-66jw | `package-lock.json` |  | `` |  |
+| GHSA-35jp-ww65-95wh | `package-lock.json` |  | `` |  |
 
-_355 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
+_359 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
 ### `creometric-website` — 31 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
+| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -164,7 +164,7 @@ _6 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
 
-### `design-systems` — 6840 findings
+### `design-systems` — 6844 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -194,39 +194,39 @@ _6 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | GHSA-w9j2-pvgh-6h63 | `package-lock.json` |  | `` |  |
 | GHSA-pmwg-cvhr-8vh7 | `package-lock.json` |  | `` |  |
 
-_6815 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6819 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 485 findings
+### `repo-health` — 1457 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
+| gcp-api-key | `dashboard.json` | 1 | `5ed6e93` | 2026-05-18 |
 
-_460 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_1432 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 
@@ -238,8 +238,8 @@ _460 more findings — see [`reports/repo-health/latest.json`](reports/repo-heal
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `scripts/crawl-competitor.js` | 78 | `82286aa` | 2026-04-30 |
 | gcp-api-key | `scripts/crawl.js` | 94 | `82286aa` | 2026-04-30 |
+| gcp-api-key | `scripts/crawl-competitor.js` | 78 | `82286aa` | 2026-04-30 |
 | GHSA-rpmf-866q-6p89 | `package-lock.json` |  | `` |  |
 | GHSA-v2v4-37r5-5v8g | `package-lock.json` |  | `` |  |
 | GHSA-58qx-3vcg-4xpx | `package-lock.json` |  | `` |  |
