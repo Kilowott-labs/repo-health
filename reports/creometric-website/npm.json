@@ -13,7 +13,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -124,7 +124,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -174,7 +174,7 @@
       },
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -202,7 +202,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -230,7 +230,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -257,7 +257,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -284,7 +284,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -311,7 +311,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -338,7 +338,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -365,7 +365,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -392,7 +392,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -419,7 +419,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -446,7 +446,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -473,7 +473,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -500,7 +500,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -527,7 +527,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -554,7 +554,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }
@@ -673,7 +673,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.6",
+        "version": "16.2.7",
         "isSemVerMajor": true
       }
     }

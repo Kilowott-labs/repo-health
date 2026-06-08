@@ -118,5 +118,20 @@
       "npm-audit": 27
     },
     "total": 31
+  },
+  {
+    "date": "2026-06-08",
+    "severity_counts": {
+      "critical": 0,
+      "high": 15,
+      "medium": 14,
+      "low": 2,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 4,
+      "npm-audit": 27
+    },
+    "total": 31
   }
 ]
