@@ -284,29 +284,6 @@
     }
   },
   {
-    "RuleID": "GHSA-62hf-57xw-28j9",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "axios",
-      "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
-      "url": "https://github.com/advisories/GHSA-62hf-57xw-28j9",
-      "cwe": [
-        "CWE-674"
-      ],
-      "cvss": {
-        "score": 7.5,
-        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "GHSA-5c9x-8gcm-mpgx",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -470,72 +447,24 @@
     }
   },
   {
-    "RuleID": "GHSA-898c-q2cr-xwhg",
+    "RuleID": "GHSA-62hf-57xw-28j9",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+    "Match": "axios@1.0.0 - 1.15.2 — Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "axios",
-      "title": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
-      "url": "https://github.com/advisories/GHSA-898c-q2cr-xwhg",
+      "title": "Axios: unbounded recursion in toFormData causes DoS via deeply nested request data",
+      "url": "https://github.com/advisories/GHSA-62hf-57xw-28j9",
       "cwe": [
-        "CWE-1321"
+        "CWE-674"
       ],
       "cvss": {
-        "score": 4.8,
-        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "GHSA-3g43-6gmg-66jw",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
-    "Source": "npm-audit",
-    "Severity": "high",
-    "Extra": {
-      "package": "axios",
-      "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
-      "url": "https://github.com/advisories/GHSA-3g43-6gmg-66jw",
-      "cwe": [
-        "CWE-94",
-        "CWE-1321"
-      ],
-      "cvss": {
-        "score": 7,
-        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "GHSA-35jp-ww65-95wh",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
-    "Source": "npm-audit",
-    "Severity": "high",
-    "Extra": {
-      "package": "axios",
-      "title": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
-      "url": "https://github.com/advisories/GHSA-35jp-ww65-95wh",
-      "cwe": [
-        "CWE-441",
-        "CWE-1321"
-      ],
-      "cvss": {
-        "score": 8.7,
-        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N"
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
       "fixAvailable": true
     }
@@ -629,6 +558,77 @@
       "cvss": {
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-3g43-6gmg-66jw",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "axios Vulnerable to Credential Theft and Response Hijacking via Prototype Pollution Gadget in Config Merge",
+      "url": "https://github.com/advisories/GHSA-3g43-6gmg-66jw",
+      "cwe": [
+        "CWE-94",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-35jp-ww65-95wh",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "axios",
+      "title": "axios Vulnerable to Full Man-in-the-Middle via Prototype Pollution Gadget in `config.proxy`",
+      "url": "https://github.com/advisories/GHSA-35jp-ww65-95wh",
+      "cwe": [
+        "CWE-441",
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 8.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-898c-q2cr-xwhg",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "axios@1.0.0 - 1.15.2 — axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "axios",
+      "title": "axios has DoS & Header Injection via Prototype Pollution Read-Side Gadgets in axios merge functions",
+      "url": "https://github.com/advisories/GHSA-898c-q2cr-xwhg",
+      "cwe": [
+        "CWE-1321"
+      ],
+      "cvss": {
+        "score": 4.8,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L"
       },
       "fixAvailable": true
     }
@@ -795,6 +795,30 @@
       "cvss": {
         "score": 0,
         "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-q7cg-457f-vx79",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "joi@18.0.0 - 18.2.0 — joi has an uncaught RangeError on deeply nested input through recursive `link()` schemas",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "joi",
+      "title": "joi has an uncaught RangeError on deeply nested input through recursive `link()` schemas",
+      "url": "https://github.com/advisories/GHSA-q7cg-457f-vx79",
+      "cwe": [
+        "CWE-248",
+        "CWE-400"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
       },
       "fixAvailable": true
     }
@@ -1079,6 +1103,30 @@
         "version": "14.0.0",
         "isSemVerMajor": true
       }
+    }
+  },
+  {
+    "RuleID": "GHSA-w7jw-789q-3m8p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "shell-quote@1.1.0 - 1.8.3 — shell-quote quote() does not escape newlines in object .op values",
+    "Source": "npm-audit",
+    "Severity": "critical",
+    "Extra": {
+      "package": "shell-quote",
+      "title": "shell-quote quote() does not escape newlines in object .op values",
+      "url": "https://github.com/advisories/GHSA-w7jw-789q-3m8p",
+      "cwe": [
+        "CWE-77",
+        "CWE-78"
+      ],
+      "cvss": {
+        "score": 8.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "fixAvailable": true
     }
   },
   {

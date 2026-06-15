@@ -1,19 +1,19 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-06-08 07:30:55 UTC**_  
-_Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findings: **16030**_
+_Last regenerated: **2026-06-15 09:21:31 UTC**_  
+_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **16043**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6379 findings | 🌐 public |
-| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 388 findings | 🔒 private |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6385 findings | 🌐 public |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 390 findings | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 31 findings | 🌐 public |
-| [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟢 clean | 🌐 public |
+| [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 3 findings | 🌐 public |
 | [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 8 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6848 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6850 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
@@ -55,7 +55,7 @@ _Repos monitored: **13**  ·  Clean: **4**  ·  Flagged: **9**  ·  Total findin
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6379 findings
+### `nordic-fund-day` — 6385 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -85,9 +85,9 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@wordpress/plugins | `package-lock.json` |  | `` |  |
 | npm-@wordpress/preferences | `package-lock.json` |  | `` |  |
 
-_6354 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6360 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
-### `kw-wp-scaffold` — 388 findings
+### `kw-wp-scaffold` — 390 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -105,7 +105,6 @@ _6354 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | GHSA-xhjh-pmcv-23jw | `package-lock.json` |  | `` |  |
 | GHSA-445q-vr5w-6q77 | `package-lock.json` |  | `` |  |
 | GHSA-m7pr-hjqh-92cm | `package-lock.json` |  | `` |  |
-| GHSA-62hf-57xw-28j9 | `package-lock.json` |  | `` |  |
 | GHSA-5c9x-8gcm-mpgx | `package-lock.json` |  | `` |  |
 | GHSA-vf2m-468p-8v99 | `package-lock.json` |  | `` |  |
 | GHSA-pf86-5x62-jrwf | `package-lock.json` |  | `` |  |
@@ -113,20 +112,21 @@ _6354 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | GHSA-xx6v-rp6x-q39c | `package-lock.json` |  | `` |  |
 | GHSA-q8qp-cvcw-x6jj | `package-lock.json` |  | `` |  |
 | GHSA-pjwm-pj3p-43mv | `package-lock.json` |  | `` |  |
-| GHSA-898c-q2cr-xwhg | `package-lock.json` |  | `` |  |
-| GHSA-3g43-6gmg-66jw | `package-lock.json` |  | `` |  |
-| GHSA-35jp-ww65-95wh | `package-lock.json` |  | `` |  |
+| GHSA-62hf-57xw-28j9 | `package-lock.json` |  | `` |  |
+| GHSA-hfxv-24rg-xrqf | `package-lock.json` |  | `` |  |
+| GHSA-777c-7fjr-54vf | `package-lock.json` |  | `` |  |
+| GHSA-p92q-9vqr-4j8v | `package-lock.json` |  | `` |  |
 
-_363 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
+_365 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
 ### `creometric-website` — 31 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
-| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -151,6 +151,14 @@ _363 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 _6 more findings — see [`reports/creometric-website/latest.json`](reports/creometric-website/latest.json)._
 
+### `WP-QA-Agent` — 3 findings
+
+| Rule | File | Line | Commit | Date |
+|---|---|---|---|---|
+| GHSA-gv7w-rqvm-qjhr | `package-lock.json` |  | `` |  |
+| GHSA-g7r4-m6w7-qqqr | `package-lock.json` |  | `` |  |
+| npm-tsx | `package-lock.json` |  | `` |  |
+
 ### `snehanair-ship-it-site-monitor` — 8 findings
 
 | Rule | File | Line | Commit | Date |
@@ -164,7 +172,7 @@ _6 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
 
-### `design-systems` — 6848 findings
+### `design-systems` — 6850 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -194,7 +202,7 @@ _6 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | GHSA-w9j2-pvgh-6h63 | `package-lock.json` |  | `` |  |
 | GHSA-pmwg-cvhr-8vh7 | `package-lock.json` |  | `` |  |
 
-_6823 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6825 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
 ### `repo-health` — 1457 findings
 

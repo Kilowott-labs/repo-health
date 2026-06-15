@@ -1515,6 +1515,21 @@
     }
   },
   {
+    "RuleID": "WordPress.Security.NonceVerification.Missing",
+    "File": "classes/hide-login-url.php",
+    "StartLine": 438,
+    "Commit": "",
+    "Date": "",
+    "Match": "Processing form data without nonce verification.",
+    "Source": "phpcs",
+    "Severity": "medium",
+    "Extra": {
+      "type": "ERROR",
+      "column": 93,
+      "fixable": false
+    }
+  },
+  {
     "RuleID": "WordPress.Security.ValidatedSanitizedInput.MissingUnslash",
     "File": "classes/hide-login-url.php",
     "StartLine": 438,
@@ -1536,21 +1551,6 @@
     "Commit": "",
     "Date": "",
     "Match": "Detected usage of a non-sanitized input variable: $_POST['post_password']",
-    "Source": "phpcs",
-    "Severity": "medium",
-    "Extra": {
-      "type": "ERROR",
-      "column": 93,
-      "fixable": false
-    }
-  },
-  {
-    "RuleID": "WordPress.Security.NonceVerification.Missing",
-    "File": "classes/hide-login-url.php",
-    "StartLine": 438,
-    "Commit": "",
-    "Date": "",
-    "Match": "Processing form data without nonce verification.",
     "Source": "phpcs",
     "Severity": "medium",
     "Extra": {
