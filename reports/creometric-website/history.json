@@ -126,5 +126,13 @@
       "gitleaks": 4,
       "npm-audit": 27
     }
+  },
+  {
+    "date": "2026-06-15T09:23:07.589Z",
+    "count": 31,
+    "bySource": {
+      "gitleaks": 4,
+      "npm-audit": 27
+    }
   }
 ]
