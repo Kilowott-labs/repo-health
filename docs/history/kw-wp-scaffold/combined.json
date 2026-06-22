@@ -148,5 +148,20 @@
       "phpcs": 334
     },
     "total": 390
+  },
+  {
+    "date": "2026-06-22",
+    "severity_counts": {
+      "critical": 1,
+      "high": 33,
+      "medium": 387,
+      "low": 16,
+      "info": 0
+    },
+    "scanner_counts": {
+      "npm-audit": 103,
+      "phpcs": 334
+    },
+    "total": 437
   }
 ]

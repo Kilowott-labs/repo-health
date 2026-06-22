@@ -1,5 +1,28 @@
 [
   {
+    "RuleID": "GHSA-h67p-54hq-rp68",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "js-yaml",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "cwe": [
+        "CWE-407"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-node-cron",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -13,7 +36,7 @@
       "range": "3.0.2 - 3.0.3",
       "fixAvailable": {
         "name": "node-cron",
-        "version": "4.2.1",
+        "version": "4.5.0",
         "isSemVerMajor": true
       }
     }
@@ -24,7 +47,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "nodemailer@<=8.0.4 — Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -41,7 +64,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.0",
+        "version": "9.0.1",
         "isSemVerMajor": true
       }
     }
@@ -52,7 +75,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "nodemailer@<=8.0.4 — Nodemailer’s addressparser is vulnerable to DoS caused by recursive calls",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer’s addressparser is vulnerable to DoS caused by recursive calls",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
@@ -68,7 +91,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.0",
+        "version": "9.0.1",
         "isSemVerMajor": true
       }
     }
@@ -79,7 +102,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "nodemailer@<=8.0.4 — Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer has SMTP command injection due to unsanitized `envelope.size` parameter",
     "Source": "npm-audit",
     "Severity": "low",
     "Extra": {
@@ -95,7 +118,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.0",
+        "version": "9.0.1",
         "isSemVerMajor": true
       }
     }
@@ -106,7 +129,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "nodemailer@<=8.0.4 — Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name Option (EHLO/HELO) ",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer Vulnerable to SMTP Command Injection via CRLF in Transport name Option (EHLO/HELO) ",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -122,7 +145,116 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.0",
+        "version": "9.0.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-268h-hp4c-crq3",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer: CRLF injection in Nodemailer List-* header comments allows arbitrary message header injection",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer: CRLF injection in Nodemailer List-* header comments allows arbitrary message header injection",
+      "url": "https://github.com/advisories/GHSA-268h-hp4c-crq3",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 5.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "9.0.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-wqvq-jvpq-h66f",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer jsonTransport bypasses disableFileAccess and disableUrlAccess during message normalization",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer jsonTransport bypasses disableFileAccess and disableUrlAccess during message normalization",
+      "url": "https://github.com/advisories/GHSA-wqvq-jvpq-h66f",
+      "cwe": [
+        "CWE-862"
+      ],
+      "cvss": {
+        "score": 5.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "9.0.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-r7g4-qg5f-qqm2",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer: Improper TLS Certificate Validation in OAuth2 Token Fetch Enables Credential Interception",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer: Improper TLS Certificate Validation in OAuth2 Token Fetch Enables Credential Interception",
+      "url": "https://github.com/advisories/GHSA-r7g4-qg5f-qqm2",
+      "cwe": [
+        "CWE-295"
+      ],
+      "cvss": {
+        "score": 6.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "9.0.1",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  {
+    "RuleID": "GHSA-p6gq-j5cr-w38f",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "nodemailer@<=9.0.0 — Nodemailer: Message-level raw option bypasses disableFileAccess/disableUrlAccess, enabling arbitrary file read and full-response SSRF in the delivered message",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "nodemailer",
+      "title": "Nodemailer: Message-level raw option bypasses disableFileAccess/disableUrlAccess, enabling arbitrary file read and full-response SSRF in the delivered message",
+      "url": "https://github.com/advisories/GHSA-p6gq-j5cr-w38f",
+      "cwe": [
+        "CWE-73",
+        "CWE-918"
+      ],
+      "cvss": {
+        "score": 7.1,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      },
+      "fixAvailable": {
+        "name": "nodemailer",
+        "version": "9.0.1",
         "isSemVerMajor": true
       }
     }
@@ -150,7 +282,7 @@
       },
       "fixAvailable": {
         "name": "node-cron",
-        "version": "4.2.1",
+        "version": "4.5.0",
         "isSemVerMajor": true
       }
     }

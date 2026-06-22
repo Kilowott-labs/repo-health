@@ -148,5 +148,20 @@
       "semgrep": 2
     },
     "total": 8
+  },
+  {
+    "date": "2026-06-22",
+    "severity_counts": {
+      "critical": 0,
+      "high": 2,
+      "medium": 10,
+      "low": 1,
+      "info": 0
+    },
+    "scanner_counts": {
+      "npm-audit": 11,
+      "semgrep": 2
+    },
+    "total": 13
   }
 ]

@@ -1,5 +1,29 @@
 [
   {
+    "RuleID": "GHSA-4x5r-pxfx-6jf8",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@babel/core@<=7.29.0 — @babel/core: Arbitrary File Read via sourceMappingURL Comment",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "@babel/core",
+      "title": "@babel/core: Arbitrary File Read via sourceMappingURL Comment",
+      "url": "https://github.com/advisories/GHSA-4x5r-pxfx-6jf8",
+      "cwe": [
+        "CWE-22",
+        "CWE-200"
+      ],
+      "cvss": {
+        "score": 3.2,
+        "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-fv7c-fp4j-7gwp",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -43,6 +67,344 @@
         "score": 6.2,
         "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@istanbuljs/load-nyc-config",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@istanbuljs/load-nyc-config@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@istanbuljs/load-nyc-config",
+      "range": "*",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@jest/core",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@jest/core@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@jest/core",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@jest/expect",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@jest/expect@* — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@jest/expect",
+      "range": "*",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@jest/globals",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@jest/globals@>=28.0.0-alpha.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@jest/globals",
+      "range": ">=28.0.0-alpha.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@jest/reporters",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@jest/reporters@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@jest/reporters",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@jest/transform",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@jest/transform@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@jest/transform",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-8988-4f7v-96qf",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/core@<2.8.0 — OpenTelemetry Core: Unbounded memory allocation in W3C Baggage propagation",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/core",
+      "title": "OpenTelemetry Core: Unbounded memory allocation in W3C Baggage propagation",
+      "url": "https://github.com/advisories/GHSA-8988-4f7v-96qf",
+      "cwe": [
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-amqplib",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-amqplib@<=0.46.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-amqplib",
+      "range": "<=0.46.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-connect",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-connect@<=0.43.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-connect",
+      "range": "<=0.43.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-express",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-express@<=0.47.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-express",
+      "range": "<=0.47.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-fs",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-fs@<=0.19.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-fs",
+      "range": "<=0.19.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-hapi",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-hapi@0.24.0 - 0.45.2 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-hapi",
+      "range": "0.24.0 - 0.45.2",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-http",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-http@<=0.16.0 || 0.19.1-alpha.7 - 0.218.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-http",
+      "range": "<=0.16.0 || 0.19.1-alpha.7 - 0.218.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-koa",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-koa@<=0.15.0 || 0.20.0 - 0.47.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-koa",
+      "range": "<=0.15.0 || 0.20.0 - 0.47.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-mongoose",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-mongoose@<=0.46.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-mongoose",
+      "range": "<=0.46.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-mysql2",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-mysql2@0.34.1 - 0.45.2 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-mysql2",
+      "range": "0.34.1 - 0.45.2",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-pg",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-pg@0.34.0 - 0.51.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-pg",
+      "range": "0.34.0 - 0.51.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/instrumentation-undici",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/instrumentation-undici@<=0.10.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/instrumentation-undici",
+      "range": "<=0.10.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/resources",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/resources@0.8.0 - 2.7.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/resources",
+      "range": "0.8.0 - 2.7.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/sdk-trace-base",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/sdk-trace-base@<=2.7.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/sdk-trace-base",
+      "range": "<=2.7.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@opentelemetry/sql-common",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@opentelemetry/sql-common@<=0.40.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@opentelemetry/sql-common",
+      "range": "<=0.40.1",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@sentry/node",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@sentry/node@8.0.0-alpha.1 - 10.53.1 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@sentry/node",
+      "range": "8.0.0-alpha.1 - 10.53.1",
       "fixAvailable": true
     }
   },
@@ -145,17 +507,32 @@
     }
   },
   {
+    "RuleID": "npm-@wordpress/babel-preset-default",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/babel-preset-default@8.10.0 - 8.48.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "@wordpress/babel-preset-default",
+      "range": "8.10.0 - 8.48.0",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-@wordpress/block-editor",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/block-editor@* — transitive vulnerability",
+    "Match": "@wordpress/block-editor@<=15.21.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/block-editor",
-      "range": "*",
+      "range": "<=15.21.1",
       "fixAvailable": false
     }
   },
@@ -165,12 +542,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/blocks@* — transitive vulnerability",
+    "Match": "@wordpress/blocks@<=15.21.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/blocks",
-      "range": "*",
+      "range": "<=15.21.1",
       "fixAvailable": false
     }
   },
@@ -210,12 +587,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/core-data@>=2.11.0 — transitive vulnerability",
+    "Match": "@wordpress/core-data@2.11.0 - 7.48.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/core-data",
-      "range": ">=2.11.0",
+      "range": "2.11.0 - 7.48.1",
       "fixAvailable": false
     }
   },
@@ -225,12 +602,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/editor@* — transitive vulnerability",
+    "Match": "@wordpress/editor@<=14.48.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/editor",
-      "range": "*",
+      "range": "<=14.48.1",
       "fixAvailable": false
     }
   },
@@ -265,17 +642,47 @@
     }
   },
   {
+    "RuleID": "npm-@wordpress/jest-console",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/jest-console@>=4.0.0-next.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/jest-console",
+      "range": ">=4.0.0-next.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-@wordpress/jest-preset-default",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "@wordpress/jest-preset-default@3.0.1 || >=6.0.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "@wordpress/jest-preset-default",
+      "range": "3.0.1 || >=6.0.0",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-@wordpress/patterns",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/patterns@* — transitive vulnerability",
+    "Match": "@wordpress/patterns@<=2.48.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/patterns",
-      "range": "*",
+      "range": "<=2.48.1",
       "fixAvailable": false
     }
   },
@@ -315,12 +722,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/reusable-blocks@* — transitive vulnerability",
+    "Match": "@wordpress/reusable-blocks@<=5.48.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/reusable-blocks",
-      "range": "*",
+      "range": "<=5.48.1",
       "fixAvailable": false
     }
   },
@@ -330,17 +737,13 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/scripts@>=7.0.0 — transitive vulnerability",
+    "Match": "@wordpress/scripts@2.4.2 || >=7.0.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
       "package": "@wordpress/scripts",
-      "range": ">=7.0.0",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "range": "2.4.2 || >=7.0.0",
+      "fixAvailable": true
     }
   },
   {
@@ -349,12 +752,12 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/server-side-render@* — transitive vulnerability",
+    "Match": "@wordpress/server-side-render@<=6.24.1 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/server-side-render",
-      "range": "*",
+      "range": "<=6.24.1",
       "fixAvailable": false
     }
   },
@@ -901,6 +1304,36 @@
     }
   },
   {
+    "RuleID": "npm-babel-jest",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "babel-jest@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "babel-jest",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-babel-plugin-istanbul",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "babel-plugin-istanbul@>=6.0.0-beta.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "babel-plugin-istanbul",
+      "range": ">=6.0.0-beta.0",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-6v7q-wjvx-w8wg",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1071,6 +1504,21 @@
     }
   },
   {
+    "RuleID": "npm-create-jest",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "create-jest@>=29.7.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "create-jest",
+      "range": ">=29.7.0",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-express",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1201,6 +1649,53 @@
     }
   },
   {
+    "RuleID": "GHSA-hmw2-7cc7-3qxx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "form-data@4.0.0 - 4.0.5 — form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "form-data",
+      "title": "form-data: CRLF injection in form-data via unescaped multipart field names and filenames",
+      "url": "https://github.com/advisories/GHSA-hmw2-7cc7-3qxx",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-64mm-vxmg-q3vj",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "http-proxy-middleware@0.16.0 - 3.0.5 — http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "http-proxy-middleware",
+      "title": "http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
+      "url": "https://github.com/advisories/GHSA-64mm-vxmg-q3vj",
+      "cwe": [
+        "CWE-20",
+        "CWE-187"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-v2v4-37r5-5v8g",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1220,6 +1715,126 @@
         "score": 0,
         "vectorString": null
       },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-circus",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-circus@>=25.2.4 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-circus",
+      "range": ">=25.2.4",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-cli",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-cli@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-cli",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-config",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-config@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-config",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-resolve-dependencies",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-resolve-dependencies@>=27.0.0-next.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-resolve-dependencies",
+      "range": ">=27.0.0-next.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-runner",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-runner@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-runner",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-runtime",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-runtime@>=25.1.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-runtime",
+      "range": ">=25.1.0",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-jest-snapshot",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "jest-snapshot@>=27.0.0-next.0 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "jest-snapshot",
+      "range": ">=27.0.0-next.0",
       "fixAvailable": true
     }
   },
@@ -1244,6 +1859,68 @@
         "score": 5.3,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
       },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-h67p-54hq-rp68",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "js-yaml",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "cwe": [
+        "CWE-407"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-v6wh-96g9-6wx3",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "launch-editor@<=2.14.0 — launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "launch-editor",
+      "title": "launch-editor: NTLMv2 hash disclosure via UNC path handling on Windows",
+      "url": "https://github.com/advisories/GHSA-v6wh-96g9-6wx3",
+      "cwe": [
+        "CWE-73",
+        "CWE-522"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-lighthouse",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "lighthouse@12.6.1-dev.20250602 - 12.6.1-dev.20250626 || >=12.7.0-dev.20250627 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "lighthouse",
+      "range": "12.6.1-dev.20250602 - 12.6.1-dev.20250626 || >=12.7.0-dev.20250627",
       "fixAvailable": true
     }
   },
@@ -1340,22 +2017,57 @@
     }
   },
   {
+    "RuleID": "GHSA-6v5v-wf23-fmfq",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "markdown-it@<=14.1.1 — markdown-it: Quadratic complexity DoS in smartquotes rule via replaceAt string operations",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "markdown-it",
+      "title": "markdown-it: Quadratic complexity DoS in smartquotes rule via replaceAt string operations",
+      "url": "https://github.com/advisories/GHSA-6v5v-wf23-fmfq",
+      "cwe": [
+        "CWE-400",
+        "CWE-407"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "npm-markdownlint",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "markdownlint@<=0.37.4 — transitive vulnerability",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "markdownlint",
+      "range": "<=0.37.4",
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "npm-markdownlint-cli",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "markdownlint-cli@0.13.0 - 0.31.1 — transitive vulnerability",
+    "Match": "markdownlint-cli@<=0.44.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
       "package": "markdownlint-cli",
-      "range": "0.13.0 - 0.31.1",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "range": "<=0.44.0",
+      "fixAvailable": true
     }
   },
   {
@@ -1378,11 +2090,7 @@
         "score": 0,
         "vectorString": null
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1405,11 +2113,7 @@
         "score": 0,
         "vectorString": null
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1432,11 +2136,7 @@
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1459,11 +2159,7 @@
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1486,11 +2182,7 @@
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1513,11 +2205,7 @@
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1881,11 +2569,7 @@
     "Extra": {
       "package": "sockjs",
       "range": ">=0.3.17",
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1932,11 +2616,7 @@
         "score": 6.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1959,11 +2639,7 @@
         "score": 5.3,
         "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
     }
   },
   {
@@ -1986,11 +2662,31 @@
         "score": 5.3,
         "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N"
       },
-      "fixAvailable": {
-        "name": "@wordpress/scripts",
-        "version": "19.2.4",
-        "isSemVerMajor": true
-      }
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-mx8g-39q3-5c79",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "webpack-dev-server@* — webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "webpack-dev-server",
+      "title": "webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+      "url": "https://github.com/advisories/GHSA-mx8g-39q3-5c79",
+      "cwe": [
+        "CWE-346",
+        "CWE-441"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
     }
   },
   {
@@ -1999,7 +2695,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "ws@8.0.0 - 8.20.0 — ws: Uninitialized memory disclosure",
+    "Match": "ws@7.0.0 - 7.5.10 || 8.0.0 - 8.20.1 — ws: Uninitialized memory disclosure",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -2012,6 +2708,54 @@
       "cvss": {
         "score": 4.4,
         "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-96hv-2xvq-fx4p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@7.0.0 - 7.5.10 || 8.0.0 - 8.20.1 — ws: Memory exhaustion DoS from tiny fragments and data chunks",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-96hv-2xvq-fx4p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@7.0.0 - 7.5.10 || 8.0.0 - 8.20.1 — ws: Memory exhaustion DoS from tiny fragments and data chunks",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
       },
       "fixAvailable": true
     }
