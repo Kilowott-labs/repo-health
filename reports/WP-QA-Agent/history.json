@@ -85,5 +85,12 @@
     "bySource": {
       "npm-audit": 3
     }
+  },
+  {
+    "date": "2026-06-22T08:59:01.439Z",
+    "count": 2,
+    "bySource": {
+      "npm-audit": 2
+    }
   }
 ]
