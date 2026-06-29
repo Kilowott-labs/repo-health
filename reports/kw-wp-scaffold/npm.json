@@ -1253,7 +1253,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "http-proxy-middleware@0.16.0 - 3.0.5 — http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
+    "Match": "http-proxy-middleware@>=0.16.0 <2.0.10 — http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1497,6 +1497,29 @@
     "Extra": {
       "package": "lighthouse",
       "range": "12.6.1-dev.20250602 - 12.6.1-dev.20250626 || >=12.7.0-dev.20250627",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-22p9-wv53-3rq4",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "linkify-it@<=5.0.0 — LinkifyIt#match scan loop has quadratic algorithmic complexity",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "linkify-it",
+      "title": "LinkifyIt#match scan loop has quadratic algorithmic complexity",
+      "url": "https://github.com/advisories/GHSA-22p9-wv53-3rq4",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
       "fixAvailable": true
     }
   },

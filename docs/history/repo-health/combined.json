@@ -161,5 +161,20 @@
       "semgrep": 1
     },
     "total": 10205
+  },
+  {
+    "date": "2026-06-29",
+    "severity_counts": {
+      "critical": 0,
+      "high": 30617,
+      "medium": 0,
+      "low": 0,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 30616,
+      "semgrep": 1
+    },
+    "total": 30617
   }
 ]

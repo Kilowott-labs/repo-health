@@ -1,23 +1,23 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-06-22 08:57:37 UTC**_  
-_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **24946**_
+_Last regenerated: **2026-06-29 07:29:53 UTC**_  
+_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **45361**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6432 findings | 🌐 public |
-| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 437 findings | 🔒 private |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6433 findings | 🌐 public |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 438 findings | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 32 findings | 🌐 public |
 | [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 2 findings | 🌐 public |
 | [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 13 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6897 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6898 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 10205 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 30617 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
 | [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 14 findings | 🌐 public |
 
@@ -55,7 +55,7 @@ _Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findi
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6432 findings
+### `nordic-fund-day` — 6433 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -85,9 +85,9 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@opentelemetry/instrumentation-mongoose | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-mysql2 | `package-lock.json` |  | `` |  |
 
-_6407 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6408 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
-### `kw-wp-scaffold` — 437 findings
+### `kw-wp-scaffold` — 438 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -117,16 +117,16 @@ _6407 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
 | GHSA-vpq2-c234-7xj6 | `package-lock.json` |  | `` |  |
 
-_412 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
+_413 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
 ### `creometric-website` — 32 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -176,7 +176,7 @@ _7 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
 
-### `design-systems` — 6897 findings
+### `design-systems` — 6898 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -206,9 +206,9 @@ _7 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
 
-_6872 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6873 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 10205 findings
+### `repo-health` — 30617 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -238,7 +238,7 @@ _6872 more findings — see [`reports/design-systems/latest.json`](reports/desig
 | gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
 | gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
 
-_10180 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_30592 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 
@@ -256,12 +256,12 @@ _10180 more findings — see [`reports/repo-health/latest.json`](reports/repo-he
 | GHSA-v2v4-37r5-5v8g | `package-lock.json` |  | `` |  |
 | GHSA-h67p-54hq-rp68 | `package-lock.json` |  | `` |  |
 | GHSA-vmh5-mc38-953g | `package-lock.json` |  | `` |  |
-| GHSA-pr7r-676h-xcf6 | `package-lock.json` |  | `` |  |
 | GHSA-p88m-4jfj-68fv | `package-lock.json` |  | `` |  |
 | GHSA-vxpw-j846-p89q | `package-lock.json` |  | `` |  |
 | GHSA-hm92-r4w5-c3mj | `package-lock.json` |  | `` |  |
 | GHSA-35p6-xmwp-9g52 | `package-lock.json` |  | `` |  |
 | GHSA-g8m3-5g58-fq7m | `package-lock.json` |  | `` |  |
+| GHSA-pr7r-676h-xcf6 | `package-lock.json` |  | `` |  |
 | GHSA-58qx-3vcg-4xpx | `package-lock.json` |  | `` |  |
 | GHSA-96hv-2xvq-fx4p | `package-lock.json` |  | `` |  |
 

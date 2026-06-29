@@ -527,13 +527,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/block-editor@<=15.21.1 — transitive vulnerability",
+    "Match": "@wordpress/block-editor@<=14.5.0 || 14.7.1-next.082ed6819.0 || 14.8.1-next.a9f418477.0 - 14.8.1-next.cd6172eb0.0 || 14.10.0 - 15.17.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/block-editor",
-      "range": "<=15.21.1",
-      "fixAvailable": false
+      "range": "<=14.5.0 || 14.7.1-next.082ed6819.0 || 14.8.1-next.a9f418477.0 - 14.8.1-next.cd6172eb0.0 || 14.10.0 - 15.17.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -548,7 +552,11 @@
     "Extra": {
       "package": "@wordpress/blocks",
       "range": "<=15.21.1",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -563,7 +571,11 @@
     "Extra": {
       "package": "@wordpress/commands",
       "range": "<=1.10.0 || 1.15.0 - 1.44.0",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -578,7 +590,11 @@
     "Extra": {
       "package": "@wordpress/components",
       "range": "<=33.0.1-next.v.202604201441.0",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/components",
+        "version": "36.0.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -587,13 +603,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/core-data@2.11.0 - 7.48.1 — transitive vulnerability",
+    "Match": "@wordpress/core-data@2.11.0 - 7.45.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/core-data",
-      "range": "2.11.0 - 7.48.1",
-      "fixAvailable": false
+      "range": "2.11.0 - 7.45.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -602,13 +622,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/editor@<=14.48.1 — transitive vulnerability",
+    "Match": "@wordpress/editor@<=14.10.0 || 14.12.1-next.082ed6819.0 || 14.13.1-next.a9f418477.0 - 14.13.1-next.cd6172eb0.0 || 14.15.0 - 14.44.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/editor",
-      "range": "<=14.48.1",
-      "fixAvailable": false
+      "range": "<=14.10.0 || 14.12.1-next.082ed6819.0 || 14.13.1-next.a9f418477.0 - 14.13.1-next.cd6172eb0.0 || 14.15.0 - 14.44.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -638,7 +662,11 @@
     "Extra": {
       "package": "@wordpress/interface",
       "range": "<=7.0.0 || 9.0.0 - 9.29.0",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -677,13 +705,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/patterns@<=2.48.1 — transitive vulnerability",
+    "Match": "@wordpress/patterns@<=2.10.0 || 2.12.1-next.082ed6819.0 || 2.13.1-next.a9f418477.0 - 2.13.1-next.cd6172eb0.0 || 2.15.0 - 2.44.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/patterns",
-      "range": "<=2.48.1",
-      "fixAvailable": false
+      "range": "<=2.10.0 || 2.12.1-next.082ed6819.0 || 2.13.1-next.a9f418477.0 - 2.13.1-next.cd6172eb0.0 || 2.15.0 - 2.44.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -698,7 +730,11 @@
     "Extra": {
       "package": "@wordpress/plugins",
       "range": "6.0.0 - 7.10.0 || 7.15.0 - 7.44.0",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -713,7 +749,11 @@
     "Extra": {
       "package": "@wordpress/preferences",
       "range": "<=4.10.0 || 4.15.0 - 4.44.0",
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -722,13 +762,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/reusable-blocks@<=5.48.1 — transitive vulnerability",
+    "Match": "@wordpress/reusable-blocks@<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 5.44.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/reusable-blocks",
-      "range": "<=5.48.1",
-      "fixAvailable": false
+      "range": "<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 5.44.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -752,13 +796,17 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/server-side-render@<=6.24.1 — transitive vulnerability",
+    "Match": "@wordpress/server-side-render@<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 6.20.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
       "package": "@wordpress/server-side-render",
-      "range": "<=6.24.1",
-      "fixAvailable": false
+      "range": "<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 6.20.0",
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -1677,7 +1725,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "http-proxy-middleware@0.16.0 - 3.0.5 — http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
+    "Match": "http-proxy-middleware@>=0.16.0 <2.0.10 — http-proxy-middleware `router` host+path substring matching allows Host-header-driven backend routing bypass",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1921,6 +1969,29 @@
     "Extra": {
       "package": "lighthouse",
       "range": "12.6.1-dev.20250602 - 12.6.1-dev.20250626 || >=12.7.0-dev.20250627",
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-22p9-wv53-3rq4",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "linkify-it@<=5.0.0 — LinkifyIt#match scan loop has quadratic algorithmic complexity",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "linkify-it",
+      "title": "LinkifyIt#match scan loop has quadratic algorithmic complexity",
+      "url": "https://github.com/advisories/GHSA-22p9-wv53-3rq4",
+      "cwe": [
+        "CWE-1333"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
       "fixAvailable": true
     }
   },
@@ -2554,7 +2625,11 @@
         "score": 5.3,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
       },
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "@wordpress/editor",
+        "version": "14.49.0",
+        "isSemVerMajor": true
+      }
     }
   },
   {
@@ -2593,7 +2668,11 @@
         "score": 7.5,
         "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
       },
-      "fixAvailable": false
+      "fixAvailable": {
+        "name": "uuid",
+        "version": "14.0.1",
+        "isSemVerMajor": true
+      }
     }
   },
   {
