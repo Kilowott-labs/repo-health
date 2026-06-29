@@ -133,5 +133,13 @@
       "gitleaks": 10204,
       "semgrep": 1
     }
+  },
+  {
+    "date": "2026-06-29T07:31:06.403Z",
+    "count": 30617,
+    "bySource": {
+      "gitleaks": 30616,
+      "semgrep": 1
+    }
   }
 ]
