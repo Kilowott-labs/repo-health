@@ -99,5 +99,13 @@
     "bySource": {
       "npm-audit": 2
     }
+  },
+  {
+    "date": "2026-07-06T07:14:50.052Z",
+    "count": 4,
+    "bySource": {
+      "npm-audit": 2,
+      "semgrep": 2
+    }
   }
 ]
