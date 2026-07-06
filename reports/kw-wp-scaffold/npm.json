@@ -48,96 +48,6 @@
     }
   },
   {
-    "RuleID": "npm-@istanbuljs/load-nyc-config",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@istanbuljs/load-nyc-config@* — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@istanbuljs/load-nyc-config",
-      "range": "*",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@jest/core",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@jest/core@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@jest/core",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@jest/expect",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@jest/expect@* — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@jest/expect",
-      "range": "*",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@jest/globals",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@jest/globals@>=28.0.0-alpha.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@jest/globals",
-      "range": ">=28.0.0-alpha.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@jest/reporters",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@jest/reporters@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@jest/reporters",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@jest/transform",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@jest/transform@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@jest/transform",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "GHSA-8988-4f7v-96qf",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -499,47 +409,17 @@
     }
   },
   {
-    "RuleID": "npm-@wordpress/jest-console",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@wordpress/jest-console@>=4.0.0-next.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@wordpress/jest-console",
-      "range": ">=4.0.0-next.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-@wordpress/jest-preset-default",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "@wordpress/jest-preset-default@3.0.1 || >=6.0.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "@wordpress/jest-preset-default",
-      "range": "3.0.1 || >=6.0.0",
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "npm-@wordpress/scripts",
     "File": "package-lock.json",
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "@wordpress/scripts@2.4.2 || >=7.0.0 — transitive vulnerability",
+    "Match": "@wordpress/scripts@>=7.0.0 — transitive vulnerability",
     "Source": "npm-audit",
     "Severity": "high",
     "Extra": {
       "package": "@wordpress/scripts",
-      "range": "2.4.2 || >=7.0.0",
+      "range": ">=7.0.0",
       "fixAvailable": true
     }
   },
@@ -1037,36 +917,6 @@
     }
   },
   {
-    "RuleID": "npm-babel-jest",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "babel-jest@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "babel-jest",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-babel-plugin-istanbul",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "babel-plugin-istanbul@>=6.0.0-beta.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "babel-plugin-istanbul",
-      "range": ">=6.0.0-beta.0",
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "GHSA-rp42-5vxx-qpwr",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1146,21 +996,6 @@
         "version": "14.0.0",
         "isSemVerMajor": true
       }
-    }
-  },
-  {
-    "RuleID": "npm-create-jest",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "create-jest@>=29.7.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "create-jest",
-      "range": ">=29.7.0",
-      "fixAvailable": true
     }
   },
   {
@@ -1295,126 +1130,6 @@
     }
   },
   {
-    "RuleID": "npm-jest",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-circus",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-circus@>=25.2.4 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-circus",
-      "range": ">=25.2.4",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-cli",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-cli@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-cli",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-config",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-config@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-config",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-resolve-dependencies",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-resolve-dependencies@>=27.0.0-next.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-resolve-dependencies",
-      "range": ">=27.0.0-next.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-runner",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-runner@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-runner",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-runtime",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-runtime@>=25.1.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-runtime",
-      "range": ">=25.1.0",
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "npm-jest-snapshot",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "jest-snapshot@>=27.0.0-next.0 — transitive vulnerability",
-    "Source": "npm-audit",
-    "Severity": "medium",
-    "Extra": {
-      "package": "jest-snapshot",
-      "range": ">=27.0.0-next.0",
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "GHSA-q7cg-457f-vx79",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -1444,7 +1159,30 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Match": "js-yaml@<=3.14.2 || 4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "js-yaml",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "cwe": [
+        "CWE-407"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-h67p-54hq-rp68",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "js-yaml@<=3.14.2 || 4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1885,7 +1623,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
+    "Match": "webpack-dev-server@<=5.2.6 — webpack-dev-server users' source code may be stolen when they access a malicious web site with non-Chromium based browser",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1908,7 +1646,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server users' source code may be stolen when they access a malicious web site",
+    "Match": "webpack-dev-server@<=5.2.6 — webpack-dev-server users' source code may be stolen when they access a malicious web site",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1931,7 +1669,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
+    "Match": "webpack-dev-server@<=5.2.6 — webpack-dev-server vulnerable to cross-origin source code exposure on non-HTTPS origins",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -1954,7 +1692,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "webpack-dev-server@* — webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
+    "Match": "webpack-dev-server@<=5.2.6 — webpack-dev-server vulnerable to HMR WebSocket interception via permissive user proxies",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {

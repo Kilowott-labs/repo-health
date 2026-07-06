@@ -5,7 +5,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Match": "js-yaml@4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -36,7 +36,7 @@
       "range": "3.0.2 - 3.0.3",
       "fixAvailable": {
         "name": "node-cron",
-        "version": "4.5.0",
+        "version": "4.6.0",
         "isSemVerMajor": true
       }
     }
@@ -64,7 +64,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -91,7 +91,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -118,7 +118,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -145,7 +145,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -172,7 +172,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -199,7 +199,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -226,7 +226,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -254,7 +254,7 @@
       },
       "fixAvailable": {
         "name": "nodemailer",
-        "version": "9.0.1",
+        "version": "9.0.3",
         "isSemVerMajor": true
       }
     }
@@ -282,7 +282,7 @@
       },
       "fixAvailable": {
         "name": "node-cron",
-        "version": "4.5.0",
+        "version": "4.6.0",
         "isSemVerMajor": true
       }
     }

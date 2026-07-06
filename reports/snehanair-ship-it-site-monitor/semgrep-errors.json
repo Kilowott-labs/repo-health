@@ -1,0 +1,41 @@
+[
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/site-monitor.yml",
+          "start": {
+            "line": 57,
+            "col": 77,
+            "offset": 1471
+          },
+          "end": {
+            "line": 57,
+            "col": 96,
+            "offset": 1490
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/site-monitor.yml:57:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `{ github.repository` was unexpected",
+    "path": ".github/workflows/site-monitor.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/site-monitor.yml",
+        "start": {
+          "line": 57,
+          "col": 77,
+          "offset": 1471
+        },
+        "end": {
+          "line": 57,
+          "col": 96,
+          "offset": 1490
+        }
+      }
+    ]
+  }
+]

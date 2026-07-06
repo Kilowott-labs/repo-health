@@ -1,5 +1,297 @@
 [
   {
+    "RuleID": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown",
+    "File": ".github/dependabot.yml",
+    "StartLine": 3,
+    "Commit": "",
+    "Date": "",
+    "Match": "This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry und",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-829: Inclusion of Functionality from Untrusted Control Sphere"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 36,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 39,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 77,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 96,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 103,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 108,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 114,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 160,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 167,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 172,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/autofix-monthly.yml",
+    "StartLine": 178,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 31,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 34,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
     "RuleID": "yaml.github-actions.security.run-shell-injection.run-shell-injection",
     "File": ".github/workflows/weekly-scan.yml",
     "StartLine": 51,
@@ -17,6 +309,321 @@
         "A01:2017 - Injection",
         "A03:2021 - Injection",
         "A05:2025 - Injection"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 67,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 86,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 89,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 94,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 101,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 390,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 409,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 414,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 419,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 425,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 454,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 494,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 499,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 509,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/weekly-scan.yml",
+    "StartLine": 515,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
       ]
     }
   }

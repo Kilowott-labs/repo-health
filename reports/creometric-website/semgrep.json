@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "RuleID": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown",
+    "File": ".github/dependabot.yml",
+    "StartLine": 3,
+    "Commit": "",
+    "Date": "",
+    "Match": "This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry und",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-829: Inclusion of Functionality from Untrusted Control Sphere"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown",
+    "File": ".github/dependabot.yml",
+    "StartLine": 13,
+    "Commit": "",
+    "Date": "",
+    "Match": "This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry und",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-829: Inclusion of Functionality from Untrusted Control Sphere"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures"
+      ]
+    }
+  }
+]

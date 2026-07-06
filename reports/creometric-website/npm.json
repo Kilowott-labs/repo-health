@@ -13,7 +13,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -124,7 +124,7 @@
       "range": "14.0.5-canary.0 - 15.0.0-rc.1",
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -174,7 +174,7 @@
       },
       "fixAvailable": {
         "name": "eslint-config-next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -185,7 +185,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Match": "js-yaml@4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {
@@ -225,7 +225,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -253,7 +253,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -280,7 +280,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -307,7 +307,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -334,7 +334,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -361,7 +361,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -388,7 +388,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -415,7 +415,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -442,7 +442,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -469,7 +469,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -496,7 +496,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -523,7 +523,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -550,7 +550,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -577,7 +577,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }
@@ -696,7 +696,7 @@
       },
       "fixAvailable": {
         "name": "next",
-        "version": "16.2.9",
+        "version": "16.2.10",
         "isSemVerMajor": true
       }
     }

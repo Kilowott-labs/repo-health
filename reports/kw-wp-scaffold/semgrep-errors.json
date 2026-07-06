@@ -1,0 +1,236 @@
+[
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/deploy-production.yml",
+          "start": {
+            "line": 53,
+            "col": 16,
+            "offset": 1428
+          },
+          "end": {
+            "line": 53,
+            "col": 45,
+            "offset": 1457
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-production.yml",
+          "start": {
+            "line": 54,
+            "col": 3,
+            "offset": 1428
+          },
+          "end": {
+            "line": 54,
+            "col": 6,
+            "offset": 1431
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-production.yml",
+          "start": {
+            "line": 54,
+            "col": 38,
+            "offset": 1428
+          },
+          "end": {
+            "line": 54,
+            "col": 41,
+            "offset": 1431
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-production.yml",
+          "start": {
+            "line": 54,
+            "col": 73,
+            "offset": 1428
+          },
+          "end": {
+            "line": 54,
+            "col": 76,
+            "offset": 1431
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/deploy-production.yml:53:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `{ secrets.PRODUCTION_SSH_PORT` was unexpected",
+    "path": ".github/workflows/deploy-production.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/deploy-production.yml",
+        "start": {
+          "line": 53,
+          "col": 16,
+          "offset": 1428
+        },
+        "end": {
+          "line": 53,
+          "col": 45,
+          "offset": 1457
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-production.yml",
+        "start": {
+          "line": 54,
+          "col": 3,
+          "offset": 1428
+        },
+        "end": {
+          "line": 54,
+          "col": 6,
+          "offset": 1431
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-production.yml",
+        "start": {
+          "line": 54,
+          "col": 38,
+          "offset": 1428
+        },
+        "end": {
+          "line": 54,
+          "col": 41,
+          "offset": 1431
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-production.yml",
+        "start": {
+          "line": 54,
+          "col": 73,
+          "offset": 1428
+        },
+        "end": {
+          "line": 54,
+          "col": 76,
+          "offset": 1431
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/deploy-staging.yml",
+          "start": {
+            "line": 74,
+            "col": 16,
+            "offset": 2089
+          },
+          "end": {
+            "line": 74,
+            "col": 42,
+            "offset": 2115
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-staging.yml",
+          "start": {
+            "line": 75,
+            "col": 3,
+            "offset": 2089
+          },
+          "end": {
+            "line": 75,
+            "col": 6,
+            "offset": 2092
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-staging.yml",
+          "start": {
+            "line": 75,
+            "col": 35,
+            "offset": 2089
+          },
+          "end": {
+            "line": 75,
+            "col": 38,
+            "offset": 2092
+          }
+        },
+        {
+          "path": ".github/workflows/deploy-staging.yml",
+          "start": {
+            "line": 75,
+            "col": 67,
+            "offset": 2089
+          },
+          "end": {
+            "line": 75,
+            "col": 70,
+            "offset": 2092
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/deploy-staging.yml:74:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `{ secrets.STAGING_SSH_PORT` was unexpected",
+    "path": ".github/workflows/deploy-staging.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/deploy-staging.yml",
+        "start": {
+          "line": 74,
+          "col": 16,
+          "offset": 2089
+        },
+        "end": {
+          "line": 74,
+          "col": 42,
+          "offset": 2115
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-staging.yml",
+        "start": {
+          "line": 75,
+          "col": 3,
+          "offset": 2089
+        },
+        "end": {
+          "line": 75,
+          "col": 6,
+          "offset": 2092
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-staging.yml",
+        "start": {
+          "line": 75,
+          "col": 35,
+          "offset": 2089
+        },
+        "end": {
+          "line": 75,
+          "col": 38,
+          "offset": 2092
+        }
+      },
+      {
+        "file": ".github/workflows/deploy-staging.yml",
+        "start": {
+          "line": 75,
+          "col": 67,
+          "offset": 2089
+        },
+        "end": {
+          "line": 75,
+          "col": 70,
+          "offset": 2092
+        }
+      }
+    ]
+  }
+]

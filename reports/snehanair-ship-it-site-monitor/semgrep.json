@@ -1,5 +1,85 @@
 [
   {
+    "RuleID": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown",
+    "File": ".github/dependabot.yml",
+    "StartLine": 3,
+    "Commit": "",
+    "Date": "",
+    "Match": "This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry und",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-829: Inclusion of Functionality from Untrusted Control Sphere"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown",
+    "File": ".github/dependabot.yml",
+    "StartLine": 13,
+    "Commit": "",
+    "Date": "",
+    "Match": "This Dependabot configuration does not set a cooldown period. Newly published packages can be malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem` entry und",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-829: Inclusion of Functionality from Untrusted Control Sphere"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/site-monitor.yml",
+    "StartLine": 20,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
+    "RuleID": "yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag",
+    "File": ".github/workflows/site-monitor.yml",
+    "StartLine": 34,
+    "Commit": "",
+    "Date": "",
+    "Match": "GitHub Actions step uses a mutable tag or branch reference. Tags and branch names can be silently repointed by the action owner, enabling supply-chain attacks — as seen in the trivy-action and kics-gi",
+    "Source": "semgrep",
+    "Severity": "medium",
+    "Extra": {
+      "category": "security",
+      "cwe": [
+        "CWE-1357: Reliance on Insufficiently Trustworthy Component",
+        "CWE-353: Missing Support for Integrity Check"
+      ],
+      "owasp": [
+        "A08:2021 - Software and Data Integrity Failures",
+        "A08:2025 - Software and Data Integrity Failures"
+      ]
+    }
+  },
+  {
     "RuleID": "problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification",
     "File": "dashboard/src/app/api/ssl/route.ts",
     "StartLine": 16,

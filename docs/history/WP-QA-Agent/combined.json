@@ -148,5 +148,20 @@
       "npm-audit": 2
     },
     "total": 2
+  },
+  {
+    "date": "2026-07-06",
+    "severity_counts": {
+      "critical": 0,
+      "high": 0,
+      "medium": 3,
+      "low": 1,
+      "info": 0
+    },
+    "scanner_counts": {
+      "npm-audit": 2,
+      "semgrep": 2
+    },
+    "total": 4
   }
 ]

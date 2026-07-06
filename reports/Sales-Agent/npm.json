@@ -52,7 +52,7 @@
     "StartLine": 0,
     "Commit": "",
     "Date": "",
-    "Match": "js-yaml@<=4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Match": "js-yaml@4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
     "Source": "npm-audit",
     "Severity": "medium",
     "Extra": {

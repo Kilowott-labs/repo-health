@@ -22,5 +22,174 @@
     "rule_id": "typescript.react.security.audit.react-unsanitized-property.react-unsanitized-property",
     "message": "Timeout when running typescript.react.security.audit.react-unsanitized-property.react-unsanitized-property on docs/assets/index-BWItFjSp.js:\n ",
     "path": "docs/assets/index-BWItFjSp.js"
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/weekly-scan.yml",
+          "start": {
+            "line": 53,
+            "col": 16,
+            "offset": 1419
+          },
+          "end": {
+            "line": 53,
+            "col": 44,
+            "offset": 1447
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/weekly-scan.yml:53:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `{ github.event.inputs.target` was unexpected",
+    "path": ".github/workflows/weekly-scan.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/weekly-scan.yml",
+        "start": {
+          "line": 53,
+          "col": 16,
+          "offset": 1419
+        },
+        "end": {
+          "line": 53,
+          "col": 44,
+          "offset": 1447
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/weekly-scan.yml",
+          "start": {
+            "line": 114,
+            "col": 63,
+            "offset": 3259
+          },
+          "end": {
+            "line": 114,
+            "col": 78,
+            "offset": 3274
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/weekly-scan.yml:114:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `{ matrix.target` was unexpected",
+    "path": ".github/workflows/weekly-scan.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/weekly-scan.yml",
+        "start": {
+          "line": 114,
+          "col": 63,
+          "offset": 3259
+        },
+        "end": {
+          "line": 114,
+          "col": 78,
+          "offset": 3274
+        }
+      }
+    ]
+  },
+  {
+    "code": 3,
+    "level": "warn",
+    "type": [
+      "PartialParsing",
+      [
+        {
+          "path": ".github/workflows/weekly-scan.yml",
+          "start": {
+            "line": 151,
+            "col": 32,
+            "offset": 4880
+          },
+          "end": {
+            "line": 151,
+            "col": 35,
+            "offset": 4883
+          }
+        },
+        {
+          "path": ".github/workflows/weekly-scan.yml",
+          "start": {
+            "line": 153,
+            "col": 1,
+            "offset": 4880
+          },
+          "end": {
+            "line": 153,
+            "col": 23,
+            "offset": 4902
+          }
+        },
+        {
+          "path": ".github/workflows/weekly-scan.yml",
+          "start": {
+            "line": 154,
+            "col": 63,
+            "offset": 4880
+          },
+          "end": {
+            "line": 154,
+            "col": 66,
+            "offset": 4883
+          }
+        }
+      ]
+    ],
+    "message": "Syntax error at line .github/workflows/weekly-scan.yml:151:\n When parsing a snippet as Bash for metavariable-pattern in rule 'yaml.github-actions.security.gha-curl-pipe-shell.gha-curl-pipe-shell', `${{` was unexpected",
+    "path": ".github/workflows/weekly-scan.yml",
+    "spans": [
+      {
+        "file": ".github/workflows/weekly-scan.yml",
+        "start": {
+          "line": 151,
+          "col": 32,
+          "offset": 4880
+        },
+        "end": {
+          "line": 151,
+          "col": 35,
+          "offset": 4883
+        }
+      },
+      {
+        "file": ".github/workflows/weekly-scan.yml",
+        "start": {
+          "line": 153,
+          "col": 1,
+          "offset": 4880
+        },
+        "end": {
+          "line": 153,
+          "col": 23,
+          "offset": 4902
+        }
+      },
+      {
+        "file": ".github/workflows/weekly-scan.yml",
+        "start": {
+          "line": 154,
+          "col": 63,
+          "offset": 4880
+        },
+        "end": {
+          "line": 154,
+          "col": 66,
+          "offset": 4883
+        }
+      }
+    ]
   }
 ]

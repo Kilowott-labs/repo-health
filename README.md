@@ -1,23 +1,23 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-06-29 07:29:53 UTC**_  
-_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **45361**_
+_Last regenerated: **2026-07-06 07:13:27 UTC**_  
+_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **106607**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6433 findings | 🌐 public |
-| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 438 findings | 🔒 private |
-| [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 32 findings | 🌐 public |
-| [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 2 findings | 🌐 public |
-| [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 13 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6898 findings | 🌐 public |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6417 findings | 🌐 public |
+| [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 443 findings | 🔒 private |
+| [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 34 findings | 🌐 public |
+| [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 4 findings | 🌐 public |
+| [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 17 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6882 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 30617 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 91882 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
 | [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 14 findings | 🌐 public |
 
@@ -55,7 +55,7 @@ _Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findi
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6433 findings
+### `nordic-fund-day` — 6417 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -68,12 +68,6 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | GHSA-4x5r-pxfx-6jf8 | `package-lock.json` |  | `` |  |
 | GHSA-fv7c-fp4j-7gwp | `package-lock.json` |  | `` |  |
 | GHSA-968p-4wvh-cqc8 | `package-lock.json` |  | `` |  |
-| npm-@istanbuljs/load-nyc-config | `package-lock.json` |  | `` |  |
-| npm-@jest/core | `package-lock.json` |  | `` |  |
-| npm-@jest/expect | `package-lock.json` |  | `` |  |
-| npm-@jest/globals | `package-lock.json` |  | `` |  |
-| npm-@jest/reporters | `package-lock.json` |  | `` |  |
-| npm-@jest/transform | `package-lock.json` |  | `` |  |
 | GHSA-8988-4f7v-96qf | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-amqplib | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-connect | `package-lock.json` |  | `` |  |
@@ -84,21 +78,21 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@opentelemetry/instrumentation-koa | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-mongoose | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-mysql2 | `package-lock.json` |  | `` |  |
+| npm-@opentelemetry/instrumentation-pg | `package-lock.json` |  | `` |  |
+| npm-@opentelemetry/instrumentation-undici | `package-lock.json` |  | `` |  |
+| npm-@opentelemetry/resources | `package-lock.json` |  | `` |  |
+| npm-@opentelemetry/sdk-trace-base | `package-lock.json` |  | `` |  |
+| npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
+| npm-@sentry/node | `package-lock.json` |  | `` |  |
 
-_6408 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6392 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
-### `kw-wp-scaffold` — 438 findings
+### `kw-wp-scaffold` — 443 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
 | GHSA-4x5r-pxfx-6jf8 | `package-lock.json` |  | `` |  |
 | GHSA-fv7c-fp4j-7gwp | `package-lock.json` |  | `` |  |
-| npm-@istanbuljs/load-nyc-config | `package-lock.json` |  | `` |  |
-| npm-@jest/core | `package-lock.json` |  | `` |  |
-| npm-@jest/expect | `package-lock.json` |  | `` |  |
-| npm-@jest/globals | `package-lock.json` |  | `` |  |
-| npm-@jest/reporters | `package-lock.json` |  | `` |  |
-| npm-@jest/transform | `package-lock.json` |  | `` |  |
 | GHSA-8988-4f7v-96qf | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-amqplib | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-connect | `package-lock.json` |  | `` |  |
@@ -116,17 +110,23 @@ _6408 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nord
 | npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
 | GHSA-vpq2-c234-7xj6 | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/eslint-plugin | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/parser | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/type-utils | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/typescript-estree | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/utils | `package-lock.json` |  | `` |  |
+| npm-@wordpress/babel-preset-default | `package-lock.json` |  | `` |  |
 
-_413 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
+_418 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-scaffold/latest.json)._
 
-### `creometric-website` — 32 findings
+### `creometric-website` — 34 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
+| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -149,16 +149,18 @@ _413 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 | GHSA-h64f-5h5j-jqjh | `package-lock.json` |  | `` |  |
 | GHSA-c4j6-fc7j-m34r | `package-lock.json` |  | `` |  |
 
-_7 more findings — see [`reports/creometric-website/latest.json`](reports/creometric-website/latest.json)._
+_9 more findings — see [`reports/creometric-website/latest.json`](reports/creometric-website/latest.json)._
 
-### `WP-QA-Agent` — 2 findings
+### `WP-QA-Agent` — 4 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
 | GHSA-g7r4-m6w7-qqqr | `package-lock.json` |  | `` |  |
 | GHSA-h67p-54hq-rp68 | `package-lock.json` |  | `` |  |
+| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
+| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 13 | `` |  |
 
-### `snehanair-ship-it-site-monitor` — 13 findings
+### `snehanair-ship-it-site-monitor` — 17 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -173,22 +175,20 @@ _7 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | GHSA-r7g4-qg5f-qqm2 | `package-lock.json` |  | `` |  |
 | GHSA-p6gq-j5cr-w38f | `package-lock.json` |  | `` |  |
 | GHSA-w5hq-g745-h8pq | `package-lock.json` |  | `` |  |
+| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
+| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 13 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/site-monitor.yml` | 20 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/site-monitor.yml` | 34 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
 | problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
 
-### `design-systems` — 6898 findings
+### `design-systems` — 6882 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
 | GHSA-4x5r-pxfx-6jf8 | `package-lock.json` |  | `` |  |
 | GHSA-fv7c-fp4j-7gwp | `package-lock.json` |  | `` |  |
 | GHSA-968p-4wvh-cqc8 | `package-lock.json` |  | `` |  |
-| npm-@istanbuljs/load-nyc-config | `package-lock.json` |  | `` |  |
-| npm-@jest/core | `package-lock.json` |  | `` |  |
-| npm-@jest/expect | `package-lock.json` |  | `` |  |
-| npm-@jest/globals | `package-lock.json` |  | `` |  |
-| npm-@jest/reporters | `package-lock.json` |  | `` |  |
-| npm-@jest/transform | `package-lock.json` |  | `` |  |
 | GHSA-8988-4f7v-96qf | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-amqplib | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/instrumentation-connect | `package-lock.json` |  | `` |  |
@@ -205,10 +205,16 @@ _7 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | npm-@opentelemetry/sdk-trace-base | `package-lock.json` |  | `` |  |
 | npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
+| GHSA-vpq2-c234-7xj6 | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/eslint-plugin | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/parser | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/type-utils | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/typescript-estree | `package-lock.json` |  | `` |  |
+| npm-@typescript-eslint/utils | `package-lock.json` |  | `` |  |
 
-_6873 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6857 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 30617 findings
+### `repo-health` — 91882 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -238,7 +244,7 @@ _6873 more findings — see [`reports/design-systems/latest.json`](reports/desig
 | gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
 | gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
 
-_30592 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_91857 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 
