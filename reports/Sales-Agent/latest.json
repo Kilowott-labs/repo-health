@@ -289,7 +289,8 @@
       "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
       "cwe": [
         "CWE-400",
-        "CWE-770"
+        "CWE-770",
+        "CWE-1050"
       ],
       "cvss": {
         "score": 7.5,

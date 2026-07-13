@@ -1,23 +1,22 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-07-06 07:13:27 UTC**_  
-_Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findings: **106607**_
+_Last regenerated: **2026-07-13 06:23:20 UTC**_  
+_Repos monitored: **12**  ·  Clean: **3**  ·  Flagged: **9**  ·  Total findings: **290297**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6417 findings | 🌐 public |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6416 findings | 🌐 public |
 | [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 443 findings | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 34 findings | 🌐 public |
 | [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 4 findings | 🌐 public |
-| [`snehanair-ship-it-site-monitor`](https://github.com/Kilowott-labs/snehanair-ship-it-site-monitor) | node | medium | 🔴 17 findings | 🌐 public |
 | [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6882 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 91882 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 275590 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
 | [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 14 findings | 🌐 public |
 
@@ -55,7 +54,7 @@ _Repos monitored: **13**  ·  Clean: **3**  ·  Flagged: **10**  ·  Total findi
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6417 findings
+### `nordic-fund-day` — 6416 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -85,7 +84,7 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
 
-_6392 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6391 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
 ### `kw-wp-scaffold` — 443 findings
 
@@ -123,10 +122,10 @@ _418 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
-| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -160,28 +159,6 @@ _9 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
 | package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 13 | `` |  |
 
-### `snehanair-ship-it-site-monitor` — 17 findings
-
-| Rule | File | Line | Commit | Date |
-|---|---|---|---|---|
-| GHSA-h67p-54hq-rp68 | `package-lock.json` |  | `` |  |
-| npm-node-cron | `package-lock.json` |  | `` |  |
-| GHSA-mm7p-fcc7-pg87 | `package-lock.json` |  | `` |  |
-| GHSA-rcmh-qjqh-p98v | `package-lock.json` |  | `` |  |
-| GHSA-c7w3-x93f-qmm8 | `package-lock.json` |  | `` |  |
-| GHSA-vvjj-xcjg-gr5g | `package-lock.json` |  | `` |  |
-| GHSA-268h-hp4c-crq3 | `package-lock.json` |  | `` |  |
-| GHSA-wqvq-jvpq-h66f | `package-lock.json` |  | `` |  |
-| GHSA-r7g4-qg5f-qqm2 | `package-lock.json` |  | `` |  |
-| GHSA-p6gq-j5cr-w38f | `package-lock.json` |  | `` |  |
-| GHSA-w5hq-g745-h8pq | `package-lock.json` |  | `` |  |
-| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
-| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 13 | `` |  |
-| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/site-monitor.yml` | 20 | `` |  |
-| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/site-monitor.yml` | 34 | `` |  |
-| problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `dashboard/src/app/api/ssl/route.ts` | 16 | `` |  |
-| problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification | `ssl-check.js` | 20 | `` |  |
-
 ### `design-systems` — 6882 findings
 
 | Rule | File | Line | Commit | Date |
@@ -214,37 +191,37 @@ _9 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 
 _6857 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 91882 findings
+### `repo-health` — 275590 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
 
-_91857 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_275565 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 

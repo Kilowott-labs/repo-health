@@ -1022,29 +1022,6 @@
     }
   },
   {
-    "RuleID": "GHSA-pjwm-pj3p-43mv",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
-    "Source": "npm-audit",
-    "Severity": "high",
-    "Extra": {
-      "package": "axios",
-      "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
-      "url": "https://github.com/advisories/GHSA-pjwm-pj3p-43mv",
-      "cwe": [
-        "CWE-918"
-      ],
-      "cvss": {
-        "score": 8.6,
-        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
     "RuleID": "GHSA-62hf-57xw-28j9",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -2544,7 +2521,8 @@
       "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
       "cwe": [
         "CWE-400",
-        "CWE-770"
+        "CWE-770",
+        "CWE-1050"
       ],
       "cvss": {
         "score": 7.5,
@@ -2568,7 +2546,8 @@
       "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
       "cwe": [
         "CWE-400",
-        "CWE-770"
+        "CWE-770",
+        "CWE-1050"
       ],
       "cvss": {
         "score": 7.5,
