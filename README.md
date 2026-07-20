@@ -1,22 +1,22 @@
 # Kilowott-labs repo health dashboard
 
-_Last regenerated: **2026-07-13 06:23:20 UTC**_  
-_Repos monitored: **12**  ·  Clean: **3**  ·  Flagged: **9**  ·  Total findings: **290297**_
+_Last regenerated: **2026-07-20 07:46:03 UTC**_  
+_Repos monitored: **12**  ·  Clean: **3**  ·  Flagged: **9**  ·  Total findings: **14742**_
 
 ## Status at a glance
 
 | Repo | Stack | Priority | Secret scan | Visibility |
 |---|---|---|---|---|
 | [`kw-security-plugin`](https://github.com/Kilowott-labs/kw-security-plugin) | php | critical | 🔴 913 findings | 🔒 private |
-| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6416 findings | 🌐 public |
+| [`nordic-fund-day`](https://github.com/Kilowott-labs/nordic-fund-day) | frontend | high | 🔴 6419 findings | 🌐 public |
 | [`kw-wp-scaffold`](https://github.com/Kilowott-labs/kw-wp-scaffold) | frontend | high | 🔴 443 findings | 🔒 private |
 | [`creometric-website`](https://github.com/Kilowott-labs/creometric-website) | node | medium | 🔴 34 findings | 🌐 public |
 | [`WP-QA-Agent`](https://github.com/Kilowott-labs/WP-QA-Agent) | node | medium | 🟡 4 findings | 🌐 public |
-| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6882 findings | 🌐 public |
+| [`design-systems`](https://github.com/Kilowott-labs/design-systems) | node | medium | 🔴 6884 findings | 🌐 public |
 | [`Claude-skills`](https://github.com/Kilowott-labs/Claude-skills) | unknown | medium | 🟢 clean | 🌐 public |
 | [`kw-figma-preflight`](https://github.com/Kilowott-labs/kw-figma-preflight) | frontend | medium | 🟢 clean | 🌐 public |
 | [`kw-wp-factory`](https://github.com/Kilowott-labs/kw-wp-factory) | powershell | medium | 🟢 clean | 🌐 public |
-| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 275590 findings | 🌐 public |
+| [`repo-health`](https://github.com/Kilowott-labs/repo-health) | node | medium | 🔴 30 findings | 🌐 public |
 | [`industrisalg-repo-main`](https://github.com/Kilowott-labs/industrisalg-repo-main) | c# | medium | 🟡 1 findings | 🔒 private |
 | [`Sales-Agent`](https://github.com/Kilowott-labs/Sales-Agent) | node | medium | 🔴 14 findings | 🌐 public |
 
@@ -26,35 +26,35 @@ _Repos monitored: **12**  ·  Clean: **3**  ·  Flagged: **9**  ·  Total findin
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| WordPress.Files.FileName.InvalidClassFileName | `classes/hide-login-url.php` | 1 | `` |  |
-| Squiz.Commenting.FileComment.MissingPackageTag | `classes/hide-login-url.php` | 10 | `` |  |
-| Squiz.Commenting.ClassComment.Missing | `classes/hide-login-url.php` | 18 | `` |  |
-| Squiz.Commenting.FunctionComment.WrongStyle | `classes/hide-login-url.php` | 32 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 40 | `` |  |
-| Squiz.Commenting.InlineComment.InvalidEndChar | `classes/hide-login-url.php` | 49 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 57 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 58 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 59 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 65 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 67 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
-| Generic.Functions.FunctionCallArgumentSpacing.TooMuchSpaceAfterComma | `classes/hide-login-url.php` | 68 | `` |  |
-| PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket | `classes/hide-login-url.php` | 77 | `` |  |
-| PEAR.Functions.FunctionCallSignature.Indent | `classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.MultipleArguments | `classes/hide-login-url.php` | 78 | `` |  |
-| PEAR.Functions.FunctionCallSignature.CloseBracketLine | `classes/hide-login-url.php` | 78 | `` |  |
-| WordPress.WP.I18n.TextDomainMismatch | `classes/hide-login-url.php` | 86 | `` |  |
-| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 119 | `` |  |
-| Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure | `classes/hide-login-url.php` | 119 | `` |  |
-| Universal.ControlStructures.DisallowLonelyIf.Found | `classes/hide-login-url.php` | 122 | `` |  |
-| Generic.CodeAnalysis.AssignmentInCondition.Found | `classes/hide-login-url.php` | 123 | `` |  |
+| Squiz.Commenting.FileComment.WrongStyle | `kw-security.php` | 2 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 3 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 4 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 5 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 6 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 7 | `` |  |
+| Universal.WhiteSpace.PrecisionAlignment.Found | `kw-security.php` | 8 | `` |  |
+| Squiz.Commenting.InlineComment.InvalidEndChar | `kw-security.php` | 11 | `` |  |
+| WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceAfterOpenParenthesis | `kw-security.php` | 12 | `` |  |
+| WordPress.WhiteSpace.OperatorSpacing.NoSpaceBefore | `kw-security.php` | 12 | `` |  |
+| WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter | `kw-security.php` | 12 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 12 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 12 | `` |  |
+| WordPress.WhiteSpace.OperatorSpacing.NoSpaceAfter | `kw-security.php` | 12 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 12 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 12 | `` |  |
+| WordPress.WhiteSpace.ControlStructureSpacing.NoSpaceBeforeCloseParenthesis | `kw-security.php` | 12 | `` |  |
+| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `kw-security.php` | 13 | `` |  |
+| Generic.WhiteSpace.DisallowSpaceIndent.SpacesUsed | `kw-security.php` | 14 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 17 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 17 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 18 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 18 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket | `kw-security.php` | 19 | `` |  |
+| PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket | `kw-security.php` | 19 | `` |  |
 
 _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw-security-plugin/latest.json)._
 
-### `nordic-fund-day` — 6416 findings
+### `nordic-fund-day` — 6419 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -84,7 +84,7 @@ _888 more findings — see [`reports/kw-security-plugin/latest.json`](reports/kw
 | npm-@opentelemetry/sql-common | `package-lock.json` |  | `` |  |
 | npm-@sentry/node | `package-lock.json` |  | `` |  |
 
-_6391 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
+_6394 more findings — see [`reports/nordic-fund-day/latest.json`](reports/nordic-fund-day/latest.json)._
 
 ### `kw-wp-scaffold` — 443 findings
 
@@ -122,10 +122,10 @@ _418 more findings — see [`reports/kw-wp-scaffold/latest.json`](reports/kw-wp-
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
-| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/components/LPForm.tsx` | 21 | `028a021` | 2026-03-19 |
 | generic-api-key | `src/app/api/submit-form/route.ts` | 3 | `567b5fe` | 2026-03-19 |
+| generic-api-key | `src/components/LeadForm.tsx` | 15 | `028a021` | 2026-03-19 |
+| generic-api-key | `src/components/ContactForm.tsx` | 15 | `028a021` | 2026-03-19 |
 | npm-@next/eslint-plugin-next | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
 | GHSA-f886-m6hf-6m8v | `package-lock.json` |  | `` |  |
@@ -159,7 +159,7 @@ _9 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
 | package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 13 | `` |  |
 
-### `design-systems` — 6882 findings
+### `design-systems` — 6884 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
@@ -189,39 +189,39 @@ _9 more findings — see [`reports/creometric-website/latest.json`](reports/creo
 | npm-@typescript-eslint/typescript-estree | `package-lock.json` |  | `` |  |
 | npm-@typescript-eslint/utils | `package-lock.json` |  | `` |  |
 
-_6857 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
+_6859 more findings — see [`reports/design-systems/latest.json`](reports/design-systems/latest.json)._
 
-### `repo-health` — 275590 findings
+### `repo-health` — 30 findings
 
 | Rule | File | Line | Commit | Date |
 |---|---|---|---|---|
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
-| gcp-api-key | `docs/dashboard.json` | 1 | `a3b4277` | 2026-06-15 |
+| package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown | `.github/dependabot.yml` | 3 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 36 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 39 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 77 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 96 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 103 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 108 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 114 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 160 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 167 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 172 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/autofix-monthly.yml` | 178 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 31 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 34 | `` |  |
+| yaml.github-actions.security.run-shell-injection.run-shell-injection | `.github/workflows/weekly-scan.yml` | 51 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 67 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 86 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 89 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 94 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 101 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 390 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 409 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 414 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 419 | `` |  |
+| yaml.github-actions.security.github-actions-mutable-action-tag.github-actions-mutable-action-tag | `.github/workflows/weekly-scan.yml` | 425 | `` |  |
 
-_275565 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
+_5 more findings — see [`reports/repo-health/latest.json`](reports/repo-health/latest.json)._
 
 ### `industrisalg-repo-main` — 1 findings
 

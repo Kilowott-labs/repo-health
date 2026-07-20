@@ -1,0 +1,302 @@
+[
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl-competitor.js",
+    "StartLine": 78,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "gcp-api-key",
+    "File": "scripts/crawl.js",
+    "StartLine": 94,
+    "Commit": "82286aa4f6808d8b6db39d97f32ff8f79e0da73b",
+    "Date": "2026-04-30T07:17:03Z",
+    "Match": "AIzaSyD92ywF5oQc2e1cHZkUL6a_3YcLbX8GJ2A`",
+    "Source": "gitleaks",
+    "Severity": "high"
+  },
+  {
+    "RuleID": "GHSA-rpmf-866q-6p89",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "basic-ftp@<=5.3.0 — basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "basic-ftp",
+      "title": "basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering",
+      "url": "https://github.com/advisories/GHSA-rpmf-866q-6p89",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-v2v4-37r5-5v8g",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ip-address@<=10.1.0 — ip-address has XSS in Address6 HTML-emitting methods",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ip-address",
+      "title": "ip-address has XSS in Address6 HTML-emitting methods",
+      "url": "https://github.com/advisories/GHSA-v2v4-37r5-5v8g",
+      "cwe": [
+        "CWE-79"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-h67p-54hq-rp68",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "js-yaml@4.0.0 - 4.1.1 — JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "js-yaml",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "cwe": [
+        "CWE-407"
+      ],
+      "cvss": {
+        "score": 5.3,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-vmh5-mc38-953g",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to TLS certificate validation bypass via dropped requestTls in SOCKS5 ProxyAgent",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to TLS certificate validation bypass via dropped requestTls in SOCKS5 ProxyAgent",
+      "url": "https://github.com/advisories/GHSA-vmh5-mc38-953g",
+      "cwe": [
+        "CWE-295"
+      ],
+      "cvss": {
+        "score": 7.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-p88m-4jfj-68fv",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to HTTP header injection via Set-Cookie percent-decoding",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to HTTP header injection via Set-Cookie percent-decoding",
+      "url": "https://github.com/advisories/GHSA-p88m-4jfj-68fv",
+      "cwe": [
+        "CWE-93"
+      ],
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-vxpw-j846-p89q",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici WebSocket client vulnerable to denial of service via fragment count bypass",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "undici",
+      "title": "undici WebSocket client vulnerable to denial of service via fragment count bypass",
+      "url": "https://github.com/advisories/GHSA-vxpw-j846-p89q",
+      "cwe": [
+        "CWE-400",
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-hm92-r4w5-c3mj",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to cross-origin request routing via SOCKS5 proxy pool reuse",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to cross-origin request routing via SOCKS5 proxy pool reuse",
+      "url": "https://github.com/advisories/GHSA-hm92-r4w5-c3mj",
+      "cwe": [
+        "CWE-346"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-35p6-xmwp-9g52",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to HTTP response queue poisoning via keep-alive socket reuse",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to HTTP response queue poisoning via keep-alive socket reuse",
+      "url": "https://github.com/advisories/GHSA-35p6-xmwp-9g52",
+      "cwe": [
+        "CWE-367"
+      ],
+      "cvss": {
+        "score": 3.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-g8m3-5g58-fq7m",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to Set-Cookie SameSite attribute downgrade via permissive substring matching",
+    "Source": "npm-audit",
+    "Severity": "low",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to Set-Cookie SameSite attribute downgrade via permissive substring matching",
+      "url": "https://github.com/advisories/GHSA-g8m3-5g58-fq7m",
+      "cwe": [
+        "CWE-183"
+      ],
+      "cvss": {
+        "score": 3.7,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-pr7r-676h-xcf6",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "undici@7.0.0 - 7.27.2 — undici vulnerable to cross-user information disclosure via shared cache whitespace bypass",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "undici",
+      "title": "undici vulnerable to cross-user information disclosure via shared cache whitespace bypass",
+      "url": "https://github.com/advisories/GHSA-pr7r-676h-xcf6",
+      "cwe": [
+        "CWE-524"
+      ],
+      "cvss": {
+        "score": 5.9,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-58qx-3vcg-4xpx",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@8.0.0 - 8.20.1 — ws: Uninitialized memory disclosure",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Uninitialized memory disclosure",
+      "url": "https://github.com/advisories/GHSA-58qx-3vcg-4xpx",
+      "cwe": [
+        "CWE-908"
+      ],
+      "cvss": {
+        "score": 4.4,
+        "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N"
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-96hv-2xvq-fx4p",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "ws@8.0.0 - 8.20.1 — ws: Memory exhaustion DoS from tiny fragments and data chunks",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "ws",
+      "title": "ws: Memory exhaustion DoS from tiny fragments and data chunks",
+      "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
+      "cwe": [
+        "CWE-400",
+        "CWE-770",
+        "CWE-1050"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
+    }
+  }
+]

@@ -236,5 +236,22 @@
       "semgrep": 5
     },
     "total": 6416
+  },
+  {
+    "date": "2026-07-20",
+    "severity_counts": {
+      "critical": 2,
+      "high": 56,
+      "medium": 5915,
+      "low": 446,
+      "info": 0
+    },
+    "scanner_counts": {
+      "gitleaks": 6,
+      "npm-audit": 125,
+      "phpcs": 6283,
+      "semgrep": 5
+    },
+    "total": 6419
   }
 ]

@@ -206,5 +206,19 @@
       "semgrep": 30
     },
     "total": 275590
+  },
+  {
+    "date": "2026-07-20",
+    "severity_counts": {
+      "critical": 0,
+      "high": 1,
+      "medium": 29,
+      "low": 0,
+      "info": 0
+    },
+    "scanner_counts": {
+      "semgrep": 30
+    },
+    "total": 30
   }
 ]

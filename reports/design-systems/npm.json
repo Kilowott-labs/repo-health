@@ -445,7 +445,7 @@
       "range": "<=14.5.0 || 14.7.1-next.082ed6819.0 || 14.8.1-next.a9f418477.0 - 14.8.1-next.cd6172eb0.0 || 14.10.0 - 15.17.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -464,7 +464,7 @@
       "range": "<=15.21.1",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -483,7 +483,7 @@
       "range": "<=1.10.0 || 1.15.0 - 1.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -502,7 +502,7 @@
       "range": "<=33.0.1-next.v.202604201441.0",
       "fixAvailable": {
         "name": "@wordpress/components",
-        "version": "36.1.0",
+        "version": "37.0.0",
         "isSemVerMajor": true
       }
     }
@@ -521,7 +521,7 @@
       "range": "2.11.0 - 7.45.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -540,7 +540,7 @@
       "range": "<=14.10.0 || 14.12.1-next.082ed6819.0 || 14.13.1-next.a9f418477.0 - 14.13.1-next.cd6172eb0.0 || 14.15.0 - 14.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -574,7 +574,7 @@
       "range": "<=7.0.0 || 9.0.0 - 9.29.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -593,7 +593,7 @@
       "range": "<=2.10.0 || 2.12.1-next.082ed6819.0 || 2.13.1-next.a9f418477.0 - 2.13.1-next.cd6172eb0.0 || 2.15.0 - 2.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -612,7 +612,7 @@
       "range": "6.0.0 - 7.10.0 || 7.15.0 - 7.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -631,7 +631,7 @@
       "range": "<=4.10.0 || 4.15.0 - 4.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -650,7 +650,7 @@
       "range": "<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 5.44.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -684,9 +684,33 @@
       "range": "<=5.10.0 || 5.12.1-next.082ed6819.0 || 5.13.1-next.a9f418477.0 - 5.13.1-next.cd6172eb0.0 || 5.15.0 - 6.20.0",
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
+    }
+  },
+  {
+    "RuleID": "GHSA-xcpc-8h2w-3j85",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "adm-zip@<0.6.0 — adm-zip: Crafted ZIP file triggers 4GB memory allocation",
+    "Source": "npm-audit",
+    "Severity": "high",
+    "Extra": {
+      "package": "adm-zip",
+      "title": "adm-zip: Crafted ZIP file triggers 4GB memory allocation",
+      "url": "https://github.com/advisories/GHSA-xcpc-8h2w-3j85",
+      "cwe": [
+        "CWE-400",
+        "CWE-789"
+      ],
+      "cvss": {
+        "score": 7.5,
+        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+      },
+      "fixAvailable": true
     }
   },
   {
@@ -1017,29 +1041,6 @@
       "cvss": {
         "score": 4.8,
         "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
-      },
-      "fixAvailable": true
-    }
-  },
-  {
-    "RuleID": "GHSA-pjwm-pj3p-43mv",
-    "File": "package-lock.json",
-    "StartLine": 0,
-    "Commit": "",
-    "Date": "",
-    "Match": "axios@1.0.0 - 1.15.2 — axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
-    "Source": "npm-audit",
-    "Severity": "high",
-    "Extra": {
-      "package": "axios",
-      "title": "axios's shouldBypassProxy does not recognize IPv4-mapped IPv6 addresses, allowing NO_PROXY bypass (incomplete fix for CVE-2025-62718)",
-      "url": "https://github.com/advisories/GHSA-pjwm-pj3p-43mv",
-      "cwe": [
-        "CWE-918"
-      ],
-      "cvss": {
-        "score": 8.6,
-        "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N"
       },
       "fixAvailable": true
     }
@@ -2365,7 +2366,7 @@
       },
       "fixAvailable": {
         "name": "@wordpress/editor",
-        "version": "14.50.0",
+        "version": "14.51.0",
         "isSemVerMajor": true
       }
     }
@@ -2507,6 +2508,52 @@
     }
   },
   {
+    "RuleID": "GHSA-mp7j-qc5w-4988",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "websocket-driver@<=0.7.4 — websocket-driver: Resource limit bypass via message compression",
+    "Source": "npm-audit",
+    "Severity": "medium",
+    "Extra": {
+      "package": "websocket-driver",
+      "title": "websocket-driver: Resource limit bypass via message compression",
+      "url": "https://github.com/advisories/GHSA-mp7j-qc5w-4988",
+      "cwe": [
+        "CWE-770"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
+    "RuleID": "GHSA-xv26-6w52-cph6",
+    "File": "package-lock.json",
+    "StartLine": 0,
+    "Commit": "",
+    "Date": "",
+    "Match": "websocket-driver@<=0.7.4 — websocket-driver: Message corruption via abuse of protocol length headers",
+    "Source": "npm-audit",
+    "Severity": "critical",
+    "Extra": {
+      "package": "websocket-driver",
+      "title": "websocket-driver: Message corruption via abuse of protocol length headers",
+      "url": "https://github.com/advisories/GHSA-xv26-6w52-cph6",
+      "cwe": [
+        "CWE-130"
+      ],
+      "cvss": {
+        "score": 0,
+        "vectorString": null
+      },
+      "fixAvailable": true
+    }
+  },
+  {
     "RuleID": "GHSA-58qx-3vcg-4xpx",
     "File": "package-lock.json",
     "StartLine": 0,
@@ -2544,7 +2591,8 @@
       "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
       "cwe": [
         "CWE-400",
-        "CWE-770"
+        "CWE-770",
+        "CWE-1050"
       ],
       "cvss": {
         "score": 7.5,
@@ -2568,7 +2616,8 @@
       "url": "https://github.com/advisories/GHSA-96hv-2xvq-fx4p",
       "cwe": [
         "CWE-400",
-        "CWE-770"
+        "CWE-770",
+        "CWE-1050"
       ],
       "cvss": {
         "score": 7.5,
