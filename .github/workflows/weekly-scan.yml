@@ -64,7 +64,7 @@ jobs:
           echo "Will scan: $targets"
 
       - name: Upload discovery artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: discovered-targets
           path: discovered-targets.json
@@ -387,7 +387,7 @@ jobs:
 
       # ---------------- Upload results ----------------
       - name: Upload report artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: report-${{ matrix.target }}
           path: reports/${{ matrix.target }}/
